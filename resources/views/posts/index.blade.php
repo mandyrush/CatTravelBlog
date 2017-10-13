@@ -1,7 +1,6 @@
 @extends ('partials.master')
 
 @section ('content')
-
 <!-- Slider -->
 	<section class="container-fluid">
 		<div class="row slider">
@@ -21,84 +20,28 @@
 	</section>
 
 <!-- Nessie Greeting -->
-	<section class="container-fluid">
+<section class="container-fluid">
 		<div class="row intro-text">
 			<p class="col-sm-12" align="center">Come with us! As me "Nessie", and my acquaintance Mozzie travel the world with <br> our enslaved humans to the far reaching corners of the globe.</p>
 		</div>
-	</section>
+	</section> 
 
 <!-- Posts -->
 	<section class="container-fluid posts"> 
-		<div class="row">
-			<figure class="col-sm-1"></figure>
-			<figure class="col-sm-4">
-				<img src="../img/mozzie-bag.jpg" class="img-fluid" alt="Responsive image">
-			</figure>
-			<figure class="col-sm-6">
-				<div class="post-info">
-					<h2>Finding my Humans</h2>
-					<h6>September 26, 2017</h6>
-					<br>
-					<h5>That night while they slept I made the biggest decision of my life. They were going to become my humans and I in turn would be their eternal protector...</h5>
-					<br>
-					<h6 class="read-more">READ MORE...</h6>
+		@foreach ($posts as $post)
+			<div class="row justify-content-center">
+				<figure class="col-sm-4">
+					<img src="{{$post->featured_image}}" class="img-fluid" alt="Responsive image">
+				</figure>
+				<div class="col-sm-6 post-info">
+					<h2>{{$post->title}}</h2>
+					<h6>{{$post->created_at}}</h6>
+					<h5>{{$post->featured_text}}</h5>
+					<h6 class="read-more">
+						<a href="/posts/{{ $post->id }}">READ MORE...</a>
+					</h6>
 				</div>
-			</figure>
-			<figure class="col-sm-1"></figure>
-		</div>
-		<div class="row">
-			<figure class="col-sm-1"></figure>
-			<figure class="col-sm-6">
-				<div class="post-info">
-					<h2>Stray Cat</h2>
-					<h6>September 26, 2017</h6>
-					<br>
-					<h5>We’ve all heard the advice “don’t take home a stray cat” so what happens when you do? Well there is only one way to find out and that’s exactly what we did...</h5>
-					<br>
-					<h6 class="read-more">READ MORE...</h6>
-				</div>
-			</figure>
-			<figure class="col-sm-4">
-				<img src="http://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/65/63/fotolia_4098846_XS.jpg" class="img-fluid" alt="Responsive image">
-			</figure>
-			<figure class="col-sm-1"></figure>
-		</div>
-	</section>
-	
-	<section>
-		<div class="row">
-			<figure class="col-sm-1"></figure>
-			<figure class="col-sm-4">
-				<img src="../img/amanda-profile.jpg" class="img-fluid" alt="Responsive image">
-			</figure>
-			<figure class="col-sm-6">
-				<div class="post-info">
-					<h2>Finding my Humans</h2>
-					<h6>September 26, 2017</h6>
-					<br>
-					<h5>That night while they slept I made the biggest decision of my life. They were going to become my humans and I in turn would be their eternal protector...</h5>
-					<br>
-					<h6 class="read-more">READ MORE...</h6>
-				</div>
-			</figure>
-			<figure class="col-sm-1"></figure>
-		</div>
-		<div class="row">
-			<figure class="col-sm-1"></figure>
-			<figure class="col-sm-6">
-				<div class="post-info">
-					<h2>Stray Cat</h2>
-					<h6>September 26, 2017</h6>
-					<br>
-					<h5>We’ve all heard the advice “don’t take home a stray cat” so what happens when you do? Well there is only one way to find out and that’s exactly what we did...</h5>
-					<br>
-					<h6 class="read-more">READ MORE...</h6>
-				</div>
-			</figure>
-			<figure class="col-sm-4">
-				<img src="http://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/65/63/fotolia_4098846_XS.jpg" class="img-fluid" alt="Responsive image">
-			</figure>
-			<figure class="col-sm-1"></figure>
-		</div>
+			</div>
+		@endforeach
 	</section>
 @endsection
