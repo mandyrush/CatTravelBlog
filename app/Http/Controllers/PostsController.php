@@ -15,4 +15,13 @@ class PostsController extends Controller
     {
         return view('posts.show', compact('post'));
     }
+    public function create()
+    {
+        return view('posts.create');
+    }
+    public function store()
+    {
+        Posts::create(request(['title', 'body']));
+        return redirect('/');
+    }
 }
