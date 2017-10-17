@@ -31,7 +31,7 @@
 		@foreach ($posts as $post)
 			<div class="row justify-content-center">
 				<figure class="col-sm-4">
-					<img src="{{$post->featured_image}}" class="img-fluid" alt="Responsive image">
+					<img src="{{Storage::disk('local')->url($post->featured_image)}}" class="img-fluid" alt="Responsive image">
 				</figure>
 				<div class="col-sm-6 post-info">
 					<h2>{{$post->title}}</h2>
