@@ -37,8 +37,8 @@
 					<h2>{{$post->title}}</h2>
 					<h6>{{$post->created_at}}</h6>
 					<h5>{{$post->featured_text}}</h5>
-					<h6 class="read-more">
-						<a href="/posts/{{ $post->id }}">READ MORE...</a>
+					<h6>
+						<a href="/posts/{{ $post->id }}" class="read-more">READ MORE...</a>
 					</h6>
 				</div>
 			</div>

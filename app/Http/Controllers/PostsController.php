@@ -25,6 +25,13 @@ class PostsController extends Controller
 
     public function store(Request $request)
     {
+        //Validate form fields
+        $this->validate(request(), [
+            'title' => 'required',
+            'body' => 'required',
+            'featured_text' => 'required'
+        ]);
+
         // Moving file to the public folder
         $filename = $request->file('featured_image')->store('public');
         $data = [
