@@ -1,7 +1,7 @@
 @extends ('partials.master')
 
 @section ('content')
-	<ul>
+	<div class="col-sm-10">
 		{{$post->body}}
-	</ul>
+	</div>
 @endsection

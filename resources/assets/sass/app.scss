@@ -1,9 +1,73 @@
+ p {
+	font-family: "Prociono";
+}
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+/* Title */
+.title {
+	font-family: "Cookie";
+	color: #85929E;
+	font-size: 75px;
+	padding: 20px;
+	margin-left: 10px;
+}
 
-// Variables
-@import "variables";
+/* Navigation Bar */
+.main-navbar {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 10px;
+	padding-top: 10px;
+}
+nav a {
+	color: white;
+}
+header div {
+	background-color: #34495E;
+}
+header p {
+	padding: 0 25px;
+}
 
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+/* Slider */
+.slider span {
+	border: 1px solid #34495E;
+	padding-bottom: 75px;
+	padding-top: 20px;
+}
+.slider-city {
+	font-family: "Cookie";
+	font-size: 30px;
+	color: #FF8000;
+}
+
+/* Nessie Greeting */
+.intro-text {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 20px;
+	color: #85929E;
+	border-bottom: 25px solid #34495E;
+	background-image: url("https://image.freepik.com/free-vector/vector-abstract-lines-template-object-design_2065-720.jpg");
+}
+
+/* Posts */
+.posts {
+	background-color: #F1F1F1;
+}
+.post-info {
+	padding-top: 70px;
+	font-family: "Prociono";
+	color: #34495E;
+}
+.read-more {
+	color: #FF8000;
+}
+
+/* Footer */
+footer div {
+	height: 100px;
+	background-color: #34495E;
+}

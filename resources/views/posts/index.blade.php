@@ -20,28 +20,18 @@
 	</section>
 
 <!-- Nessie Greeting -->
-<section class="container-fluid">
+	<section class="container-fluid">
 		<div class="row intro-text">
 			<p class="col-sm-12" align="center">Come with us! As me "Nessie", and my acquaintance Mozzie travel the world with <br> our enslaved humans to the far reaching corners of the globe.</p>
 		</div>
 	</section> 
 
-<!-- Posts -->
 	<section class="container-fluid posts"> 
-		@foreach ($posts as $post)
-			<div class="row justify-content-center">
-				<figure class="col-sm-4">
-					<img src="{{Storage::disk('local')->url($post->featured_image)}}" class="img-fluid" alt="Responsive image">
-				</figure>
-				<div class="col-sm-6 post-info">
-					<h2>{{$post->title}}</h2>
-					<h6>{{$post->created_at}}</h6>
-					<h5>{{$post->featured_text}}</h5>
-					<h6>
-						<a href="/posts/{{ $post->id }}" class="read-more">READ MORE...</a>
-					</h6>
-				</div>
-			</div>
-		@endforeach
+		<div class="row justify-content-center">
+			@foreach ($posts as $post)
+				@include ('posts.post')
+			@endforeach
+		</div>
 	</section>
+
 @endsection
