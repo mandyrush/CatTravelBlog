@@ -1,5 +1,45 @@
-p {
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);p {
   font-family: "Prociono";
+}
+
+a {
+  font-family: "Prociono";
+}
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  color: #85929E;
+}
+
+a:active {
+  color: #fff;
+}
+
+.read-more {
+  font-family: "Prociono";
+}
+
+.read-more:link {
+  color: #FF8000;
+}
+
+.read-more:visited {
+  color: #FF8000;
+}
+
+.read-more:hover {
+  color: #85929E;
+}
+
+.read-more:active {
+  color: #FF8000;
 }
 
 /* Title */
@@ -30,15 +70,11 @@ p {
   padding-top: 10px;
 }
 
-nav a {
-  color: white;
-}
-
 header div {
   background-color: #34495E;
 }
 
-header p {
+header a {
   padding: 0 25px;
 }
 
@@ -77,10 +113,6 @@ header p {
   padding-top: 70px;
   font-family: "Prociono";
   color: #34495E;
-}
-
-.read-more {
-  color: #FF8000;
 }
 
 /* Footer */

@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
     public function index()
     {
         $posts = Post::latest()->get();
@@ -31,14 +35,15 @@ class PostsController extends Controller
             'body' => 'required',
             'featured_text' => 'required'
         ]);
-
+        
         // Moving file to the public folder
         $filename = $request->file('featured_image')->store('public');
         $data = [
               "title" => $request->title,
               "body" => $request->body,
               "featured_text" => $request->featured_text,
-              "featured_image" => $filename
+              "featured_image" => $filename,
+              "user_id" => auth()->id()
         ];
 
         // Save

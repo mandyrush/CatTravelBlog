@@ -1,7 +1,12 @@
-@extends ('partials.master')
+@extends ('layouts.master')
 
 @section ('content')
 	<div class="col-sm-10">
+		<h2>{{ $post->title }}</h2>
+		<p>
+			{{ $post->user->name }} on
+			{{ $post->created_at->toFormattedDateString() }}
+		</p>
 		{{$post->body}}
 
 		<hr>
@@ -36,7 +41,7 @@
 					</div>
 				</form>
 
-				@include('partials.errors')
+				@include('layouts.errors')
 			</div>
 		</div>
 

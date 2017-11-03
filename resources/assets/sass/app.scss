@@ -1,5 +1,20 @@
- p {
+p {
 	font-family: "Prociono";
+}
+a {
+	font-family: "Prociono";
+	&:link { color: #fff; }
+	&:visited { color: #fff; }
+	&:hover { color: #85929E; }
+	&:active { color: #fff; }
+}
+
+.read-more {
+	font-family: "Prociono";
+	&:link { color: #FF8000; }
+	&:visited { color: #FF8000; }
+	&:hover { color: #85929E; }
+	&:active { color: #FF8000; }
 }
 
 /* Title */
@@ -21,13 +36,11 @@
 	height: 10px;
 	padding-top: 10px;
 }
-nav a {
-	color: white;
-}
+
 header div {
 	background-color: #34495E;
 }
-header p {
+header a {
 	padding: 0 25px;
 }
 
@@ -62,12 +75,14 @@ header p {
 	font-family: "Prociono";
 	color: #34495E;
 }
-.read-more {
-	color: #FF8000;
-}
 
 /* Footer */
 footer div {
 	height: 100px;
 	background-color: #34495E;
 }
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+ // Variables
+@import "variables";
