@@ -16,7 +16,10 @@
 				@foreach($post->comments as $comment)
 					<li class="list-group-item">
 						<strong>
-							{{ $comment->created_at->DiffForHumans() }}: &nbsp;
+							{{ $comment->user->name }}: &nbsp;
+						</strong>
+						<strong>
+							{{ $comment->created_at->DiffForHumans() }} &nbsp;
 						</strong>
 						{{ $comment->body }}
 					</li>
@@ -26,24 +29,26 @@
 
 		{{-- Add a comment --}}
 		<hr>
-		
-		<div class="card">
-			<div class="card-block">
-				<form method="POST" action="/posts/{{ $post->id }}/comments">
-					{{ csrf_field() }} 
+		@if (Auth::check())			
+			<form method="POST" action="/posts/{{ $post->id }}/comments">
+				{{ csrf_field() }} 
 
-					<div class="form-group">
-						<textarea name="body" placeholder="Your comment here" class="form-control" required></textarea>
-					</div>
+				<div class="form-group">
+					<textarea name="body" placeholder="Your comment here" class="form-control" required></textarea>
+				</div>
 
-					<div class="form-group">
-						<button type="submit" class="btn btn-primary">Add Comment</button>
-					</div>
-				</form>
-
-				@include('layouts.errors')
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">Add Comment</button>
+				</div>
+			</form>
+		@else	
+			<div class="form-group">
+				<a href="/login">
+					<button class="btn btn-primary">Login a to add a comment</button>
+				</a>			
 			</div>
-		</div>
+		@endif
 
+		@include('partials.errors')
 	</div>
 @endsection

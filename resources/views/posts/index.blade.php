@@ -9,7 +9,7 @@
 				<p class="slider-city">Lisbon</p>
 			</span>
 			<span class="col-sm-4" style="border-right: none; border-left: none">
-				<img src="https://www.st-christophers.co.uk/__data/assets/image/0005/462614/prague_hero.jpg" class="img-fluid" alt="Responsive image">
+				<img src="http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Czech%20Republic/Prague/Prague%20city-xlarge.jpg" class="img-fluid" alt="Responsive image">
 				<p class="slider-city">Prague</p>
 			</span>
 			<span class="col-sm-4">

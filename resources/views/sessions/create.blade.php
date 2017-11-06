@@ -20,7 +20,7 @@
 				<button type="submit" class="btn btn-primary">Sign In</button>
 			</div>
 
-			@include ('layouts.errors')
+			@include ('partials.errors')
 		</form>
 	</div>
 @endsection

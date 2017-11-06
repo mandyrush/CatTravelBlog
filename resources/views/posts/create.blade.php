@@ -32,7 +32,7 @@
 				<button type="submit" class="btn btn-primary">Publish</button>
 			</div>
 
-			@include ('layouts.errors')
+			@include ('partials.errors')
 			
 		</form>
 	</div>

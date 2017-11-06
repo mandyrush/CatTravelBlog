@@ -17,8 +17,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Cookie|Prociono" rel="stylesheet">
 </head>
 <body>
-	@include ('layouts.nav')
+	@include ('partials.nav')
 	@yield ('content')
-	@include ('layouts.footer')
+	@include ('partials.footer')
 </body>
 </html>

@@ -1,45 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);p {
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);body {
   font-family: "Prociono";
-}
-
-a {
-  font-family: "Prociono";
-}
-
-a:link {
-  color: #fff;
-}
-
-a:visited {
-  color: #fff;
-}
-
-a:hover {
-  color: #85929E;
-}
-
-a:active {
-  color: #fff;
-}
-
-.read-more {
-  font-family: "Prociono";
-}
-
-.read-more:link {
-  color: #FF8000;
-}
-
-.read-more:visited {
-  color: #FF8000;
-}
-
-.read-more:hover {
-  color: #85929E;
-}
-
-.read-more:active {
-  color: #FF8000;
 }
 
 /* Title */
@@ -52,7 +12,44 @@ a:active {
   margin-left: 10px;
 }
 
+.title-link:link {
+  color: #85929E;
+}
+
+.title-link:visited {
+  color: #85929E;
+}
+
+.title-link:hover {
+  color: #85929E;
+  text-decoration: none;
+}
+
+.title-link:active {
+  color: #85929E;
+}
+
 /* Navigation Bar */
+
+.main-navbar a {
+  font-family: "Prociono";
+}
+
+.main-navbar a:link {
+  color: #fff;
+}
+
+.main-navbar a:visited {
+  color: #fff;
+}
+
+.main-navbar a:hover {
+  color: #fff;
+}
+
+.main-navbar a:active {
+  color: #fff;
+}
 
 .main-navbar {
   margin-top: 20px;
@@ -68,6 +65,22 @@ a:active {
           align-items: center;
   height: 10px;
   padding-top: 10px;
+}
+
+.dropdown-menu a:link {
+  color: #34495E;
+}
+
+.dropdown-menu a:visited {
+  color: #34495E;
+}
+
+.dropdown-menu a:hover {
+  color: #34495E;
+}
+
+.dropdown-menu a:active {
+  color: #34495E;
 }
 
 header div {
@@ -113,6 +126,26 @@ header a {
   padding-top: 70px;
   font-family: "Prociono";
   color: #34495E;
+}
+
+.read-more {
+  font-family: "Prociono";
+}
+
+.read-more:link {
+  color: #FF8000;
+}
+
+.read-more:visited {
+  color: #FF8000;
+}
+
+.read-more:hover {
+  color: #85929E;
+}
+
+.read-more:active {
+  color: #FF8000;
 }
 
 /* Footer */

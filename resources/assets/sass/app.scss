@@ -1,20 +1,5 @@
-p {
+body {
 	font-family: "Prociono";
-}
-a {
-	font-family: "Prociono";
-	&:link { color: #fff; }
-	&:visited { color: #fff; }
-	&:hover { color: #85929E; }
-	&:active { color: #fff; }
-}
-
-.read-more {
-	font-family: "Prociono";
-	&:link { color: #FF8000; }
-	&:visited { color: #FF8000; }
-	&:hover { color: #85929E; }
-	&:active { color: #FF8000; }
 }
 
 /* Title */
@@ -25,8 +10,21 @@ a {
 	padding: 20px;
 	margin-left: 10px;
 }
+.title-link {
+	&:link { color: #85929E; }
+	&:visited { color: #85929E; }
+	&:hover { color: #85929E; text-decoration: none;}
+	&:active { color: #85929E; }
+}
 
 /* Navigation Bar */
+.main-navbar a {
+	font-family: "Prociono";
+	&:link { color: #fff; }
+	&:visited { color: #fff; }
+	&:hover { color: #fff; }
+	&:active { color: #fff; }
+}
 .main-navbar {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -36,7 +34,12 @@ a {
 	height: 10px;
 	padding-top: 10px;
 }
-
+.dropdown-menu a {
+	&:link { color: #34495E; }
+	&:visited { color: #34495E; }
+	&:hover { color: #34495E; }
+	&:active { color: #34495E; }
+}
 header div {
 	background-color: #34495E;
 }
@@ -74,6 +77,13 @@ header a {
 	padding-top: 70px;
 	font-family: "Prociono";
 	color: #34495E;
+}
+.read-more {
+	font-family: "Prociono";
+	&:link { color: #FF8000; }
+	&:visited { color: #FF8000; }
+	&:hover { color: #85929E; }
+	&:active { color: #FF8000; }
 }
 
 /* Footer */

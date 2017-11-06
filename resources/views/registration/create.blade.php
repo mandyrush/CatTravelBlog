@@ -30,7 +30,7 @@
 				<button type="submit" class="btn btn-primary">Register</button>
 			</div>
 
-			@include ('layouts.errors')
+			@include ('partials.errors')
 
 		</form>
 	</div>
