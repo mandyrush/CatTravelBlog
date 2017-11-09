@@ -33,7 +33,8 @@ class PostsController extends Controller
         $this->validate(request(), [
             'title' => 'required',
             'body' => 'required',
-            'featured_text' => 'required'
+            'featured_text' => 'required',
+            'location' => 'required'
         ]);
         
         // Moving file to the public folder
@@ -42,6 +43,7 @@ class PostsController extends Controller
               "title" => $request->title,
               "body" => $request->body,
               "featured_text" => $request->featured_text,
+              "location" => $request->location,
               "featured_image" => $filename,
               "user_id" => auth()->id()
         ];

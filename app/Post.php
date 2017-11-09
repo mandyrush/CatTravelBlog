@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+
 use Illuminate\Support\Facades\Auth;
 
 class Post extends Model
@@ -18,6 +19,6 @@ class Post extends Model
     public function addComment($body)
     {
         $user_id = Auth::user()->id;
-    	$this->comments()->create(compact('body', 'user_id'));
+        $this->comments()->create(compact('body', 'user_id'));
     }
 }

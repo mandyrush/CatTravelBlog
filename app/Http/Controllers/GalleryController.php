@@ -9,30 +9,37 @@ class GalleryController extends Controller
 {
     public function index()
     {
-    	$galleries = Gallery::latest()->get();
-    	return view('galleries.index', compact('galleries'));
+        $galleries = Gallery::latest()->get();
+        return view('galleries.index', compact('galleries'));
     }
 
     public function create()
     {
-    	return view('galleries.create');
+        return view('galleries.create');
     }
 
     public function store(Request $request)
     {
-    	foreach($request->file('featured_image') as $file) {
-    		
-    		$filename = $file->store('public');
+    //Validate form fields
+        $this->validate(request(), [
+            'location' => 'required'
+        ]);
 
-        	// Save
-        	Gallery::create([ "featured_image" => $filename]);
-    	}
+        foreach ($request->file('featured_image') as $file) {
+            $filename = $file->store('public');
+
+            // Save
+            Gallery::create([
+                "featured_image" => $filename,
+                "location" => $request['location']
+            ]);
+        }
 
         return redirect('/gallery');
     }
 
     public function show(Gallery $gallery)
     {
-    	return view('galleries.show', compact('gallery'));
+        return view('galleries.show', compact('gallery'));
     }
 }
