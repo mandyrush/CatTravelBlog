@@ -23,11 +23,6 @@
 				<textarea id="featured_text" name="featured_text" class="form-control"></textarea>
 			</div>
 
-			<div class="form-group">
-				<label for="location">Location:</label>
-				<input type="text" class="form-control" id="location" name="location">
-			</div>
-
 		  	<div class="form-group">
 				<label for="featured_image">Select Featured Image to Upload:</label>
 				<input type="file" name="featured_image" id="featured_image" />

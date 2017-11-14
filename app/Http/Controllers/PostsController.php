@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -13,7 +14,11 @@ class PostsController extends Controller
     }
     public function index()
     {
-        $posts = Post::latest()->get();
+
+        $posts = Post::latest()
+            ->filter(['month'=> \request('month'), 'year'=> \request('year')])
+            ->get();
+
         return view('posts.index', compact('posts'));
     }
 
@@ -33,8 +38,7 @@ class PostsController extends Controller
         $this->validate(request(), [
             'title' => 'required',
             'body' => 'required',
-            'featured_text' => 'required',
-            'location' => 'required'
+            'featured_text' => 'required'
         ]);
         
         // Moving file to the public folder
@@ -43,7 +47,6 @@ class PostsController extends Controller
               "title" => $request->title,
               "body" => $request->body,
               "featured_text" => $request->featured_text,
-              "location" => $request->location,
               "featured_image" => $filename,
               "user_id" => auth()->id()
         ];

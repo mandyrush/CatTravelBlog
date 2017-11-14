@@ -10,11 +10,6 @@
 			{{ csrf_field() }}
 
 			<div class="form-group">
-				<label for="location">Location:</label>
-				<input type="text" class="form-control" id="location" name="location">
-			</div>
-
-			<div class="form-group">
 				<label for="featured_image">Select Image to Upload:</label>
 				<input type="file" name="featured_image[]" multiple="multiple" id="featured_image" />
 			</div>

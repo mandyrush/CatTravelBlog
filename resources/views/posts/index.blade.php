@@ -9,7 +9,7 @@
 				<p class="slider-city">Lisbon</p>
 			</span>
 			<span class="col-sm-4" style="border-right: none; border-left: none">
-				<img src="http://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Czech%20Republic/Prague/Prague%20city-xlarge.jpg" class="img-fluid" alt="Responsive image">
+				<img src="https://www.nomadasaurus.com/wp-content/uploads/2016/09/Red-Roofs-What-To-Do-In-Prague.jpg" class="img-fluid" alt="Responsive image">
 				<p class="slider-city">Prague</p>
 			</span>
 			<span class="col-sm-4">
@@ -26,6 +26,7 @@
 		</div>
 	</section> 
 
+<!-- Posts -->
 	<section class="container-fluid posts"> 
 		<div class="row justify-content-center">
 			@foreach ($posts as $post)

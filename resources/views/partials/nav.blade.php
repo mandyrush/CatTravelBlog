@@ -1,12 +1,12 @@
-<div class="row">
-	<a class="title-link" href="/">
-		<h1 class="col-sm-12 title" align="left">Cats Wander</h1>
+<div class="row title">
+	<a href="/">
+		<h1 class="col-sm-12" align="left">Cats Wander</h1>
 	</a>
 </div>
 
 <header class="container-fluid">	
-	<div class="row">
-		<nav class="col-sm-12 main-navbar">
+	<div class="row main-navbar">
+		<nav class="col-sm-12 nav-menu">
 			
 			<a class="nav-link" href="/">Home</a>
 			<a class="nav-link" href="/gallery">Gallery</a>

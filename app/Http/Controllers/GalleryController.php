@@ -20,18 +20,13 @@ class GalleryController extends Controller
 
     public function store(Request $request)
     {
-    //Validate form fields
-        $this->validate(request(), [
-            'location' => 'required'
-        ]);
 
         foreach ($request->file('featured_image') as $file) {
             $filename = $file->store('public');
 
             // Save
             Gallery::create([
-                "featured_image" => $filename,
-                "location" => $request['location']
+                "featured_image" => $filename
             ]);
         }
 
