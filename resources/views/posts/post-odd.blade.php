@@ -1,9 +1,4 @@
-<!-- Posts -->
-<figure class="col-sm-4">
-	<a href="/posts/{{ $post->id }}">
-		<img src="{{Storage::disk('local')->url( $post->featured_image )}}" class="img-fluid" alt="Responsive image">
-	</a>
-</figure>
+<!-- Posts-odd -->
 
 <div class="col-sm-6 post-info">
 	<h2>{{ $post->title }}</h2>
@@ -13,4 +8,10 @@
 		<a href="/posts/{{ $post->id }}" class="read-more">READ MORE...</a>
 	</h6>
 </div>
+
+<figure class="col-sm-4">
+	<a href="/posts/{{ $post->id }}">
+		<img src="{{Storage::disk('local')->url( $post->featured_image )}}" class="img-fluid" alt="Responsive image">
+	</a>
+</figure>
 			

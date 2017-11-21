@@ -30,7 +30,11 @@
 	<section class="container-fluid posts"> 
 		<div class="row justify-content-center">
 			@foreach ($posts as $post)
-				@include ('posts.post')
+				@if ($post->id % 2 == 1)
+					@include ('posts.post-odd')
+				@elseif ($post->id % 2 == 0)
+					@include ('posts.post-even')
+				@endif
 			@endforeach
 		</div>
 	</section>

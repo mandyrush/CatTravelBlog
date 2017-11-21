@@ -73,9 +73,10 @@
 		}
 }
 
-/* Posts */
+/* Posts Index*/
 .posts {
 	background-color: #F1F1F1;
+	padding-top: 15px;
 		.post-info {
 			padding-top: 70px;
 			font-family: "Prociono";
@@ -91,6 +92,35 @@
 			&:hover { color: #85929E; }
 			&:active { color: #FF8000; }
 		}
+}
+
+/* Posts Show */
+.post-show {
+	margin: 10px;
+	margin-top: 15px;
+}
+
+/* Gallery */
+.masonry { /* Masonry container */
+    column-count: 4;
+    column-gap: 1em;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.masonry-panel { /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+    border-radius: 15px;
+}
+.masonry-panel_content img {
+	border-radius: 15px;
+	display: block;
+	margin: 0 auto;
 }
 
 /* Footer */

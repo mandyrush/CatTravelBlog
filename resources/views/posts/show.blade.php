@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('content')
-	<div class="col-sm-10">
+	<div class="col-sm-9 post-show">
 		<h2>{{ $post->title }}</h2>
 		<p>
 			{{ $post->user->name }} on

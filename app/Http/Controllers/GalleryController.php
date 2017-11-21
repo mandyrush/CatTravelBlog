@@ -32,9 +32,4 @@ class GalleryController extends Controller
 
         return redirect('/gallery');
     }
-
-    public function show(Gallery $gallery)
-    {
-        return view('galleries.show', compact('gallery'));
-    }
 }

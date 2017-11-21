@@ -10,7 +10,6 @@ Route::post('/posts/{post}/comments', 'CommentsController@store');
 Route::get('/gallery', 'GalleryController@index');
 Route::get('/gallery/create', 'GalleryController@create');
 Route::post('/gallery', 'GalleryController@store');
-Route::get('/gallery/{images}', 'GalleryController@show');
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
