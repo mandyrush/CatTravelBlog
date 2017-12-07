@@ -27,7 +27,7 @@
 	</section> 
 
 <!-- Posts -->
-	<section class="container-fluid posts"> 
+	<section class="container-fluid"> 
 		<div class="row justify-content-center">
 			@foreach ($posts as $post)
 				@if ($post->id % 2 == 1)

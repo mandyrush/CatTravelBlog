@@ -75,29 +75,82 @@
 
 /* Posts Index*/
 .posts {
-	background-color: #F1F1F1;
-	padding-top: 15px;
-		.post-info {
-			padding-top: 70px;
-			font-family: "Prociono";
-			color: #34495E;
-				h5 {
-					padding-top: 20px;
-				}
-		}
-		.read-more {
-			font-family: "Prociono";
-			&:link { color: #FF8000; }
-			&:visited { color: #FF8000; }
-			&:hover { color: #85929E; }
-			&:active { color: #FF8000; }
+	padding: 10px;
+	padding-top: 25px;
+}
+.odd {
+	background-color: white;
+}
+.even {
+	background-color: #ccc;
+}
+
+.post-info {
+	padding-top: 70px;
+	font-family: "Prociono";
+	color: #34495E;
+		h5 {
+			padding-top: 20px;
 		}
 }
+.post-title {
+	font-family: "Prociono";
+	&:link { color: #34495E; }
+	&:visited { color: #34495E; }
+	&:hover { color: #34495E; text-decoration: none;}
+	&:active { color: #34495E; }
+}
+.read-more {
+	font-family: "Prociono";
+	&:link { color: #FF8000; }
+	&:visited { color: #FF8000; }
+	&:hover { color: #FF8000; }
+	&:active { color: #FF8000; }
+}
+
 
 /* Posts Show */
 .post-show {
 	margin: 10px;
-	margin-top: 15px;
+	margin-top: 50px;
+	font-family: "Prociono";
+	color: #34495E;
+}
+.post-heading {
+	padding-bottom: 5px;
+	padding-top: 25px;
+		.post-heading h2{
+			font-size: 30px;
+		}
+}
+.post-body {
+	font-size: 18px;
+	padding-top: 5px;
+	padding-bottom: 40px;
+}
+.nessie-say {
+	display: flex;
+	font-size: 35px;
+	color: #FF8000;
+	font-family: "Cookie";
+		p {
+			margin: auto;
+			padding-left: 40px;
+		}
+}
+
+/* Comments */
+.comments {
+	margin-left: 45px;
+}
+.user-comments {
+	font-family: "Prociono";
+	color: #FF8000;
+	p {
+		padding-top: 15px;
+		margin: auto;
+		color: #34495E;
+	}
 }
 
 /* Gallery */

@@ -113,37 +113,66 @@
 /* Posts Index*/
 
 .posts {
-  background-color: #F1F1F1;
-  padding-top: 15px;
+  padding: 10px;
+  padding-top: 25px;
 }
 
-.posts .post-info {
+.odd {
+  background-color: white;
+}
+
+.even {
+  background-color: #ccc;
+}
+
+.post-info {
   padding-top: 70px;
   font-family: "Prociono";
   color: #34495E;
 }
 
-.posts .post-info h5 {
+.post-info h5 {
   padding-top: 20px;
 }
 
-.posts .read-more {
+.post-title {
   font-family: "Prociono";
 }
 
-.posts .read-more:link {
+.post-title:link {
+  color: #34495E;
+}
+
+.post-title:visited {
+  color: #34495E;
+}
+
+.post-title:hover {
+  color: #34495E;
+  text-decoration: none;
+}
+
+.post-title:active {
+  color: #34495E;
+}
+
+.read-more {
+  font-family: "Prociono";
+}
+
+.read-more:link {
   color: #FF8000;
 }
 
-.posts .read-more:visited {
+.read-more:visited {
   color: #FF8000;
 }
 
-.posts .read-more:hover {
-  color: #85929E;
+.read-more:hover {
+  color: #FF8000;
 }
 
-.posts .read-more:active {
+.read-more:active {
   color: #FF8000;
 }
 
@@ -151,7 +180,55 @@
 
 .post-show {
   margin: 10px;
-  margin-top: 15px;
+  margin-top: 50px;
+  font-family: "Prociono";
+  color: #34495E;
+}
+
+.post-heading {
+  padding-bottom: 5px;
+  padding-top: 25px;
+}
+
+.post-heading .post-heading h2 {
+  font-size: 30px;
+}
+
+.post-body {
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+
+.nessie-say {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 35px;
+  color: #FF8000;
+  font-family: "Cookie";
+}
+
+.nessie-say p {
+  margin: auto;
+  padding-left: 40px;
+}
+
+/* Comments */
+
+.comments {
+  margin-left: 45px;
+}
+
+.user-comments {
+  font-family: "Prociono";
+  color: #FF8000;
+}
+
+.user-comments p {
+  padding-top: 15px;
+  margin: auto;
+  color: #34495E;
 }
 
 /* Gallery */
