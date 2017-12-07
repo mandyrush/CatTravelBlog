@@ -199,6 +199,21 @@ footer div {
 		&:active { color: #fff; }
 		}
 
+#flash-message {
+	background-color: #FF8000;
+	color: #fff;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 10;
+	animation: flash-message 6s forwards;
+}
+
+@keyframes flash-message {
+    0%   {opacity: 1;}
+    100% {opacity: 0; display:none;}
+}
+
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
