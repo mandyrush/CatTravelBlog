@@ -29,13 +29,15 @@
 <!-- Posts -->
 	<section class="container-fluid"> 
 		<div class="row justify-content-center">
-			@foreach ($posts as $post)
-				@if ($post->id % 2 == 1)
+
+			@foreach ($posts as $key => $post)
+				@if ($key % 2 == 1)
 					@include ('posts.post-odd')
-				@elseif ($post->id % 2 == 0)
+				@elseif ($key % 2 == 0)
 					@include ('posts.post-even')
-				@endif
+				@endif		
 			@endforeach
+
 		</div>
 	</section>
 
