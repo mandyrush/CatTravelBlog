@@ -92,10 +92,26 @@
   padding-top: 20px;
 }
 
-.slider span .slider-city {
-  color: #FF8000;
+.slider-city {
   font-family: "Cookie";
   font-size: 30px;
+}
+
+.slider-city:link {
+  color: #FF8000;
+}
+
+.slider-city:visited {
+  color: #FF8000;
+}
+
+.slider-city:hover {
+  color: #FF8000;
+  text-decoration: none;
+}
+
+.slider-city:active {
+  color: #FF8000;
 }
 
 /* Nessie Greeting */

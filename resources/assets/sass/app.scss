@@ -51,13 +51,16 @@
 	border: 1px solid #34495E;
 	padding-bottom: 75px;
 	padding-top: 20px;
-		.slider-city {
-			color: #FF8000;
-			font : {
-				family: "Cookie";
-				size: 30px;
-			}
-		}
+}
+.slider-city {
+	&:link { color: #FF8000; }
+	&:visited { color: #FF8000; }
+	&:hover { color: #FF8000; text-decoration: none; }
+	&:active { color: #FF8000; }
+	font : {
+		family: "Cookie";
+		size: 30px;
+	}
 }
 
 /* Nessie Greeting */

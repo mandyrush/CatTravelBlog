@@ -7,9 +7,14 @@ use Illuminate\Http\Request;
 
 class TagsController extends Controller
 {
-    public function index(Tag $tag)
+    public function posts(Tag $tag)
     {
-    	$posts = $tag->posts;
-    	return view('posts.index', compact('posts'));
+        $posts = $tag->posts;
+        return view('posts.index', compact('posts'));
+    }
+    public function galleries(Tag $tag)
+    {
+        $galleries = $tag->galleries;
+        return view('galleries.index', compact('galleries'));
     }
 }

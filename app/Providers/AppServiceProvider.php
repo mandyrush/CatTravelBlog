@@ -19,6 +19,11 @@ class AppServiceProvider extends ServiceProvider
             
             $view->with(compact('archives', 'tags'));
         });
+
+        view()->composer('posts.index', function ($view) {
+            $tags = \App\Tag::has('galleries')->pluck('name');
+            $view->with(compact('tags'));
+        });
     }
 
     /**

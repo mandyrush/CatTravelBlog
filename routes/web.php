@@ -5,7 +5,8 @@ Route::get('/posts/create', 'PostsController@create');
 Route::post('/posts', 'PostsController@store');
 Route::get('/posts/{post}', 'PostsController@show');
 
-Route::get('/posts/tags/{tag}', 'TagsController@index');
+Route::get('/posts/tags/{tag}', 'TagsController@posts');
+Route::get('/galleries/tags/{tag}', 'TagsController@galleries');
 
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 
