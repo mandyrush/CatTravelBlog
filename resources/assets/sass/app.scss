@@ -1,24 +1,43 @@
+/* Colors */
+$gray: #85929E;
+$lt-gray: #ccc;
+$blue: #34495E;
+$orange: #FF8000;
+$white: #fff;
+
+/* fonts */
+$cookie: Cookie;
+$prociono: Prociono;
+
+body {
+	color: $blue;
+	font : {
+		family: $prociono;
+		size: 18px;
+	}
+}
 
 /* Title */
 .title {
 	padding: 10px;
 	padding-left: 20px;
 		a {
-			&:link { color: #85929E; }
-			&:visited { color: #85929E; }
-			&:hover { color: #85929E; text-decoration: none;}
-			&:active { color: #85929E; }
+			&:link { color: $gray; }
+			&:visited { color: $gray; }
+			&:hover { color: $gray; text-decoration: none;}
+			&:active { color: $gray; }
 		}
 		h1 {
-			font-family: "Cookie";
-			color: #85929E;
-			font-size: 90px;
+			font : {
+				family: $cookie;
+				size: 90px;
 		}
+	}
 }
 
 /* Navigation Bar */
 .main-navbar{
-	background-color: #34495E;
+	background-color: $blue;
 	.nav-menu {
 		padding: 10px;
 		margin-top: 20px;
@@ -27,38 +46,34 @@
 		justify-content: flex-start;
 		align-items: center;
 		height: 10px;
-			font : {
-				family: "Prociono";
-				size: 18px;
-			}
-			a {
-				&:link { color: #fff; }
-				&:visited { color: #fff; }
-				&:hover { color: #fff; }
-				&:active { color: #fff; }
-			}
-			.dropdown-menu a {
-				&:link { color: #34495E; }
-				&:visited { color: #34495E; }
-				&:hover { color: #34495E; }
-				&:active { color: #34495E; }
-			}
+		a {
+			&:link { color: $white; }
+			&:visited { color: $white; }
+			&:hover { color: $white; }
+			&:active { color: $white; }
+		}
+		.dropdown-menu a {
+			&:link { color: $blue; }
+			&:visited { color: $blue; }
+			&:hover { color: $blue; }
+			&:active { color: $blue; }
+		}
 	}
 }
 
 /* Slider */
 .slider span {
-	border: 1px solid #34495E;
+	border: 1px solid $blue;
 	padding-bottom: 75px;
 	padding-top: 20px;
 }
 .slider-city {
-	&:link { color: #FF8000; }
-	&:visited { color: #FF8000; }
-	&:hover { color: #FF8000; text-decoration: none; }
-	&:active { color: #FF8000; }
+	&:link { color: $orange; }
+	&:visited { color: $orange; }
+	&:hover { color: $orange; text-decoration: none; }
+	&:active { color: $orange; }
 	font : {
-		family: "Cookie";
+		family: $cookie;
 		size: 30px;
 	}
 }
@@ -67,13 +82,12 @@
 .intro-text {
 	padding-top: 40px;
 	padding-bottom: 40px;
-	border-bottom: 25px solid #34495E;
+	border-bottom: 30px solid $blue;
 	background-image: url("https://image.freepik.com/free-vector/vector-abstract-lines-template-object-design_2065-720.jpg");
-	color: #85929E;
-		font : {
-			family: "Prociono";
-			size: 22px;
-		}
+	color: $gray;
+	font : {
+		size: 22px;
+	}
 }
 
 /* Posts Index*/
@@ -82,64 +96,55 @@
 	padding-top: 25px;
 }
 .odd {
-	background-color: white;
+	background-color: $white;
 }
 .even {
-	background-color: #ccc;
+	background-color: $lt-gray;
 }
-
 .post-info {
 	padding-top: 70px;
-	font-family: "Prociono";
-	color: #34495E;
-		h5 {
-			padding-top: 20px;
-		}
+	h5 {
+		padding-top: 20px;
+	}
 }
 .post-title {
-	font-family: "Prociono";
-	&:link { color: #34495E; }
-	&:visited { color: #34495E; }
-	&:hover { color: #34495E; text-decoration: none;}
-	&:active { color: #34495E; }
+	&:link { color: $blue; }
+	&:visited { color: $blue; }
+	&:hover { color: $blue; text-decoration: none;}
+	&:active { color: $blue; }
 }
 .read-more {
-	font-family: "Prociono";
-	&:link { color: #FF8000; }
-	&:visited { color: #FF8000; }
-	&:hover { color: #FF8000; }
-	&:active { color: #FF8000; }
+	&:link { color: $orange; }
+	&:visited { color: $orange; }
+	&:hover { color: $orange; }
+	&:active { color: $orange; }
 }
-
 
 /* Posts Show */
 .post-show {
 	margin: 10px;
 	margin-top: 50px;
-	font-family: "Prociono";
-	color: #34495E;
 }
 .post-heading {
 	padding-bottom: 5px;
 	padding-top: 25px;
-		.post-heading h2{
-			font-size: 30px;
-		}
+	.post-heading h2{
+		font-size: 30px;
+	}
 }
 .post-body {
-	font-size: 18px;
 	padding-top: 5px;
 	padding-bottom: 40px;
 }
 .nessie-say {
 	display: flex;
 	font-size: 35px;
-	color: #FF8000;
-	font-family: "Cookie";
-		p {
-			margin: auto;
-			padding-left: 40px;
-		}
+	color: $orange;
+	font-family: $cookie;
+	p {
+		margin: auto;
+		padding-left: 40px;
+	}
 }
 
 /* Comments */
@@ -147,13 +152,16 @@
 	margin-left: 45px;
 }
 .user-comments {
-	font-family: "Prociono";
-	color: #FF8000;
+	color: $orange;
 	p {
 		padding-top: 15px;
 		margin: auto;
-		color: #34495E;
+		color: $blue;
 	}
+}
+.btn {
+	border-color: $blue;
+	background-color: $blue;
 }
 
 /* Gallery */
@@ -182,31 +190,26 @@
 /* Footer */
 footer div {
 	height: 100px;
-	background-color: #34495E;
-		h4 {
-			padding: 10px;
-			padding-left: 20px;
-			color: #fff;
-			font : {
-				family: "Prociono";
-				size: 25px;
-		}
+	background-color: $blue;
+	h4 {
+		padding: 10px;
+		padding-left: 20px;
+		color: $white;
 	}
 }
-	.archives-link {
-		font-family: "Prociono";
-		padding: 25px;
-		&:link { color: #fff; }
-		&:visited { color: #fff; }
-		&:hover { color: #fff; }
-		&:active { color: #fff; }
-		}
+.archives-link {
+	padding: 25px;
+	&:link { color: $white; }
+	&:visited { color: $white; }
+	&:hover { color: $white; }
+	&:active { color: $white; }
+	}
 
 #flash-message {
-	background-color: #FF8000;
-	color: #fff;
+	background-color: $orange;
+	color: $white;
 	position: absolute;
-	bottom: 20px;
+	top: 20px;
 	right: 20px;
 	z-index: 10;
 	animation: flash-message 6s forwards;

@@ -1,4 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/* Title */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/* Colors */
+
+/* fonts */
+
+body {
+  color: #34495E;
+  font-family: Prociono;
+  font-size: 18px;
+}
+
+/* Title */
 
 .title {
   padding: 10px;
@@ -23,8 +33,7 @@
 }
 
 .title h1 {
-  font-family: "Cookie";
-  color: #85929E;
+  font-family: Cookie;
   font-size: 90px;
 }
 
@@ -48,8 +57,6 @@
       -ms-flex-align: center;
           align-items: center;
   height: 10px;
-  font-family: "Prociono";
-  font-size: 18px;
 }
 
 .main-navbar .nav-menu a:link {
@@ -93,7 +100,7 @@
 }
 
 .slider-city {
-  font-family: "Cookie";
+  font-family: Cookie;
   font-size: 30px;
 }
 
@@ -119,10 +126,9 @@
 .intro-text {
   padding-top: 40px;
   padding-bottom: 40px;
-  border-bottom: 25px solid #34495E;
+  border-bottom: 30px solid #34495E;
   background-image: url("https://image.freepik.com/free-vector/vector-abstract-lines-template-object-design_2065-720.jpg");
   color: #85929E;
-  font-family: "Prociono";
   font-size: 22px;
 }
 
@@ -134,7 +140,7 @@
 }
 
 .odd {
-  background-color: white;
+  background-color: #fff;
 }
 
 .even {
@@ -143,16 +149,10 @@
 
 .post-info {
   padding-top: 70px;
-  font-family: "Prociono";
-  color: #34495E;
 }
 
 .post-info h5 {
   padding-top: 20px;
-}
-
-.post-title {
-  font-family: "Prociono";
 }
 
 .post-title:link {
@@ -170,10 +170,6 @@
 
 .post-title:active {
   color: #34495E;
-}
-
-.read-more {
-  font-family: "Prociono";
 }
 
 .read-more:link {
@@ -197,8 +193,6 @@
 .post-show {
   margin: 10px;
   margin-top: 50px;
-  font-family: "Prociono";
-  color: #34495E;
 }
 
 .post-heading {
@@ -211,7 +205,6 @@
 }
 
 .post-body {
-  font-size: 18px;
   padding-top: 5px;
   padding-bottom: 40px;
 }
@@ -222,7 +215,7 @@
   display: flex;
   font-size: 35px;
   color: #FF8000;
-  font-family: "Cookie";
+  font-family: Cookie;
 }
 
 .nessie-say p {
@@ -237,7 +230,6 @@
 }
 
 .user-comments {
-  font-family: "Prociono";
   color: #FF8000;
 }
 
@@ -245,6 +237,11 @@
   padding-top: 15px;
   margin: auto;
   color: #34495E;
+}
+
+.btn {
+  border-color: #34495E;
+  background-color: #34495E;
 }
 
 /* Gallery */
@@ -287,12 +284,9 @@ footer div h4 {
   padding: 10px;
   padding-left: 20px;
   color: #fff;
-  font-family: "Prociono";
-  font-size: 25px;
 }
 
 .archives-link {
-  font-family: "Prociono";
   padding: 25px;
 }
 
@@ -316,7 +310,7 @@ footer div h4 {
   background-color: #FF8000;
   color: #fff;
   position: absolute;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
   z-index: 10;
   -webkit-animation: flash-message 6s forwards;
