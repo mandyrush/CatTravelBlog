@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         view()->composer(
-            ['posts.index', 'galleries.index'],
+            ['posts.index', 'galleries.index', 'galleries.show'],
             function ($view) {
                  $tags = \App\Tag::has('galleries')->pluck('name');
                  $view->with(compact('tags'));

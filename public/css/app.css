@@ -121,15 +121,28 @@ body {
   color: #FF8000;
 }
 
+/* Main Image */
+
+.main-image {
+  height: 100vh;
+  background-image: url("https://lh3.googleusercontent.com/-iDQHqh-b-VM/WQ7vRpSimXI/AAAAAAAABeM/Z7q3O5byu5wRK8RjxIKK0cP6DnK1fjH1ACJoC/w6000-h4000/89%2Bgarden%2Bd.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
 /* Nessie Greeting */
 
 .intro-text {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: 30px solid #34495E;
-  background-image: url("https://image.freepik.com/free-vector/vector-abstract-lines-template-object-design_2065-720.jpg");
-  color: #85929E;
-  font-size: 22px;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(129, 179, 77, 0.33);
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
 }
 
 /* Posts Index*/
@@ -239,9 +252,14 @@ body {
   color: #34495E;
 }
 
-.btn {
-  border-color: #34495E;
+.btn-primary {
+  border-color: #85929E;
   background-color: #34495E;
+}
+
+.btn-primary:hover {
+  background-color: #85929E;
+  border-color: #85929E;
 }
 
 /* Gallery */

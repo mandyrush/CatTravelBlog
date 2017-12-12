@@ -15,6 +15,6 @@ class TagsController extends Controller
     public function galleries(Tag $tag)
     {
         $galleries = $tag->galleries;
-        return view('galleries.index', compact('galleries'));
+        return view('galleries.show', compact('galleries'));
     }
 }

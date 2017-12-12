@@ -1,8 +1,8 @@
 /* Colors */
+$primary: #34495E;
+$accent: #FF8000;
 $gray: #85929E;
 $lt-gray: #ccc;
-$blue: #34495E;
-$orange: #FF8000;
 $white: #fff;
 
 /* fonts */
@@ -10,7 +10,7 @@ $cookie: Cookie;
 $prociono: Prociono;
 
 body {
-	color: $blue;
+	color: $primary;
 	font : {
 		family: $prociono;
 		size: 18px;
@@ -37,7 +37,7 @@ body {
 
 /* Navigation Bar */
 .main-navbar{
-	background-color: $blue;
+	background-color: $primary;
 	.nav-menu {
 		padding: 10px;
 		margin-top: 20px;
@@ -53,41 +53,51 @@ body {
 			&:active { color: $white; }
 		}
 		.dropdown-menu a {
-			&:link { color: $blue; }
-			&:visited { color: $blue; }
-			&:hover { color: $blue; }
-			&:active { color: $blue; }
+			&:link { color: $primary; }
+			&:visited { color: $primary; }
+			&:hover { color: $primary; }
+			&:active { color: $primary; }
 		}
 	}
 }
 
 /* Slider */
 .slider span {
-	border: 1px solid $blue;
+	border: 1px solid $primary;
 	padding-bottom: 75px;
 	padding-top: 20px;
 }
 .slider-city {
-	&:link { color: $orange; }
-	&:visited { color: $orange; }
-	&:hover { color: $orange; text-decoration: none; }
-	&:active { color: $orange; }
+	&:link { color: $accent; }
+	&:visited { color: $accent; }
+	&:hover { color: $accent; text-decoration: none; }
+	&:active { color: $accent; }
 	font : {
 		family: $cookie;
 		size: 30px;
 	}
 }
 
+/* Main Image */
+.main-image {
+	height: 100vh;
+	background-image: url('https://lh3.googleusercontent.com/-iDQHqh-b-VM/WQ7vRpSimXI/AAAAAAAABeM/Z7q3O5byu5wRK8RjxIKK0cP6DnK1fjH1ACJoC/w6000-h4000/89%2Bgarden%2Bd.jpg');
+	background-size: cover;
+	position: relative;
+	z-index: -1;
+}
+
 /* Nessie Greeting */
 .intro-text {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	border-bottom: 30px solid $blue;
-	background-image: url("https://image.freepik.com/free-vector/vector-abstract-lines-template-object-design_2065-720.jpg");
-	color: $gray;
-	font : {
-		size: 22px;
-	}
+	margin: auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background-color: rgba(129, 179, 77, 0.33);
+	padding: 10px;
+	font-size: 30px;
+	color: $white;
 }
 
 /* Posts Index*/
@@ -108,16 +118,16 @@ body {
 	}
 }
 .post-title {
-	&:link { color: $blue; }
-	&:visited { color: $blue; }
-	&:hover { color: $blue; text-decoration: none;}
-	&:active { color: $blue; }
+	&:link { color: $primary; }
+	&:visited { color: $primary; }
+	&:hover { color: $primary; text-decoration: none;}
+	&:active { color: $primary; }
 }
 .read-more {
-	&:link { color: $orange; }
-	&:visited { color: $orange; }
-	&:hover { color: $orange; }
-	&:active { color: $orange; }
+	&:link { color: $accent; }
+	&:visited { color: $accent; }
+	&:hover { color: $accent; }
+	&:active { color: $accent; }
 }
 
 /* Posts Show */
@@ -139,7 +149,7 @@ body {
 .nessie-say {
 	display: flex;
 	font-size: 35px;
-	color: $orange;
+	color: $accent;
 	font-family: $cookie;
 	p {
 		margin: auto;
@@ -152,16 +162,20 @@ body {
 	margin-left: 45px;
 }
 .user-comments {
-	color: $orange;
+	color: $accent;
 	p {
 		padding-top: 15px;
 		margin: auto;
-		color: $blue;
+		color: $primary;
 	}
 }
-.btn {
-	border-color: $blue;
-	background-color: $blue;
+.btn-primary {
+	border-color: $gray;
+	background-color: $primary;
+	&:hover {
+		background-color: $gray;
+		border-color: $gray;
+	}
 }
 
 /* Gallery */
@@ -190,7 +204,7 @@ body {
 /* Footer */
 footer div {
 	height: 100px;
-	background-color: $blue;
+	background-color: $primary;
 	h4 {
 		padding: 10px;
 		padding-left: 20px;
@@ -206,7 +220,7 @@ footer div {
 	}
 
 #flash-message {
-	background-color: $orange;
+	background-color: $accent;
 	color: $white;
 	position: absolute;
 	top: 20px;
