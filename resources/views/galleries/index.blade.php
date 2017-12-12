@@ -2,6 +2,12 @@
 
 @section ('content')
 	
+	{{-- <div>
+		@foreach($tags as $tag)
+			{{ $tag }}
+		@endforeach
+	</div> --}}
+	
 	<div class="masonry">
 
 		@foreach ($galleries as $gallery)

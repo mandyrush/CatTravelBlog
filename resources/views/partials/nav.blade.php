@@ -10,9 +10,8 @@
 			
 			<a class="nav-link" href="/">Home</a>
 			<a class="nav-link" href="/gallery">Gallery</a>
-			<a class="nav-link" href="kitties.html">Kitties</a>
-			<a class="nav-link" href="humans.html">The Humans</a>
-			<a class="nav-link" href="contact.html">Contact Us</a>
+			<a class="nav-link" href="/kitties">Kitties</a>
+			<a class="nav-link" href="/humans">The Humans</a>
 
 			@if (Auth::check())
 				<div class="dropdown show ml-auto">
