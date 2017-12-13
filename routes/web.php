@@ -10,6 +10,9 @@ Route::get('/posts/{post}', 'PostsController@show');
 Route::get('/posts/tags/{tag}', 'TagsController@posts');
 Route::get('/galleries/tags/{tag}', 'TagsController@galleries');
 
+Route::get('/kitties', 'PagesController@kitties');
+Route::get('/humans', 'PagesController@humans');
+
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 
 Route::get('/gallery', 'GalleryController@index');
