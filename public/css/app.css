@@ -15,79 +15,78 @@ body {
   padding-left: 20px;
 }
 
-.title a:link {
-  color: #85929E;
-}
-
-.title a:visited {
-  color: #85929E;
-}
-
-.title a:hover {
-  color: #85929E;
-  text-decoration: none;
-}
-
-.title a:active {
-  color: #85929E;
-}
-
 .title h1 {
+  color: #85929E;
   font-family: "Cookie", cursive;
   font-size: 90px;
 }
 
 /* Navigation Bar */
 
-.main-navbar {
-  background-color: #34495E;
+.dropdown-toggle::after {
+  display: none;
 }
 
-.main-navbar .nav-menu {
+.login-btn {
   padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.login-btn a:link {
+  color: #34495E;
+}
+
+.login-btn a:visited {
+  color: #34495E;
+}
+
+.login-btn a:hover {
+  color: #34495E;
+  text-decoration: none;
+}
+
+.login-btn a:active {
+  color: #34495E;
+}
+
+.aligner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.main-navbar .nav-menu a:link {
-  color: #fff;
+.aligner-item {
+  max-width: 50%;
 }
 
-.main-navbar .nav-menu a:visited {
-  color: #fff;
+.nav-menu {
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 30px;
 }
 
-.main-navbar .nav-menu a:hover {
-  color: #fff;
-}
-
-.main-navbar .nav-menu a:active {
-  color: #fff;
-}
-
-.main-navbar .nav-menu .dropdown-menu a:link {
+.nav-menu a:link {
   color: #34495E;
 }
 
-.main-navbar .nav-menu .dropdown-menu a:visited {
+.nav-menu a:visited {
   color: #34495E;
 }
 
-.main-navbar .nav-menu .dropdown-menu a:hover {
+.nav-menu a:hover {
   color: #34495E;
+  text-decoration: none;
 }
 
-.main-navbar .nav-menu .dropdown-menu a:active {
+.nav-menu a:active {
   color: #34495E;
 }
 

@@ -20,6 +20,10 @@
 				<button type="submit" class="btn btn-primary">Sign In</button>
 			</div>
 
+			<div>
+				<a href="/register">Register</a>
+			</div>
+
 			@include ('partials.errors')
 		</form>
 	</div>

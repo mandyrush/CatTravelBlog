@@ -21,13 +21,8 @@ body {
 .title {
 	padding: 10px;
 	padding-left: 20px;
-		a {
-			&:link { color: $gray; }
-			&:visited { color: $gray; }
-			&:hover { color: $gray; text-decoration: none;}
-			&:active { color: $gray; }
-		}
 		h1 {
+			color: $gray;
 			font : {
 				family: $cookie;
 				size: 90px;
@@ -36,28 +31,38 @@ body {
 }
 
 /* Navigation Bar */
-.main-navbar{
-	background-color: $primary;
-	.nav-menu {
-		padding: 10px;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		height: 10px;
-		a {
-			&:link { color: $white; }
-			&:visited { color: $white; }
-			&:hover { color: $white; }
-			&:active { color: $white; }
-		}
-		.dropdown-menu a {
-			&:link { color: $primary; }
-			&:visited { color: $primary; }
-			&:hover { color: $primary; }
-			&:active { color: $primary; }
-		}
+.dropdown-toggle::after {
+	display: none;
+}
+.login-btn {
+	padding: 10px;
+	padding-right: 30px;
+	font-weight: bold;
+	font-size: 22px;
+	a {
+		&:link { color: $primary; }
+		&:visited { color: $primary; }
+		&:hover { color: $primary; text-decoration: none; }
+		&:active { color: $primary; }
+	}
+}
+.aligner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.aligner-item {
+	max-width: 50%;
+}
+.nav-menu {
+	padding: 10px;
+	padding-left: 30px;
+	font-size: 30px;
+	a {
+		&:link { color: $primary; }
+		&:visited { color: $primary; }
+		&:hover { color: $primary; text-decoration: none; }
+		&:active { color: $primary; }
 	}
 }
 

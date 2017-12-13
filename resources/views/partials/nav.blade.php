@@ -1,31 +1,30 @@
-<div class="row title">
-	<a href="/">
-		<h1 class="col-sm-12" align="left">Cats Wander</h1>
-	</a>
-</div>
-
 <header class="container-fluid">	
-	<div class="row main-navbar">
-		<nav class="col-sm-12 nav-menu">
-			
-			<a class="nav-link" href="/">Home</a>
-			<a class="nav-link" href="/gallery">Gallery</a>
-			<a class="nav-link" href="/kitties">Kitties</a>
-			<a class="nav-link" href="/humans">The Humans</a>
+	<div class="row justify-content-between">
 
-			@if (Auth::check())
-				<div class="dropdown show ml-auto">
-					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ 'Welcome ' .Auth::user()->name }}</a>
+		<nav class="col-sm-1 nav-menu">
+			<div class="dropdown show ml-auto">
+				<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-bars"></i>
+				</a>
 
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					    <a class="dropdown-item" href="/logout">Logout</a>
-					</div>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="/">Home</a>
+					<a class="dropdown-item" href="/gallery">Gallery</a>
+					<a class="dropdown-item" href="/kitties">Kitties</a>
+					<a class="dropdown-item" href="/humans">The Humans</a>
 				</div>
-			@else ()
-				<a class="nav-link ml-auto" href="/register">{{ 'Register' }}</a>
-				<a class="nav-link" href="/login">{{ 'Login' }}</a>
-			@endif
-				
+			</div>
 		</nav>	
+
+		<div class="login-btn aligner">
+			<div class="col-sm-1 aligner-item">
+				@if (Auth::check())
+					<a href="/logout">Logout</a>
+				@else ()
+					<a href="/login">{{ 'Login' }}</a>
+				@endif
+			</div>	
+		</div>
+	
 	</div>
 </header>
