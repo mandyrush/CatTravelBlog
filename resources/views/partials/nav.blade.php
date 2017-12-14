@@ -1,5 +1,5 @@
 <header class="container-fluid">	
-	<div class="row justify-content-between">
+	<div class="nav-bar row justify-content-between">
 
 		<nav class="col-sm-1 nav-menu">
 			<div class="dropdown show ml-auto">

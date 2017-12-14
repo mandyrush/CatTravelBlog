@@ -11,8 +11,7 @@ body {
 /* Title */
 
 .title {
-  padding: 10px;
-  padding-left: 20px;
+  padding-left: 90px;
 }
 
 .title h1 {
@@ -28,7 +27,7 @@ body {
 }
 
 .login-btn {
-  padding: 10px;
+  padding-top: 20px;
   padding-right: 30px;
   font-weight: bold;
   font-size: 22px;
@@ -68,7 +67,7 @@ body {
 }
 
 .nav-menu {
-  padding: 10px;
+  padding-top: 20px;
   padding-left: 30px;
   font-size: 30px;
 }
@@ -88,6 +87,31 @@ body {
 
 .nav-menu a:active {
   color: #34495E;
+}
+
+.home-nav {
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.home-nav .nav-bar a:link {
+  color: #fff;
+}
+
+.home-nav .nav-bar a:visited {
+  color: #85929E;
+}
+
+.home-nav .nav-bar a:hover {
+  color: #85929E;
+  text-decoration: none;
+}
+
+.home-nav .nav-bar a:active {
+  color: #85929E;
 }
 
 /* Slider */
