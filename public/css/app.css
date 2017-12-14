@@ -20,34 +20,10 @@ body {
   font-size: 90px;
 }
 
-/* Navigation Bar */
+/* Master/Home Navigation Bars */
 
 .dropdown-toggle::after {
   display: none;
-}
-
-.login-btn {
-  padding-top: 20px;
-  padding-right: 30px;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.login-btn a:link {
-  color: #34495E;
-}
-
-.login-btn a:visited {
-  color: #34495E;
-}
-
-.login-btn a:hover {
-  color: #34495E;
-  text-decoration: none;
-}
-
-.login-btn a:active {
-  color: #34495E;
 }
 
 .aligner {
@@ -66,28 +42,35 @@ body {
   max-width: 50%;
 }
 
+.dropdown-toggle {
+  color: #fff;
+}
+
+.dropdown-toggle:hover {
+  color: #fff;
+}
+
+.dropdown-item {
+  color: #34495E;
+}
+
 .nav-menu {
-  padding-top: 20px;
   padding-left: 30px;
   font-size: 30px;
 }
 
-.nav-menu a:link {
-  color: #34495E;
+.login-btn {
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 22px;
 }
 
-.nav-menu a:visited {
-  color: #34495E;
-}
-
-.nav-menu a:hover {
-  color: #34495E;
+.login-btn a {
+  color: #fff;
   text-decoration: none;
 }
 
-.nav-menu a:active {
-  color: #34495E;
-}
+/* Home Navigation Bar */
 
 .home-nav {
   margin: auto;
@@ -95,23 +78,14 @@ body {
   left: 0;
   right: 0;
   position: absolute;
+  padding-top: 20px;
 }
 
-.home-nav .nav-bar a:link {
-  color: #fff;
-}
+/* Master Navigation Bar */
 
-.home-nav .nav-bar a:visited {
-  color: #85929E;
-}
-
-.home-nav .nav-bar a:hover {
-  color: #85929E;
-  text-decoration: none;
-}
-
-.home-nav .nav-bar a:active {
-  color: #85929E;
+.master-nav {
+  padding-top: 20px;
+  background-color: #34495E;
 }
 
 /* Slider */
@@ -316,35 +290,9 @@ body {
 
 /* Footer */
 
-footer div {
-  height: 100px;
+.main-footer {
+  height: 75px;
   background-color: #34495E;
-}
-
-footer div h4 {
-  padding: 10px;
-  padding-left: 20px;
-  color: #fff;
-}
-
-.archives-link {
-  padding: 25px;
-}
-
-.archives-link:link {
-  color: #fff;
-}
-
-.archives-link:visited {
-  color: #fff;
-}
-
-.archives-link:hover {
-  color: #fff;
-}
-
-.archives-link:active {
-  color: #fff;
 }
 
 #flash-message {

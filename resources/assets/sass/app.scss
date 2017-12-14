@@ -29,21 +29,9 @@ body {
 	}
 }
 
-/* Navigation Bar */
+/* Master/Home Navigation Bars */
 .dropdown-toggle::after {
 	display: none;
-}
-.login-btn {
-	padding-top: 20px;
-	padding-right: 30px;
-	font-weight: bold;
-	font-size: 22px;
-	a {
-		&:link { color: $primary; }
-		&:visited { color: $primary; }
-		&:hover { color: $primary; text-decoration: none; }
-		&:active { color: $primary; }
-	}
 }
 .aligner {
 	display: flex;
@@ -53,29 +41,41 @@ body {
 .aligner-item {
 	max-width: 50%;
 }
+.dropdown-toggle {
+		color: $white;
+		&:hover {color: $white;}
+	}
+.dropdown-item {
+	color: $primary;
+}
 .nav-menu {
-	padding-top: 20px;
 	padding-left: 30px;
 	font-size: 30px;
+}
+.login-btn {
+padding-right: 30px;
+font-weight: bold;
+font-size: 22px;
 	a {
-		&:link { color: $primary; }
-		&:visited { color: $primary; }
-		&:hover { color: $primary; text-decoration: none; }
-		&:active { color: $primary; }
+		color: $white;
+		text-decoration: none;
 	}
 }
+
+/* Home Navigation Bar */
 .home-nav {
 	margin: auto;
 	top: 0;
 	left: 0;
 	right: 0;
 	position: absolute;
-	.nav-bar a {
-		&:link { color: $white; }
-		&:visited { color: $gray; }
-		&:hover { color: $gray; text-decoration: none; }
-		&:active { color: $gray; }
-	}
+	padding-top: 20px;
+}
+
+/* Master Navigation Bar */
+.master-nav {
+	padding-top: 20px;
+	background-color: $primary;
 }
 
 /* Slider */
@@ -219,22 +219,10 @@ body {
 }
 
 /* Footer */
-footer div {
-	height: 100px;
+.main-footer {
+	height: 75px;
 	background-color: $primary;
-	h4 {
-		padding: 10px;
-		padding-left: 20px;
-		color: $white;
-	}
 }
-.archives-link {
-	padding: 25px;
-	&:link { color: $white; }
-	&:visited { color: $white; }
-	&:hover { color: $white; }
-	&:active { color: $white; }
-	}
 
 #flash-message {
 	background-color: $accent;

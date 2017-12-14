@@ -4,9 +4,11 @@
 	@include('partials.head')
 </head>
 <body>
-	<div class="home-nav">
-		@include ('partials.nav')
-	</div>
+	<header class="home-nav container-fluid">	
+		<div class="row justify-content-between">
+			@include ('partials.nav')
+		</div>
+	</header>
 
 	@if ($flash = session('message'))
 		<div id="flash-message" class="alert alert-success" role="alert">
