@@ -21,18 +21,13 @@ class AppServiceProvider extends ServiceProvider
         });
 
         view()->composer(
-            ['posts.index', 'galleries.index', 'galleries.show'],
+            ['posts.index', 'galleries.index', 'galleries.create', 'galleries.show'],
             function ($view) {
-                 $tags = \App\Tag::has('galleries')->pluck('name');
+                 //$tags = \App\Tag::has('galleries')->pluck('name');
+                 $tags = \App\Tag::get()->all();
                  $view->with(compact('tags'));
             }
         );
-           
-
-        // view()->composer('posts.index', function ($view) {
-        //     $tags = \App\Tag::has('galleries')->pluck('name');
-        //     $view->with(compact('tags'));
-        // });
     }
 
     /**
