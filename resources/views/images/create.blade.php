@@ -6,7 +6,7 @@
 
 		<hr>
 
-		<form method="POST" action="/image" enctype="multipart/form-data">
+		<form method="POST" action="/images" enctype="multipart/form-data">
 			{{ csrf_field() }}
 
 			<div class="form-group">

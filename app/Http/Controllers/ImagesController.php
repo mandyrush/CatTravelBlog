@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Image;
 use Illuminate\Http\Request;
 
-class ImageController extends Controller
+class ImagesController extends Controller
 {
     public function index()
     {
@@ -31,6 +31,6 @@ class ImageController extends Controller
         }
         
 
-        return redirect('/image');
+        return redirect('/images');
     }
 }

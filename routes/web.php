@@ -15,9 +15,9 @@ Route::get('/humans', 'PagesController@humans');
 
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 
-Route::get('/images', 'ImageController@index');
-Route::get('/image/create', 'ImageController@create');
-Route::post('/image', 'ImageController@store');
+Route::get('/images', 'ImagesController@index');
+Route::get('/images/create', 'ImagesController@create');
+Route::post('/images', 'ImagesController@store');
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
