@@ -15,7 +15,10 @@ Route::get('/humans', 'PagesController@humans');
 
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 
-Route::get('/images', 'ImagesController@index');
+Route::get('/albums', 'AlbumsController@index');
+Route::get('/albums/create', 'AlbumsController@create');
+Route::post('/albums', 'AlbumsController@store');
+
 Route::get('/images/create', 'ImagesController@create');
 Route::post('/images', 'ImagesController@store');
 

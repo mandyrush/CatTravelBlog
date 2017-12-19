@@ -14,6 +14,10 @@ class Tag extends Model
     {
         return $this->belongsToMany(Image::class);
     }
+    public function albums()
+    {
+        return $this->belongsToMany(Album::class);
+    }
 
     // Changes primary id to name
     public function getRouteKeyName()

@@ -78,22 +78,23 @@ font-size: 22px;
 	background-color: $primary;
 }
 
-/* Slider */
-.slider span {
+/* Albums */
+.album-tile {
 	border: 1px solid $primary;
 	padding-bottom: 75px;
 	padding-top: 20px;
-}
-.slider-city {
-	&:link { color: $accent; }
-	&:visited { color: $accent; }
-	&:hover { color: $accent; text-decoration: none; }
-	&:active { color: $accent; }
-	font : {
-		family: $cookie;
-		size: 30px;
+	a {
+		&:link { color: $accent; }
+		&:visited { color: $accent; }
+		&:hover { color: $accent; text-decoration: none; }
+		&:active { color: $accent; }
+		font : {
+			family: $cookie;
+			size: 30px;
+		}
 	}
 }
+
 
 /* Main Image */
 .main-image {

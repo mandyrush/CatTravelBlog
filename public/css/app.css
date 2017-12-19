@@ -88,33 +88,33 @@ body {
   background-color: #34495E;
 }
 
-/* Slider */
+/* Albums */
 
-.slider span {
+.album-tile {
   border: 1px solid #34495E;
   padding-bottom: 75px;
   padding-top: 20px;
 }
 
-.slider-city {
+.album-tile a {
   font-family: "Cookie", cursive;
   font-size: 30px;
 }
 
-.slider-city:link {
+.album-tile a:link {
   color: #FF8000;
 }
 
-.slider-city:visited {
+.album-tile a:visited {
   color: #FF8000;
 }
 
-.slider-city:hover {
+.album-tile a:hover {
   color: #FF8000;
   text-decoration: none;
 }
 
-.slider-city:active {
+.album-tile a:active {
   color: #FF8000;
 }
 

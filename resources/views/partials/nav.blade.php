@@ -7,7 +7,7 @@
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 				<a class="dropdown-item" href="/">Home</a>
 				<a class="dropdown-item" href="/posts">Posts</a>
-				<a class="dropdown-item" href="/images">Gallery</a>
+				<a class="dropdown-item" href="/albums">Gallery</a>
 				<a class="dropdown-item" href="/kitties">Kitties</a>
 				<a class="dropdown-item" href="/humans">The Humans</a>
 			</div>
