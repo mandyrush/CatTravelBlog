@@ -15,7 +15,7 @@
 
 				<div class="post-body">
 					<p>
-						{{$post->body}}
+						{!! $post->body !!}
 					</p>
 				</div>
 			</div>

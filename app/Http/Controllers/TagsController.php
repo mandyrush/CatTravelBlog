@@ -12,9 +12,9 @@ class TagsController extends Controller
         $posts = $tag->posts;
         return view('posts.index', compact('posts'));
     }
-    public function galleries(Tag $tag)
+    public function images(Tag $tag)
     {
-        $galleries = $tag->galleries;
-        return view('galleries.show', compact('galleries'));
+        $images = $tag->images;
+        return view('images.show', compact('images'));
     }
 }

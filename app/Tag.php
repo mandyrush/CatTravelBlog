@@ -10,11 +10,12 @@ class Tag extends Model
     {
         return $this->belongsToMany(Post::class);
     }
-    public function galleries()
+    public function images()
     {
-        return $this->belongsToMany(Gallery::class);
+        return $this->belongsToMany(Image::class);
     }
 
+    // Changes primary id to name
     public function getRouteKeyName()
     {
         return 'name';

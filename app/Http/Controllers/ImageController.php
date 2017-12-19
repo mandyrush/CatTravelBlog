@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Gallery;
+use App\Image;
 use Illuminate\Http\Request;
 
-class GalleryController extends Controller
+class ImageController extends Controller
 {
     public function index()
     {
-        $galleries = Gallery::latest()->get();
-        return view('galleries.index', compact('galleries'));
+        $images = Image::latest()->get();
+        return view('images.index', compact('images'));
     }
 
     public function create()
     {
-        return view('galleries.create');
+        return view('images.create');
     }
 
     public function store(Request $request)
@@ -24,13 +24,13 @@ class GalleryController extends Controller
             $filename = $file->store('public');
 
             // Save
-            $gallery = Gallery::create([
+            $image = Image::create([
                 "featured_image" => $filename
             ]);
-            $gallery->tags()->attach($request['tag']); // @todo replace 1 with the tag id
+            $image->tags()->attach($request['tag']); // @todo replace 1 with the tag id
         }
         
 
-        return redirect('/gallery');
+        return redirect('/image');
     }
 }

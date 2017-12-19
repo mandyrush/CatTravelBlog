@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Gallery extends Model
+class Image extends Model
 {
     protected $guarded = ['created_at'];
 

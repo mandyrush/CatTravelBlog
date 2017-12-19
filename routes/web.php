@@ -8,16 +8,16 @@ Route::post('/posts', 'PostsController@store');
 Route::get('/posts/{post}', 'PostsController@show');
 
 Route::get('/posts/tags/{tag}', 'TagsController@posts');
-Route::get('/galleries/tags/{tag}', 'TagsController@galleries');
+Route::get('/images/tags/{tag}', 'TagsController@images');
 
 Route::get('/kitties', 'PagesController@kitties');
 Route::get('/humans', 'PagesController@humans');
 
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 
-Route::get('/gallery', 'GalleryController@index');
-Route::get('/gallery/create', 'GalleryController@create');
-Route::post('/gallery', 'GalleryController@store');
+Route::get('/images', 'ImageController@index');
+Route::get('/image/create', 'ImageController@create');
+Route::post('/image', 'ImageController@store');
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
