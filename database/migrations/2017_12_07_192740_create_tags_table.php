@@ -28,6 +28,11 @@ class CreateTagsTable extends Migration
             $table->integer('tag_id'); 
             $table->primary(['image_id', 'tag_id']);
         });
+        Schema::create('album_tag', function (Blueprint $table) {
+            $table->integer('album_id');
+            $table->integer('tag_id'); 
+            $table->primary(['album_id', 'tag_id']);
+        });
     }
 
     /**
@@ -40,5 +45,6 @@ class CreateTagsTable extends Migration
         Schema::dropIfExists('tags');
         Schema::dropIfExists('post_tag');
         Schema::dropIfExists('image_tag');
+        Schema::dropIfExists('album_tag');
     }
 }
