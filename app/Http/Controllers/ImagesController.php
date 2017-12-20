@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class ImagesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index']);
+    }
     public function index()
     {
         $images = Image::latest()->get();
@@ -31,6 +35,6 @@ class ImagesController extends Controller
         }
         
 
-        return redirect('/images');
+        return redirect('/albums');
     }
 }
