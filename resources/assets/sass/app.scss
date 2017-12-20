@@ -79,10 +79,9 @@ font-size: 22px;
 }
 
 /* Albums */
-.album-tile {
-	border: 1px solid $primary;
-	padding-bottom: 75px;
-	padding-top: 20px;
+.album {
+	padding-left: 0px;
+	padding-right: 0px;
 	a {
 		&:link { color: $accent; }
 		&:visited { color: $accent; }
@@ -92,6 +91,17 @@ font-size: 22px;
 			family: $cookie;
 			size: 30px;
 		}
+	}
+}
+.album-tile {
+	border: 1px solid $primary;
+	padding-bottom: 75px;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	&:hover {
+		background-color: $lt-gray;
+		opacity: 0.6;
 	}
 }
 

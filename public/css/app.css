@@ -90,32 +90,44 @@ body {
 
 /* Albums */
 
-.album-tile {
-  border: 1px solid #34495E;
-  padding-bottom: 75px;
-  padding-top: 20px;
+.album {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.album-tile a {
+.album a {
   font-family: "Cookie", cursive;
   font-size: 30px;
 }
 
-.album-tile a:link {
+.album a:link {
   color: #FF8000;
 }
 
-.album-tile a:visited {
+.album a:visited {
   color: #FF8000;
 }
 
-.album-tile a:hover {
+.album a:hover {
   color: #FF8000;
   text-decoration: none;
 }
 
-.album-tile a:active {
+.album a:active {
   color: #FF8000;
+}
+
+.album-tile {
+  border: 1px solid #34495E;
+  padding-bottom: 75px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.album-tile:hover {
+  background-color: #ccc;
+  opacity: 0.6;
 }
 
 /* Main Image */

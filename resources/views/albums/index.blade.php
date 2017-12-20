@@ -5,11 +5,17 @@
 		<div class="row">
 
 			@foreach($albums as $album)
-				<div class="col-sm-4 album-tile">
-					<img src="{{Storage::disk('local')->url( $album->cover_image )}}" class="img-fluid" alt="Responsive image">
+				<div class="col-sm-4 album">
+					
 					@foreach($album->tags as $tag)
-						<a href="/images/tags/{{$tag->name}}">{{$tag->name}}</a>
+						<a href="/images/tags/{{$tag->name}}">
+							<div class="album-tile">
+								<img src="{{Storage::disk('local')->url( $album->cover_image )}}" class="img-fluid" alt="Responsive image">
+								{{$album->title}}
+							</div>
+						</a>
 					@endforeach
+			
 				</div>
 			@endforeach
 
