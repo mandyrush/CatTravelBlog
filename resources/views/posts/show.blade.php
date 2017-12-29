@@ -2,7 +2,7 @@
 
 @section ('content')
 	<div class="container-fluid post-show">
-		<div class="row justify-content-center">
+		<div class="row post-row justify-content-center">
 			
 			<div class="col-sm-8 post-heading">
 				<h2>{{ $post->title }}</h2>
