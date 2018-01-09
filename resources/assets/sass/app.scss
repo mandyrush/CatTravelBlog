@@ -33,14 +33,6 @@ body {
 .dropdown-toggle::after {
 	display: none;
 }
-.aligner {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.aligner-item {
-	max-width: 50%;
-}
 .dropdown-toggle {
 		color: $white;
 		&:hover {color: $white;}
@@ -51,15 +43,6 @@ body {
 .nav-menu {
 	padding-left: 30px;
 	font-size: 30px;
-}
-.login-btn {
-padding-right: 30px;
-font-weight: bold;
-font-size: 22px;
-	a {
-		color: $white;
-		text-decoration: none;
-	}
 }
 
 /* Home Navigation Bar */
