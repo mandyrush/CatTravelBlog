@@ -63,9 +63,16 @@ body {
 
 /* Albums */
 
+.album-index {
+  background-image: url(/images/test_background.jpg?b309546b461290e7f93458d66c4b3112);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .album {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 15px;
 }
 
 .album a {
@@ -74,33 +81,45 @@ body {
 }
 
 .album a:link {
-  color: #FF8000;
+  color: #fff;
 }
 
 .album a:visited {
-  color: #FF8000;
+  color: #fff;
 }
 
 .album a:hover {
-  color: #FF8000;
+  color: #fff;
   text-decoration: none;
 }
 
 .album a:active {
-  color: #FF8000;
+  color: #fff;
 }
 
-.album-tile {
-  border: 1px solid #34495E;
-  padding-bottom: 75px;
-  padding-top: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
+.album-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.album-tile:hover {
+.album-content:hover {
   background-color: #ccc;
   opacity: 0.6;
+}
+
+.album-title {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Main Image */

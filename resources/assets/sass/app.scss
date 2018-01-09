@@ -62,32 +62,42 @@ body {
 }
 
 /* Albums */
+.album-index {
+	background-image: url('/users/amanda/desktop/test_images/test_background.jpg');
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 .album {
-	padding-left: 0px;
-	padding-right: 0px;
+	padding: 15px;
 	a {
-		&:link { color: $accent; }
-		&:visited { color: $accent; }
-		&:hover { color: $accent; text-decoration: none; }
-		&:active { color: $accent; }
+		&:link { color: $white; }
+		&:visited { color: $white; }
+		&:hover { color: $white; text-decoration: none; }
+		&:active { color: $white; }
 		font : {
 			family: $cookie;
 			size: 30px;
 		}
 	}
 }
-.album-tile {
-	border: 1px solid $primary;
-	padding-bottom: 75px;
-	padding-top: 20px;
-	padding-left: 15px;
-	padding-right: 15px;
+.album-content {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
 	&:hover {
 		background-color: $lt-gray;
 		opacity: 0.6;
 	}
 }
-
+.album-title {
+	position: absolute;
+	z-index: 1;
+	border: 1px solid white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
 /* Main Image */
 .main-image {
