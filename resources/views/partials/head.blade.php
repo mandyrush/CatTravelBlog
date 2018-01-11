@@ -2,6 +2,7 @@
 <title>KittyTravelBlog</title>
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Cookie|Prociono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
 
 <!-- CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">

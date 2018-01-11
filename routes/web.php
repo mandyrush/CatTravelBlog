@@ -7,8 +7,9 @@ Route::get('/posts/create', 'PostsController@create');
 Route::post('/posts', 'PostsController@store');
 Route::get('/posts/{post}', 'PostsController@show');
 
+// Tags
 Route::get('/posts/tags/{tag}', 'TagsController@posts');
-Route::get('/images/tags/{tag}', 'TagsController@images');
+Route::get('/photos/tags/{tag}', 'TagsController@photos');
 
 Route::get('/kitties', 'PagesController@kitties');
 Route::get('/humans', 'PagesController@humans');
@@ -19,8 +20,9 @@ Route::get('/albums', 'AlbumsController@index');
 Route::get('/albums/create', 'AlbumsController@create');
 Route::post('/albums', 'AlbumsController@store');
 
-Route::get('/images/create', 'ImagesController@create');
-Route::post('/images', 'ImagesController@store');
+Route::get('/photos', 'PhotosController@index');
+Route::get('/photos/create', 'PhotosController@create');
+Route::post('/photos', 'PhotosController@store');
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');

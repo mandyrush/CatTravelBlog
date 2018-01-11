@@ -2,7 +2,7 @@
 
 @section ('content')
 
-<div class="main-image">
+<div class="main-photo">
 	<div class="title">
 		<h1>
 			Cats Wander

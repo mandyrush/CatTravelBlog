@@ -10,9 +10,9 @@ class Tag extends Model
     {
         return $this->belongsToMany(Post::class);
     }
-    public function images()
+    public function photos()
     {
-        return $this->belongsToMany(Image::class);
+        return $this->belongsToMany(Photo::class);
     }
     public function albums()
     {

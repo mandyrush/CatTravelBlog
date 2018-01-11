@@ -5,7 +5,7 @@
 
 		<figure class="col-md-4">
 			<a href="/posts/{{ $post->id }}">
-				<img src="{{Storage::disk('local')->url( $post->featured_image )}}" class="img-fluid" alt="Responsive image">
+				<img src="{{Storage::disk('local')->url( $post->featured_photo )}}" class="img-fluid" alt="Responsive image">
 			</a>
 		</figure>
 

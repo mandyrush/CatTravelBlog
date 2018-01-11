@@ -19,7 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->text('featured_text');
-            $table->string('featured_image');
+            $table->string('featured_photo');
             $table->timestamps();
         });
     }

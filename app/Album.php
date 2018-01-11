@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Album extends Model
 {
-    public function images()
+    public function photos()
     {
-    	return $this->belongsToMany(Image::class);
+    	return $this->belongsToMany(Photo::class);
     }
     public function tags()
     {

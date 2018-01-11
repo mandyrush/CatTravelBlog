@@ -24,8 +24,8 @@
 			</div>
 
 		  	<div class="form-group">
-				<label for="featured_image">Select Featured Image to Upload:</label>
-				<input type="file" name="featured_image" id="featured_image" />
+				<label for="featured_photo">Select Featured Photo to Upload:</label>
+				<input type="file" name="featured_photo" id="featured_photo" />
 			</div>
 
 			<div class="form-group">

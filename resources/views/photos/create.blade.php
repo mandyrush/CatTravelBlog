@@ -2,16 +2,16 @@
 
 @section ('content')
 	<div class="col-sm-8">
-		<h4>Add an image to the Gallery</h4>
+		<h4>Add a photo to the Gallery</h4>
 
 		<hr>
 
-		<form method="POST" action="/images" enctype="multipart/form-data">
+		<form method="POST" action="/photos" enctype="multipart/form-data">
 			{{ csrf_field() }}
 
 			<div class="form-group">
-				<label for="featured_image">Select Image to Upload:</label>
-				<input type="file" name="featured_image[]" multiple="multiple" id="featured_image" />
+				<label for="featured_photo">Select Photo to Upload:</label>
+				<input type="file" name="featured_photo[]" multiple="multiple" id="featured_photo" />
 			</div>
 
 			<select class="form-group custom-select" name="tag">

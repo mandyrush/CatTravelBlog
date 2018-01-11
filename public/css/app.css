@@ -4,7 +4,7 @@
 
 body {
   color: #34495E;
-  font-family: "Prociono", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Prociono", sans-serif;
   font-size: 18px;
 }
 
@@ -64,7 +64,6 @@ body {
 /* Albums */
 
 .album-index {
-  background-image: url(/images/test_background.jpg?b309546b461290e7f93458d66c4b3112);
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 15px;
@@ -73,11 +72,6 @@ body {
 
 .album {
   padding: 15px;
-}
-
-.album a {
-  font-family: "Cookie", cursive;
-  font-size: 30px;
 }
 
 .album a:link {
@@ -118,23 +112,25 @@ body {
 }
 
 .white-border div {
-  border: 1px solid white;
+  border: 1px solid #fff;
   width: 100%;
   height: 100%;
 }
 
 .album-title {
-  position: absolute;
-  border: 1px solid white;
-  background-color: white;
+  font-family: 'Quattrocento', serif;
+  font-weight: 300;
+  font-size: 26px;
   color: #34495E;
   padding-left: 10px;
   padding-right: 10px;
+  text-transform: uppercase;
+  border: 1px solid #34495E;
 }
 
-/* Main Image */
+/* Main Photo */
 
-.main-image {
+.main-photo {
   height: 100vh;
   background-image: url("https://lh3.googleusercontent.com/-iDQHqh-b-VM/WQ7vRpSimXI/AAAAAAAABeM/Z7q3O5byu5wRK8RjxIKK0cP6DnK1fjH1ACJoC/w6000-h4000/89%2Bgarden%2Bd.jpg");
   background-size: cover;
