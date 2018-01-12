@@ -1,5 +1,4 @@
 /* Colors */
-// $primary: rgb(71, 182, 173);
 $primary: #34495E;
 $accent: #FF8000;
 $gray: #85929E;
@@ -7,13 +6,13 @@ $lt-gray: #ccc;
 $white: #fff;
 
 /* fonts */
-$cookie: "Cookie", cursive;
-$prociono: "HelveticaNeue-Light", "Helvetica Neue Light", "Prociono", sans-serif;
+$primary-ft: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+$accent-ft: "Cookie", cursive;
 
 body {
 	color: $primary;
 	font : {
-		family: $prociono;
+		family: $primary-ft;
 		size: 18px;
 	}
 }
@@ -24,7 +23,7 @@ body {
 	h1 {
 		color: $gray;
 		font : {
-			family: $cookie;
+			family: $accent-ft;
 			size: 90px;
 		}
 	}
@@ -191,7 +190,7 @@ body {
 	display: flex;
 	font-size: 35px;
 	color: $accent;
-	font-family: $cookie;
+	font-family: $accent-ft;
 	p {
 		margin: auto;
 		padding-left: 40px;
