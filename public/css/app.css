@@ -3,9 +3,58 @@
 /* fonts */
 
 body {
+  background-color: #ccc;
   color: #34495E;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
   font-size: 18px;
+}
+
+.page-border {
+  background-color: #fff;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.banner h3 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+}
+
+.banner {
+  background-image: url("https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593");
+  color: white;
+  height: 500px;
+  width: 100%;
+}
+
+.banner-text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 300px;
+  width: 500px;
+  margin: 100px;
+  padding: 20px;
+  background-color: #fff;
+  color: #34495E;
+  font-family: 'Quattrocento', serif;
+  font-weight: 300;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pretty-border {
+  border: 1px solid #ccc;
 }
 
 /* Title */
@@ -58,7 +107,7 @@ body {
 
 .master-nav {
   padding-top: 20px;
-  background-color: #34495E;
+  background-color: #47b6ad;
 }
 
 /* Albums */
@@ -122,10 +171,9 @@ body {
   font-weight: 300;
   font-size: 26px;
   color: #34495E;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 30px;
   text-transform: uppercase;
-  border: 1px solid #34495E;
+  border: 1px solid #ccc;
 }
 
 /* Main Photo */
@@ -311,7 +359,7 @@ body {
 
 .main-footer {
   height: 75px;
-  background-color: #34495E;
+  background-color: #47b6ad;
 }
 
 #flash-message {

@@ -4,13 +4,18 @@
 	@include('partials.head')
 </head>
 <body>
-	<header class="master-nav container-fluid">	
-		<div class="row justify-content-between">
-			@include ('partials.nav')
+	<div class="page-border">
+		<div>
+			@include ('partials.banner')
 		</div>
-	</header>
-	
-	@yield ('content')
-	@include ('partials.footer')
+		<header class="master-nav container-fluid">	
+			<div class="row justify-content-between">
+				@include ('partials.nav')
+			</div>
+		</header>
+		
+		@yield ('content')
+		@include ('partials.footer')
+	</div>
 </body>
 </html>

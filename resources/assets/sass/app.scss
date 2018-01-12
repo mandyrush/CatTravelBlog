@@ -10,11 +10,54 @@ $primary-ft: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
 $accent-ft: "Cookie", cursive;
 
 body {
+	background-color: $lt-gray;
 	color: $primary;
 	font : {
 		family: $primary-ft;
 		size: 18px;
 	}
+}
+.page-border {
+	background-color: $white;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+
+.banner h3 {
+	margin: 0;
+	text-shadow: 2px 2px 6px #000;
+	text-align: center;
+}
+.banner {
+	background-image: url('https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593');
+	color: white;	
+	height: 500px;
+	width: 100%;
+}
+.banner-text {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	position: absolute;
+	height: 300px;
+	width: 500px;
+	margin: 100px;
+	padding: 20px;
+
+	background-color: $white;
+	
+	color: $primary;
+	font-family: 'Quattrocento', serif;
+	font-weight: 300;
+	font-size: 26px;
+
+	text-transform: uppercase;
+	text-align: center;
+}
+.pretty-border {
+		border: 1px solid $lt-gray;
 }
 
 /* Title */
@@ -58,7 +101,7 @@ body {
 /* Master Navigation Bar */
 .master-nav {
 	padding-top: 20px;
-	background-color: $primary;
+	background-color: rgb(71, 182, 173);
 }
 
 /* Albums */
@@ -77,7 +120,6 @@ body {
 		&:active { color: $white; }
 	}
 }
-
 .album-content {
 	display: flex;
   	align-items: center;
@@ -104,10 +146,9 @@ body {
 	font-weight: 300;
 	font-size: 26px;
 	color: $primary;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 30px;
 	text-transform: uppercase;
-	border: 1px solid $primary;
+	border: 1px solid $lt-gray;
 }
 
 /* Main Photo */
@@ -244,7 +285,7 @@ body {
 /* Footer */
 .main-footer {
 	height: 75px;
-	background-color: $primary;
+	background-color: rgb(71, 182, 173);
 }
 
 #flash-message {

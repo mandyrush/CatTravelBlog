@@ -18,7 +18,7 @@
 
 					</div>
 
-					<div class="album-title">
+					<div class="album-title text-center">
 						All Photos
 					</div>
 
@@ -42,7 +42,7 @@
 
 							</div>
 
-							<div class="album-title">
+							<div class="album-title text-center">
 								{{$album->title}}
 							</div>
 						</a>
