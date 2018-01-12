@@ -14,9 +14,8 @@ class PhotosController extends Controller
 
     public function index()
     {
-        echo 'here';
-        // $photos = Photo::latest()->get();
-        // return view('photos.index', compact('photos'));
+        $photos = Photo::latest()->get();
+        return view('photos.index', compact('photos'));
     }
 
     public function create()
