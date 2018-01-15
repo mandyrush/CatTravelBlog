@@ -2,9 +2,9 @@
 
 @section ('content')
 
-<!-- Posts -->
-	<section class="container-fluid"> 
-		<div class="row justify-content-center">
+{{-- Posts --}}
+	<section> 
+		<div class="post-layout">
 
 			@foreach ($posts as $key => $post)
 				@if ($key % 2 == 1)
