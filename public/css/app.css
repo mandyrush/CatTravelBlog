@@ -57,19 +57,7 @@ body {
   border: 1px solid #ccc;
 }
 
-/* Title */
-
-.title {
-  padding-left: 90px;
-}
-
-.title h1 {
-  color: #85929E;
-  font-family: "Cookie", cursive;
-  font-size: 90px;
-}
-
-/* Master/Home Navigation Bars */
+/* Navigation Bar */
 
 .dropdown-toggle::after {
   display: none;
@@ -91,19 +79,6 @@ body {
   padding-left: 30px;
   font-size: 30px;
 }
-
-/* Home Navigation Bar */
-
-.home-nav {
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  padding-top: 20px;
-}
-
-/* Master Navigation Bar */
 
 .master-nav {
   padding-top: 20px;
@@ -174,30 +149,6 @@ body {
   padding: 30px;
   text-transform: uppercase;
   border: 1px solid #ccc;
-}
-
-/* Main Photo */
-
-.main-photo {
-  height: 100vh;
-  background-image: url("https://lh3.googleusercontent.com/-iDQHqh-b-VM/WQ7vRpSimXI/AAAAAAAABeM/Z7q3O5byu5wRK8RjxIKK0cP6DnK1fjH1ACJoC/w6000-h4000/89%2Bgarden%2Bd.jpg");
-  background-size: cover;
-  position: relative;
-  z-index: -1;
-}
-
-/* Nessie Greeting */
-
-.intro-text {
-  margin: auto;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  background-color: rgba(129, 179, 77, 0.33);
-  padding: 10px;
-  font-size: 30px;
-  color: #fff;
 }
 
 /* Posts Index*/
