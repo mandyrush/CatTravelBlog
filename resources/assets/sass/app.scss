@@ -25,13 +25,14 @@ body {
 }
 
 .banner h3 {
-	margin: 0;
-	text-shadow: 2px 2px 6px #000;
+	// margin: 0;
+	// text-shadow: 2px 2px 6px #000;
 	text-align: center;
+	font-size: 60px;
+	padding-bottom: 15px;
 }
 .banner {
 	background-image: url('https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593');
-	color: white;	
 	height: 500px;
 	width: 100%;
 }
@@ -43,7 +44,6 @@ body {
 	height: 300px;
 	width: 500px;
 	margin: 100px;
-	padding: 20px;
 
 	background-color: $white;
 	
@@ -55,8 +55,17 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 }
+
 .pretty-border {
-		border: 1px solid $lt-gray;
+	position: relative;
+  	height: 100%;
+  	width: 100%;
+  	padding: 15px;
+  	div {
+  		border: 1px solid $lt-gray;
+  		width: 100%;
+  		height: 100%;
+  	}
 }
 
 /* Navigation Bar */
