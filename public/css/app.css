@@ -16,12 +16,6 @@ body {
   margin-right: 40px;
 }
 
-.banner h3 {
-  text-align: center;
-  font-size: 60px;
-  padding-bottom: 15px;
-}
-
 .banner {
   background-image: url("https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593");
   height: 500px;
@@ -29,15 +23,7 @@ body {
 }
 
 .banner-text {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 15px;
   position: absolute;
   height: 300px;
   width: 500px;
@@ -46,22 +32,33 @@ body {
   color: #34495E;
   font-family: 'Quattrocento', serif;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 15px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .pretty-border {
-  position: relative;
+  border: 1px solid #ccc;
   height: 100%;
-  width: 100%;
-  padding: 15px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
-.pretty-border div {
-  border: 1px solid #ccc;
-  width: 100%;
-  height: 100%;
+.pretty-border h3 {
+  font-size: 40px;
+  padding-bottom: 15px;
 }
 
 /* Navigation Bar */
