@@ -9,7 +9,12 @@ $white: #fff;
 $primary-ft: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
 $accent-ft: "Cookie", cursive;
 
+body html {
+	height: 100%;
+}
+
 body {
+	margin: 0;
 	background-color: $lt-gray;
 	color: $primary;
 	font : {
@@ -18,23 +23,31 @@ body {
 	}
 }
 .page-border {
-	background-color: $white;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 	margin-top: 40px;
 	margin-left: 40px;
 	margin-right: 40px;
+	background-color: $white;
 }
 
 .banner {
 	background-image: url('https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593');
-	height: 500px;
-	width: 100%;
+	height: 85vh;
+	margin: 40px;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .banner-text {
 	padding: 15px;
 	position: absolute;
-	height: 300px;
-	width: 500px;
-	margin: 100px;
+	display: flex;
+	min-height: 300px;
+	max-width: 500px;
 	background-color: $white;
 	
 	color: $primary;
@@ -46,7 +59,6 @@ body {
 }
 .pretty-border {
 	border: 1px solid $lt-gray;
-	height: 100%;
 	padding: 20px;
 	display: flex;
 	align-items: center;
@@ -54,7 +66,7 @@ body {
 	flex-direction: column;
 	text-align: center;
 	h3 {
-		font-size: 40px;
+		font-size: 80px;
 		padding-bottom: 15px;	
 	}
 }
@@ -75,7 +87,7 @@ body {
 	font-size: 30px;
 }
 .master-nav {
-	padding: 5px;
+	padding: 15px;
 	padding-left: 20px;
 	background-color: rgb(71, 182, 173);
 }

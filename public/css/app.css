@@ -2,7 +2,12 @@
 
 /* fonts */
 
+body html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   background-color: #ccc;
   color: #34495E;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
@@ -10,24 +15,45 @@ body {
 }
 
 .page-border {
-  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
+  background-color: #fff;
 }
 
 .banner {
   background-image: url("https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593");
-  height: 500px;
-  width: 100%;
+  height: 85vh;
+  margin: 40px;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner-text {
   padding: 15px;
   position: absolute;
-  height: 300px;
-  width: 500px;
-  margin: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 300px;
+  max-width: 500px;
   background-color: #fff;
   color: #34495E;
   font-family: 'Quattrocento', serif;
@@ -38,7 +64,6 @@ body {
 
 .pretty-border {
   border: 1px solid #ccc;
-  height: 100%;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +82,7 @@ body {
 }
 
 .pretty-border h3 {
-  font-size: 40px;
+  font-size: 80px;
   padding-bottom: 15px;
 }
 
@@ -85,7 +110,7 @@ body {
 }
 
 .master-nav {
-  padding: 5px;
+  padding: 15px;
   padding-left: 20px;
   background-color: #47b6ad;
 }
