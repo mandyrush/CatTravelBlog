@@ -145,16 +145,16 @@ body {
 	margin: 30px;
 }
 .posts {
-	padding: 10px;
-	padding-top: 25px;
+	padding: 30px;
 	margin-bottom: 30px;
 	border: 1px solid $lt-gray;
-}
-.odd {
 	background-color: $white;
 }
-.even {
-	background-color: $white;
+.post-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 .post-title {
 	&:link { color: $primary; }
@@ -183,8 +183,8 @@ body {
 .post-show {
 	margin: 10px;
 	margin-top: 50px;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 0;
+	margin-right: 0;
 }
 .post-heading {
 	padding-bottom: 5px;
@@ -194,10 +194,10 @@ body {
 	}
 }
 .post-row {
-	padding-right: 0px;
-	padding-left: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 .post-body {
 	padding-top: 5px;

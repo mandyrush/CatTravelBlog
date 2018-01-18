@@ -10,7 +10,7 @@
 
 					<div class="album-content">
 						
-						<img src="http://eskipaper.com/images/maine-coon-kittens-4.jpg" class="img-fluid" alt="Responsive image">
+						<img class="img-fluid" src="http://eskipaper.com/images/maine-coon-kittens-4.jpg" alt="Responsive image">
 					
 						<div class="white-border">
 							<div></div>

@@ -3,11 +3,19 @@
 <div class="container-fluid">
 	<div class="row posts even">
 
-		<figure class="col-md-6">
+		<div class="col-md-6" style="padding-left: 0">
 			<a href="/posts/{{ $post->id }}">
-				<img src="{{Storage::disk('local')->url( $post->featured_photo )}}" class="img-fluid" alt="Responsive image">
+
+				<div class="post-img">
+					<img class="img-fluid" src="{{Storage::disk('local')->url( $post->featured_photo )}}" alt="Responsive image">
+
+					<div class="white-border">
+						<div></div>
+					</div>
+				</div>
+
 			</a>
-		</figure>
+		</div>
 		
 		<div class="col-md-6 post-info aligner">
 			<div class="aligner-item">

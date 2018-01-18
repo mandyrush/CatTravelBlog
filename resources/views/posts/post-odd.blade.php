@@ -17,11 +17,19 @@
 			</div>
 		</div>
 
-		<figure class="col-md-6">
+		<div class="col-md-6" style="padding-right: 0">
 			<a href="/posts/{{ $post->id }}">
-				<img src="{{Storage::disk('local')->url( $post->featured_photo )}}" class="img-fluid" alt="Responsive image">
+
+				<div class="post-img">
+					<img class="img-fluid" src="{{Storage::disk('local')->url( $post->featured_photo )}}" alt="Responsive image">
+
+					<div class="white-border">
+						<div></div>
+					</div>
+				</div>
+
 			</a>
-		</figure>
+		</div>
 
 	</div>
 </div>
