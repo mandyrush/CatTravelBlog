@@ -330,18 +330,32 @@ body {
   border-color: #85929E;
 }
 
-/* Gallery */
+/* Photos */
 
 .masonry {
   /* Masonry container */
-  -webkit-column-count: 4;
-          column-count: 4;
+  -webkit-column-count: 1;
+          column-count: 1;
   -webkit-column-gap: 1em;
           column-gap: 1em;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .masonry {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .masonry {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
 }
 
 .masonry-panel {
@@ -357,6 +371,70 @@ body {
   border-radius: 15px;
   display: block;
   margin: 0 auto;
+}
+
+/*Masonry Panel Flip */
+
+.flip-med {
+  height: 300px;
+}
+
+.flip {
+  -webkit-perspective: 2500px;
+          perspective: 2500px;
+}
+
+.flip:hover .flip-content {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-panel {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 15px;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flip-panel-front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  z-index: 2;
+  background-color: #47b6ad;
+}
+
+.flip-panel-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: #FF8000;
+}
+
+.flip-content {
+  height: 100%;
+  overflow: visible;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.85s;
+  transition: 0.85s;
+  color: #fff;
+  font-family: 'Quattrocento', serif;
+  font-size: 40px;
+  text-align: center;
 }
 
 /* Footer */
