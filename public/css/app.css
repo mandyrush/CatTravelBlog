@@ -373,9 +373,15 @@ body {
   margin: 0 auto;
 }
 
-.masonry-panel_content button {
+.masonry-panel_content .btn-link {
   border: none;
   padding: 0;
+}
+
+.masonry-panel_content .btn-secondary {
+  padding: 5px;
+  background-color: #47b6ad;
+  border: none;
 }
 
 /*Masonry Panel Flip */
