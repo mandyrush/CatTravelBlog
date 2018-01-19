@@ -4,17 +4,6 @@
 	
 	<div class="masonry">
 
-		@foreach ($photos as $photo)
-			<div class="masonry-panel">
-				<div class="masonry-panel_content">
-					<a href="{{Storage::disk('local')->url( $photo->featured_photo )}}" target="_blank">
-						<img class="img-fluid" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" alt="Responsive image">
-					</a>
-				</div>
-			</div>
-		@endforeach
-
-
 		<div class="masonry-panel flip-med flip">
 			<div class="masonry-panel_content flip-content">
 				<div class="flip-panel flip-panel-front">
@@ -26,6 +15,15 @@
 			</div>
 		</div>
 
+		@foreach ($photos as $photo)
+			<div class="masonry-panel">
+				<div class="masonry-panel_content">
+					<a href="{{Storage::disk('local')->url( $photo->featured_photo )}}" target="_blank">
+						<img class="img-fluid" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" alt="Responsive image">
+					</a>
+				</div>
+			</div>
+		@endforeach
 
 	</div>
 
