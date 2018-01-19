@@ -15,6 +15,6 @@ class TagsController extends Controller
     public function photos(Tag $tag)
     {
         $photos = $tag->photos;
-        return view('photos.show', compact('photos'));
+        return view('photos.index', compact('photos'));
     }
 }

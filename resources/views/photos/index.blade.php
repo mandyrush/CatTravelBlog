@@ -18,7 +18,7 @@
 		@foreach ($photos as $photo)
 			<div class="masonry-panel">
 				<div class="masonry-panel_content">
-					<a href="{{Storage::disk('local')->url( $photo->featured_photo )}}" target="_blank">
+					<a href="{{Storage::disk('local')->url( $photo->featured_photo )}}">
 						<img class="img-fluid" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" alt="Responsive image">
 					</a>
 				</div>
