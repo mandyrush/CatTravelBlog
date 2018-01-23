@@ -1,19 +1,21 @@
 @extends ('layouts.master')
 
 @section ('content')
-	
+
 	<div class="masonry">
 
-		<div class="masonry-panel flip-med flip">
-			<div class="masonry-panel_content flip-content">
-				<div class="flip-panel flip-panel-front">
-					<p>Nessie say...</p>
-				</div>
-				<div class="flip-panel flip-panel-back">
-					<p>A stick in the paw is worth 2 under the fridge.</p>
+		@foreach ($nessiesays as $nessiesay)
+			<div class="masonry-panel flip-med flip">
+				<div class="masonry-panel_content flip-content">
+					<div class="flip-panel flip-panel-front">
+						<p>Nessie Say...</p>
+					</div>
+					<div class="flip-panel flip-panel-back">
+						<p>{{ $nessiesay->nessie_say }}</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		@endforeach
 
 		@foreach ($photos as $photo)
 			<div class="masonry-panel">

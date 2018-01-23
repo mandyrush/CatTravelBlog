@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\NessieSay;
 use App\Photo;
 use Illuminate\Http\Request;
 
@@ -14,8 +15,10 @@ class PhotosController extends Controller
 
     public function index()
     {
+        $nessiesays = NessieSay::getLatest();
         $photos = Photo::latest()->get();
-        return view('photos.index', compact('photos'));
+
+        return view('photos.index', compact('photos', 'nessiesays'));
     }
 
     public function create()
