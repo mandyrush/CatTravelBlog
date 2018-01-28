@@ -17,7 +17,7 @@
 			</div>
 
 			<div class="form-group">
-				<button type="submit" class="btn btn-primary">Sign In</button>
+				<button type="submit" class="btn btn-secondary btn-lg">Sign In</button>
 			</div>
 
 			<div>

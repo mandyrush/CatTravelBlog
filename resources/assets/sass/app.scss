@@ -5,9 +5,16 @@ $gray: #85929E;
 $lt-gray: #ccc;
 $white: #fff;
 
-/* fonts */
+/* Fonts */
 $primary-ft: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
 $accent-ft: "Cookie", cursive;
+
+/* Buttons */
+.btn-secondary {
+	padding: 5px;
+	background-color: rgb(71, 182, 173);
+	border: none;
+}
 
 body html {
 	height: 100%;
@@ -111,10 +118,10 @@ body {
   	align-items: center;
   	justify-content: center;
   	position: relative;
-	// &:hover {
-	// 	background-color: $lt-gray;
-	// 	opacity: 0.6;
-	// }
+	 &:hover {
+	 	background-color: $lt-gray;
+	 	opacity: 0.8;
+	 }
 }
 .white-border {
   	position: absolute;
@@ -235,14 +242,6 @@ body {
 		color: $primary;
 	}
 }
-.btn-primary {
-	border-color: $gray;
-	background-color: $primary;
-	&:hover {
-		background-color: $gray;
-		border-color: $gray;
-	}
-}
 
 /* Photos */
 .masonry { /* Masonry container */
@@ -278,11 +277,6 @@ body {
 .masonry-panel_content .btn-link {
 	border: none;
 	padding: 0;
-}
-.masonry-panel_content .btn-secondary {
-	padding: 5px;
-	background-color: rgb(71, 182, 173);
-	border: none;
 }
 
 /*Masonry Panel Flip */

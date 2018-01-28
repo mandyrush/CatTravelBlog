@@ -1,6 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/* Colors */
 
-/* fonts */
+/* Fonts */
+
+/* Buttons */
+
+.btn-secondary {
+  padding: 5px;
+  background-color: #47b6ad;
+  border: none;
+}
 
 body html {
   height: 100%;
@@ -154,6 +162,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+}
+
+.album-content:hover {
+  background-color: #ccc;
+  opacity: 0.8;
 }
 
 .white-border {
@@ -331,16 +344,6 @@ body {
   color: #34495E;
 }
 
-.btn-primary {
-  border-color: #85929E;
-  background-color: #34495E;
-}
-
-.btn-primary:hover {
-  background-color: #85929E;
-  border-color: #85929E;
-}
-
 /* Photos */
 
 .masonry {
@@ -387,12 +390,6 @@ body {
 .masonry-panel_content .btn-link {
   border: none;
   padding: 0;
-}
-
-.masonry-panel_content .btn-secondary {
-  padding: 5px;
-  background-color: #47b6ad;
-  border: none;
 }
 
 /*Masonry Panel Flip */
