@@ -15,7 +15,7 @@ class CreateNessieSaysTable extends Migration
     {
         Schema::create('nessie_says', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('nessie_say');
+            $table->text('quote');
             $table->timestamps();
         });
     }

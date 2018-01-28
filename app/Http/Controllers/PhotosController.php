@@ -15,11 +15,11 @@ class PhotosController extends Controller
 
     public function index()
     {
-        $nessiesays = collect(NessieSay::getLatest())->shuffle();
+        $nessieQuote = collect(NessieSay::getLatest())->shuffle();
 
         $photos = Photo::latest()->limit(10)->get();
 
-        return view('photos.index', compact('photos', 'nessiesays'));
+        return view('photos.index', compact('photos', 'nessieQuote'));
     }
 
     public function create()

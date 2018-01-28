@@ -6,16 +6,7 @@
 		@foreach ($photos as $key => $photo)
 
 			@if ($key % 7 == 1)
-				<div class="masonry-panel flip-med flip">
-					<div class="masonry-panel_content flip-content">
-						<div class="flip-panel flip-panel-front">
-							<p>Nessie Say...</p>
-						</div>
-						<div class="flip-panel flip-panel-back">
-							<p>{{ $nessiesays[$key]['nessie_say'] }}</p>
-						</div>
-					</div>
-				</div>
+				@include ('partials.nessiesays')
 			@endif
 
 			<div class="masonry-panel">
@@ -42,9 +33,9 @@
 
 								@endforeach
 
-									<div class="modal-body">
-										<img class="img-fluid" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" alt="Responsive image">
-									</div>
+								<div class="modal-body">
+									<img class="img-fluid" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" alt="Responsive image">
+								</div>
 
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Close</button>
