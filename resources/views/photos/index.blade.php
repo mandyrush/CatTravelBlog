@@ -3,21 +3,21 @@
 @section ('content')
 
 	<div class="masonry">
+		@foreach ($photos as $key => $photo)
 
-		@foreach ($nessiesays as $nessiesay)
-			<div class="masonry-panel flip-med flip">
-				<div class="masonry-panel_content flip-content">
-					<div class="flip-panel flip-panel-front">
-						<p>Nessie Say...</p>
-					</div>
-					<div class="flip-panel flip-panel-back">
-						<p>{{ $nessiesay->nessie_say }}</p>
+			@if ($key % 7 == 1)
+				<div class="masonry-panel flip-med flip">
+					<div class="masonry-panel_content flip-content">
+						<div class="flip-panel flip-panel-front">
+							<p>Nessie Say...</p>
+						</div>
+						<div class="flip-panel flip-panel-back">
+							<p>{{ $nessiesays[$key]['nessie_say'] }}</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		@endforeach
+			@endif
 
-		@foreach ($photos as $photo)
 			<div class="masonry-panel">
 				<div class="masonry-panel_content">
 
@@ -57,6 +57,7 @@
 
 				</div>
 			</div>
+
 		@endforeach
 
 	</div>

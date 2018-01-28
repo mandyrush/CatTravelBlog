@@ -17,7 +17,7 @@ class PhotosController extends Controller
     {
         $nessiesays = collect(NessieSay::getLatest())->shuffle();
 
-        $photos = Photo::latest()->get();
+        $photos = Photo::latest()->limit(10)->get();
 
         return view('photos.index', compact('photos', 'nessiesays'));
     }
