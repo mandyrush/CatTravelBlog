@@ -8,9 +8,9 @@
 
 			@foreach ($posts as $key => $post)
 				@if ($key % 2 == 1)
-					@include ('posts.post-odd')
+					@include ('posts.post_odd')
 				@elseif ($key % 2 == 0)
-					@include ('posts.post-even')
+					@include ('posts.post_even')
 				@endif		
 			@endforeach
 
