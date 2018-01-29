@@ -17,7 +17,7 @@
 			</div>
 		</div>
 
-		<div class="col-md-6" style="padding-right: 0">
+		<div class="col-md-6 img">
 			<a href="/posts/{{ $post->id }}">
 
 				<div class="post-img">

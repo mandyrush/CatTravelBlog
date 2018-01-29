@@ -3,7 +3,7 @@
 <div class="container-fluid">
 	<div class="row posts even">
 
-		<div class="col-md-6" style="padding-left: 0">
+		<div class="col-md-6">
 			<a href="/posts/{{ $post->id }}">
 
 				<div class="post-img">

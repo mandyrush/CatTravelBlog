@@ -120,7 +120,7 @@ body {
   	position: relative;
 	 &:hover {
 	 	background-color: $lt-gray;
-	 	opacity: 0.8;
+	 	opacity: 0.9;
 	 }
 }
 .white-border {
@@ -156,6 +156,14 @@ body {
 }
 
 /* Posts Index*/
+@media (max-width: 768px) {
+	.odd .img {
+		order: 1;
+	}
+	.odd .post-info {
+		order: 2;
+	}
+}
 .post-layout {
 	background-color: $white;
 	margin: 30px;

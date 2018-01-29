@@ -166,7 +166,7 @@ body {
 
 .album-content:hover {
   background-color: #ccc;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .white-border {
@@ -206,6 +206,20 @@ body {
 }
 
 /* Posts Index*/
+
+@media (max-width: 768px) {
+  .odd .img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .odd .post-info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
 
 .post-layout {
   background-color: #fff;
