@@ -3,8 +3,8 @@
 <div class="container-fluid">
 	<div class="row posts even">
 
-		<div class="col-md-6">
-			<a href="/posts/{{ $post->id }}">
+		<div class="col-md-6 img aligner">
+			<a href="/posts/{{ $post->id }}" class="aligner-item">
 
 				<div class="post-img">
 					<img class="img-fluid" src="{{Storage::disk('local')->url( $post->featured_photo )}}" alt="Responsive image">
