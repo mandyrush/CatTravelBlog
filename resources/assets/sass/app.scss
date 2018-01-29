@@ -10,6 +10,9 @@ $primary-ft: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
 $accent-ft: "Cookie", cursive;
 
 /* Buttons */
+.btn {
+	cursor: pointer;
+}
 .btn-secondary {
 	padding: 5px;
 	background-color: rgb(71, 182, 173);
@@ -74,7 +77,7 @@ body {
 	background-image: url('https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: $accent;
+	background-color: $white;
 	position: relative;
 	display: flex;
 	align-items: center;

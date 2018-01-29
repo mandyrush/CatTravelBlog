@@ -4,6 +4,10 @@
 
 /* Buttons */
 
+.btn {
+  cursor: pointer;
+}
+
 .btn-secondary {
   padding: 5px;
   background-color: #47b6ad;
@@ -85,7 +89,7 @@ body {
   background-image: url("https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #FF8000;
+  background-color: #fff;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
