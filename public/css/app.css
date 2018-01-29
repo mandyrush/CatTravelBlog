@@ -10,17 +10,7 @@
   border: none;
 }
 
-body html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  background-color: #ccc;
-  color: #34495E;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
-  font-size: 18px;
-}
+/* Borders */
 
 .page-border {
   display: -webkit-box;
@@ -34,38 +24,6 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   background-color: #fff;
-}
-
-.banner {
-  background-image: url("https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593");
-  height: 100vh;
-  background-size: cover;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.banner-text {
-  padding: 15px;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 300px;
-  max-width: 500px;
-  background-color: #fff;
-  color: #34495E;
-  font-family: 'Quattrocento', serif;
-  font-weight: 300;
-  font-size: 15px;
-  text-transform: uppercase;
 }
 
 .pretty-border {
@@ -88,8 +46,101 @@ body {
 }
 
 .pretty-border h3 {
-  font-size: 80px;
   padding-bottom: 15px;
+}
+
+.white-border {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.white-border div {
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.home-white-border {
+  border: 40px solid #fff;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+body html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #ccc;
+  color: #34495E;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+  font-size: 18px;
+}
+
+.banner {
+  background-image: url("https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FF8000;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.banner-text {
+  padding: 15px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  color: #34495E;
+  font-family: 'Quattrocento', serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .banner-text p {
+    font-size: 0.8rem;
+  }
+
+  .banner-text h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .banner-text h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-text p {
+    font-size: 1.2rem;
+  }
+
+  .banner-text h3 {
+    font-size: 2.8rem;
+  }
 }
 
 /* Navigation Bar */
@@ -167,32 +218,6 @@ body {
 .album-content:hover {
   background-color: #ccc;
   opacity: 0.9;
-}
-
-.white-border {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 20px;
-}
-
-.white-border div {
-  border: 1px solid #fff;
-  width: 100%;
-  height: 100%;
-}
-
-.home-white-border {
-  border: 40px solid #fff;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 40px;
-}
-
-.home-white-border div {
-  width: 100%;
-  height: 100%;
 }
 
 .album-title {
