@@ -17,4 +17,8 @@
 		</div>
 	</section>
 
+	<div class="container">
+		{{ $posts->render("pagination::bootstrap-4") }}
+	</div>
+
 @endsection

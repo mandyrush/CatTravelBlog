@@ -17,7 +17,7 @@ class PostsController extends Controller
 
         $posts = Post::latest()
             ->filter(['month'=> \request('month'), 'year'=> \request('year')])
-            ->get();
+            ->paginate(5);
 
         return view('posts.index', compact('posts'));
     }
