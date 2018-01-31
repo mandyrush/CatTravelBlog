@@ -51,6 +51,10 @@
 				</div>
 			@endforeach
 
+			<div class="container">
+				{{ $albums->render("pagination::bootstrap-4") }}
+			</div>
+
 		</div>
 	</div>
 @endsection
