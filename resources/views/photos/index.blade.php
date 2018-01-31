@@ -5,7 +5,7 @@
 	<div class="masonry">
 		@foreach ($photos as $key => $photo)
 
-			@if ($key % 7 == 1)
+			@if ($key % 10 == 4)
 				@include ('partials.nessiesays')
 			@endif
 
@@ -51,6 +51,10 @@
 
 		@endforeach
 
+	</div>
+
+	<div class="container">
+		{{ $photos->render("pagination::bootstrap-4") }}
 	</div>
 
 @endsection

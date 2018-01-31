@@ -17,7 +17,7 @@ class PhotosController extends Controller
     {
         $nessieQuote = collect(NessieSay::getLatest())->shuffle();
 
-        $photos = Photo::latest()->limit(10)->get();
+        $photos = Photo::latest('created_at')->paginate(20);
 
         return view('photos.index', compact('photos', 'nessieQuote'));
     }

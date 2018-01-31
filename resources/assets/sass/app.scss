@@ -9,6 +9,13 @@ $white: #fff;
 $primary-ft: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
 $accent-ft: "Cookie", cursive;
 
+.page-item.active .page-link {
+	background-color: rgb(71, 182, 173);
+	border: 1px solid $lt-gray;
+}
+.page-link {
+	color: $primary;
+}
 /* Buttons */
 .btn {
 	cursor: pointer;
@@ -57,6 +64,9 @@ $accent-ft: "Cookie", cursive;
 	position: absolute;
 	height: 100%;
 	width: 100%;
+}
+.modal {
+	background-color: rgba(0,0,0,0.5);
 }
 
 body html {

@@ -16,7 +16,7 @@ class TagsController extends Controller
     public function photos(Tag $tag)
     {
         $nessieQuote = collect(NessieSay::getLatest())->shuffle();
-        $photos = $tag->photos;
+        $photos = $tag->photos()->latest('created_at')->paginate(20);
         return view('photos.index', compact('photos', 'nessieQuote'));
     }
 }
