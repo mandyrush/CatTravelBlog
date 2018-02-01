@@ -285,6 +285,15 @@ body {
 		padding-left: 40px;
 	}
 }
+.nessie-quote {
+	font-style: italic;
+	q::before {
+		content:  ' " ';
+	}
+	q::after {
+		content:  ' " ';
+	}
+}
 
 /* Comments */
 .comments {

@@ -396,6 +396,18 @@ body {
   padding-left: 40px;
 }
 
+.nessie-quote {
+  font-style: italic;
+}
+
+.nessie-quote q::before {
+  content: ' " ';
+}
+
+.nessie-quote q::after {
+  content: ' " ';
+}
+
 /* Comments */
 
 .comments {
