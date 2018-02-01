@@ -3,9 +3,10 @@
 @section ('content')
 
 	<div class="masonry">
+
 		@foreach ($photos as $key => $photo)
 
-			@if ($key % 10 == 4)
+			@if ($key % 15 == 5)
 				@include ('partials.nessiesays')
 			@endif
 
