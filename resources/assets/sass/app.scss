@@ -278,6 +278,7 @@ body {
 	margin-top: 50px;
 	margin-left: 0;
 	margin-right: 0;
+	padding-left: 30px;
 }
 .post-heading {
 	padding-bottom: 5px;
@@ -317,13 +318,11 @@ body {
 }
 
 /* Comments */
-.comments {
-	margin-left: 45px;
-}
 .user-comments {
 	color: $accent;
+	padding-bottom: 30px;
 	p {
-		padding-top: 15px;
+		padding-top: 5px;
 		margin: auto;
 		color: $primary;
 	}

@@ -1,7 +1,7 @@
 {{-- Posted Comments --}}
-<div class="col-sm-5 comments">
+<div class="row user-comments">
 
-    <div class="user-comments">
+    <div class="col-md-5">
         <ul class="list-group">
             @foreach($post->comments as $comment)
                 <li class="list-group-item">
@@ -19,26 +19,30 @@
         </ul>
     </div>
 
+</div>
+
     {{-- Add a comment --}}
-    <hr>
-    @if (Auth::check())
-        <form method="POST" action="/posts/{{ $post->id }}/comments">
-            {{ csrf_field() }}
+<div class="row add-comments">
+    <div class="col-md-5">
+        <hr>
+        @if (Auth::check())
+            <form method="POST" action="/posts/{{ $post->id }}/comments">
+                {{ csrf_field() }}
 
+                <div class="form-group">
+                    <textarea name="body" placeholder="Your comment here" class="form-control" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-secondary btn-lg">Add Comment</button>
+                </div>
+            </form>
+        @else
             <div class="form-group">
-                <textarea name="body" placeholder="Your comment here" class="form-control" required></textarea>
+                <a href="/login">
+                    <button class="btn btn-secondary btn-lg">Login To Comment</button>
+                </a>
             </div>
-
-            <div class="form-group">
-                <button type="submit" class="btn btn-secondary btn-lg">Add Comment</button>
-            </div>
-        </form>
-    @else
-        <div class="form-group">
-            <a href="/login">
-                <button class="btn btn-secondary btn-lg">Login To Comment</button>
-            </a>
-        </div>
-    @endif
-
+        @endif
+    </div>
 </div>
