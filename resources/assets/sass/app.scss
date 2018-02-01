@@ -1,5 +1,6 @@
 /* Colors */
 $primary: #34495E;
+$primary2: rgb(71, 182, 173);
 $accent: #FF8000;
 $gray: #85929E;
 $lt-gray: #ccc;
@@ -10,7 +11,7 @@ $primary-ft: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
 $accent-ft: "Cookie", cursive;
 
 .page-item.active .page-link {
-	background-color: rgb(71, 182, 173);
+	background-color: $primary2;
 	border: 1px solid $lt-gray;
 }
 .page-link {
@@ -22,7 +23,7 @@ $accent-ft: "Cookie", cursive;
 }
 .btn-secondary {
 	padding: 5px;
-	background-color: rgb(71, 182, 173);
+	background-color: $primary2;
 	border: none;
 }
 
@@ -156,7 +157,7 @@ body {
 .master-nav {
 	padding: 15px;
 	padding-left: 20px;
-	background-color: rgb(71, 182, 173);
+	background-color: $primary2;
 }
 
 /* Albums */
@@ -197,6 +198,26 @@ body {
 }
 
 /* Posts Index*/
+.more_posts {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+	a {
+		border: 2px solid $lt-gray;
+		padding: 15px;
+		border-radius: 10px;
+		background-color: $white;
+		&:link { color: $primary; }
+		&:visited { color: $primary; }
+		&:hover { color: $primary; text-decoration: none;}
+		&:active { color: $primary; }
+	}
+	a:hover {
+		background-color: $primary2;
+		color: $white;
+	}
+}
+
 @media (max-width: 768px) {
 	.odd .img {
 		order: 1;
@@ -371,7 +392,7 @@ body {
 .flip-panel-front {
 	transform: rotateY(0deg);
 	z-index: 2;
-	background-color: rgb(71, 182, 173);
+	background-color: $primary2;
 }
 .flip-panel-back {
 	transform: rotateY(180deg);
@@ -392,7 +413,7 @@ body {
 /* Footer */
 .main-footer {
 	height: 75px;
-	background-color: rgb(71, 182, 173);
+	background-color: $primary2;
 }
 
 #flash-message {

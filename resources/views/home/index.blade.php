@@ -17,4 +17,8 @@
 		</div>
 	</section>
 
+	<div class="more_posts">
+		<a href="/posts">View More Posts</a>
+	</div>
+
 @endsection
