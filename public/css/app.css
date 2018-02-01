@@ -86,6 +86,10 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.modal-dialog {
+  margin: 8px auto;
+}
+
 body html {
   height: 100%;
 }
