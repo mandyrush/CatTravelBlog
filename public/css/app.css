@@ -422,6 +422,11 @@ body {
   padding-bottom: 40px;
 }
 
+.post-body img {
+  height: 500px;
+  width: auto;
+}
+
 .nessie-say {
   display: -webkit-box;
   display: -ms-flexbox;

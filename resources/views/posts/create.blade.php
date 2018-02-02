@@ -1,6 +1,10 @@
 @extends ('layouts.master')
 
 @section ('content')
+
+	<!-- ckEditor 5 -->
+	<script src="https://cdn.ckeditor.com/ckeditor5/1.0.0-alpha.2/classic/ckeditor.js"></script>
+
 	<div class="col-sm-8">
 		<h1>Publish a Post</h1>
 
@@ -15,7 +19,7 @@
 
 			<div class="form-group">
 				<label for="body">Body:</label>
-				<textarea id="body" name="body" class="form-control"></textarea>
+				<textarea id="editor" name="body" class="form-control"></textarea>
 			</div>
 
 			<div class="form-group">
@@ -36,4 +40,13 @@
 			
 		</form>
 	</div>
+
+	<script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+            console.error( error );
+        } );
+	</script>
 @endsection
+

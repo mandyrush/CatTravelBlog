@@ -296,6 +296,10 @@ body {
 .post-body {
 	padding-top: 5px;
 	padding-bottom: 40px;
+	img {
+		height: 500px;
+		width: auto;
+	}
 }
 .nessie-say {
 	display: flex;
