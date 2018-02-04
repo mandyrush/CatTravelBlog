@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\NessieSay;
 use App\Tag;
-use Illuminate\Http\Request;
 
 class TagsController extends Controller
 {
@@ -12,9 +12,11 @@ class TagsController extends Controller
         $posts = $tag->posts;
         return view('posts.index', compact('posts'));
     }
-    public function images(Tag $tag)
+
+    public function photos(Tag $tag)
     {
-        $images = $tag->images;
-        return view('images.show', compact('images'));
+        $nessieQuote = collect(NessieSay::getLatest())->shuffle();
+        $photos = $tag->photos()->latest('created_at')->paginate(30);
+        return view('photos.index', compact('photos', 'nessieQuote'));
     }
 }

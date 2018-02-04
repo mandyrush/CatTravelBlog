@@ -1,16 +1,24 @@
 @extends ('layouts.home')
 
 @section ('content')
+	
+{{-- Posts --}}
+	<section> 
+		<div class="post-layout">
 
-<div class="main-image">
-	<div class="title">
-		<h1>
-			Cats Wander
-		</h1>
+			@foreach ($posts as $key => $post)
+				@if ($key % 2 == 1)
+					@include ('posts.post_odd')
+				@elseif ($key % 2 == 0)
+					@include ('posts.post_even')
+				@endif		
+			@endforeach
+
+		</div>
+	</section>
+
+	<div class="more_posts">
+		<a href="/posts">View More Posts</a>
 	</div>
-	<div class="intro-text col-sm-12" align="center">
-		Come with us! As me "Nessie", and my acquaintance Mozzie travel the world with <br> our enslaved humans to the far reaching corners of the globe.
-	</div>
-</div>
 
 @endsection

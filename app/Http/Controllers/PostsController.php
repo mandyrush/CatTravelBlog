@@ -17,7 +17,7 @@ class PostsController extends Controller
 
         $posts = Post::latest()
             ->filter(['month'=> \request('month'), 'year'=> \request('year')])
-            ->get();
+            ->paginate(5);
 
         return view('posts.index', compact('posts'));
     }
@@ -42,12 +42,12 @@ class PostsController extends Controller
         ]);
         
         // Moving file to the public folder
-        $filename = $request->file('featured_image')->store('public');
+        $filename = $request->file('featured_photo')->store('public');
         $data = [
               "title" => $request->title,
               "body" => $request->body,
               "featured_text" => $request->featured_text,
-              "featured_image" => $filename,
+              "featured_photo" => $filename,
               "user_id" => auth()->id()
         ];
 

@@ -10,7 +10,7 @@ class AlbumsController extends Controller
 {
     public function index(Tag $tag)
     {
-        $albums = Album::with('tags')->get();
+        $albums = Album::with('tags')->paginate(8);
         return view('albums.index', compact('albums'));
     }
     public function create()
