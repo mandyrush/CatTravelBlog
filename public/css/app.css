@@ -90,16 +90,16 @@
   margin: 8px auto;
 }
 
-body html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   background-color: #ccc;
   color: #34495E;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
   font-size: 18px;
+}
+
+.section {
+  display: block;
 }
 
 .banner {
