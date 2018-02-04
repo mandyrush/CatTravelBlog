@@ -1,11 +1,25 @@
 <?php
 
-// Admin
-Route::get('admin', function () {
-    return view('admin/layouts/primary');
-});
+// ------------ Admin ------------
+Route::prefix('admin')->group(function () {
 
-Route::get('admin/test', 'Admin\PagesController@index');
+    // @todo update this route
+    Route::get('/', function () {
+        return view('admin/layouts/primary');
+    });
+
+    // Pages
+    Route::get('test', 'Admin\PagesController@index');
+
+    // Posts
+    Route::get('posts/create', 'Admin\PostsController@create');
+    Route::get('posts/{post}', 'Admin\PostsController@show');
+    Route::get('posts/{post}/edit', 'Admin\PostsController@edit');
+    Route::get('posts', 'Admin\PostsController@index');
+    Route::post('posts', 'Admin\PostsController@store');
+    Route::post('posts/{post}/delete', 'Admin\PostsController@delete');
+});
+// ------------ end: Admin ------------
 
 //Albums
 Route::get('/albums', 'AlbumsController@index');

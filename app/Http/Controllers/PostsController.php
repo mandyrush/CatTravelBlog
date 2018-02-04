@@ -44,11 +44,12 @@ class PostsController extends Controller
         // Moving file to the public folder
         $filename = $request->file('featured_photo')->store('public');
         $data = [
-              "title" => $request->title,
-              "body" => $request->body,
-              "featured_text" => $request->featured_text,
-              "featured_photo" => $filename,
-              "user_id" => auth()->id()
+            "user_id" => auth()->id(),
+            "title" => $request->title,
+            "body" => $request->body,
+            "featured_text" => $request->featured_text,
+            "featured_photo" => $filename,
+            "status" => 1
         ];
 
         // Save

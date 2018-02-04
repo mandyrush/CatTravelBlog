@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Starter</title>
+    <title> @yield('title') | Admin</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap -->      <link rel="stylesheet" href="{{ asset('vendor/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css')}}" >
@@ -52,10 +52,12 @@ desired effect
         <div class="content-wrapper">
             <!-- Page header -->
             <section class="content-header">
-                <h1> Page Header <small>Optional description</small></h1>
+                <h1> @yield('title') <small>@yield('title-subtext')</small></h1>
                 <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-                    <li class="active">Here</li>
+                    <li>
+                        <a href="/admin"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li class="active">Posts</li>
                 </ol>
             </section>
             <!-- Main content -->
@@ -73,11 +75,11 @@ desired effect
 
     <!-- JS SCRIPTS -->
     <!-- jQuery 3 -->
-    <script src="{{asset('vendor/adminlte/bower_components/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{ asset('vendor/adminlte/bower_components/jquery/dist/jquery.min.js')}}"></script>
     <!-- Bootstrap 3.3.7 -->
-    <script src="{{asset('vendor/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('vendor/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
     <!-- AdminLTE App -->
-    <script src="{{asset('vendor/adminlte/dist/js/adminlte.min.js')}}"></script>
+    <script src="{{ asset('vendor/adminlte/dist/js/adminlte.min.js')}}"></script>
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
          Both of these plugins are recommended to enhance the

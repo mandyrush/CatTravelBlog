@@ -35,14 +35,15 @@
             <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
             <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
             <li class="treeview">
-                <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+                <a href="#">
+                    <i class="fa fa-edit"></i> <span>Posts</span>
                     <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#">Link in level 2</a></li>
-                    <li><a href="#">Link in level 2</a></li>
+                    <li><a href="/admin/posts"><i class="fa fa-circle-o"></i> Show All</a></li>
+                    <li><a href="/admin/posts/create"><i class="fa fa-circle-o"></i> Create</a></li>
                 </ul>
             </li>
         </ul>
