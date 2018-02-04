@@ -45,7 +45,6 @@ $accent-ft: "Cookie", cursive;
 	flex-direction: column;
 	text-align: center;
 	h3 {
-		//font-size: 60px;
 		padding-bottom: 15px;
 	}
 }
@@ -66,17 +65,13 @@ $accent-ft: "Cookie", cursive;
 	height: 100%;
 	width: 100%;
 }
+
 .modal {
 	background-color: rgba(0,0,0,0.5);
 }
 
 .modal-dialog {
 	margin: 8px auto;
-}
-
-
-body html {
-	height: 100%;
 }
 
 body {
@@ -88,7 +83,9 @@ body {
 		size: 18px;
 	}
 }
-
+.section {
+	display: block;
+}
 .banner {
 	background-image: url('https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593');
 	background-repeat: no-repeat;
