@@ -28,6 +28,12 @@ class AppServiceProvider extends ServiceProvider
                  $view->with(compact('tags'));
             }
         );
+
+        // Run this on a fresh install
+        // This will move the 'adminlte' vendor files to a usable spot in the public folder
+        $this->publishes([
+            base_path('vendor/almasaeed2010/adminlte') => public_path('vendor/adminlte'),
+        ], 'vendor');
     }
 
     /**

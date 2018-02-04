@@ -1,5 +1,12 @@
 <?php
 
+// Admin
+Route::get('admin', function () {
+    return view('admin/layouts/primary');
+});
+
+Route::get('admin/test', 'Admin\PagesController@index');
+
 //Albums
 Route::get('/albums', 'AlbumsController@index');
 Route::get('/albums/create', 'AlbumsController@create');
