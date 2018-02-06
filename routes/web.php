@@ -33,7 +33,12 @@ Route::post('/posts/{post}/comments', 'CommentsController@store');
 Route::get('/', 'HomeController@index')->name('home');
 
 //Pages
-Route::get('/kitties', 'PagesController@kitties');
+Route::get('/kitties/mozzie', function(){
+    return view('pages.mozzie');
+});
+Route::get('/kitties/nessie', function(){
+    return view('pages.nessie');
+});
 Route::get('/humans', 'PagesController@humans');
 
 //Photos
