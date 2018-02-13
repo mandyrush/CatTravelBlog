@@ -21,6 +21,9 @@ $accent-ft: "Cookie", cursive;
 .btn {
 	cursor: pointer;
 }
+
+button:focus {outline: transparent;}
+
 .btn-secondary {
 	padding: 5px;
 	background-color: $primary2;
@@ -136,63 +139,48 @@ body {
 	}
 }
 
-/* Navigation Bar */
-.dropdown-toggle::after {
-	display: none;
+//Navigation Bar
+.master-nav {
+	background-color: $primary2;
+	padding: 5px;
+	padding-left: 15px;
 }
-.dropdown-item {
-	color: $primary;
-}
-.dropdown-menu a, .dropdown-menu label {
-	display: block;
-	padding: .55rem;
-}
-.dropdown-menu label {
-	cursor: pointer;
-	margin-bottom: 0;
-}
-
-.nav-menu {
-	padding-left: 30px;
+.navbar-toggler {
+	color: $white;
+	border: none;
 	font-size: 30px;
+	cursor: pointer;
+}
+.navbar-nav {
+	padding-left: 10px;
+}
+.nav-item {
+	a {
+		&:link { color: $primary; }
+		&:visited { color: $primary; }
+		&:hover { color: $primary; text-decoration: none; }
+		&:active { color: $primary; }
+	}
+}
+.nav-btn {
+	background-color: transparent;
+	color: $primary;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border: transparent;
+	font-size: 18px;
+}
+.nav-level2 {
 	ul {
 		list-style-type: none;
-		padding: 0;
-		margin: 0;
+		padding-left: 30px;
 	}
-}
-.master-nav {
-	padding: 15px;
-	padding-left: 20px;
-	background-color: $primary2;
-}
-.master-nav .dropdown-toggle {
-	color: $white;
-	&:hover {color: $white;}
 }
 .kitties-humans-nav {
-	padding: 15px;
-	padding-left: 20px;
 	position: absolute;
 	z-index: 1;
-}
-.kitties-humans-nav .dropdown-toggle {
-	color: $primary;
-	&:hover {color: $primary;}
-}
-.group-list {
-	height: 100%;
-	max-height: 0;
-	overflow: hidden;
-	a {
-		padding-left: 3rem;
-	}
-}
-.nav-list a:focus, .nav-list a:hover, .nav-list label:focus, .nav-list label:hover { background: #f8f9fa; }
-
-/* reset the height when checkbox is checked */
-.nav-list input[type=checkbox]:checked + label + ul {
-	max-height: 1000px;
 }
 
 /* Albums */

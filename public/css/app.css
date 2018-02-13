@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+button:focus {
+  outline: transparent;
+}
+
 .btn-secondary {
   padding: 5px;
   background-color: #47b6ad;
@@ -164,88 +168,59 @@ body {
   }
 }
 
-/* Navigation Bar */
-
-.dropdown-toggle::after {
-  display: none;
+.master-nav {
+  background-color: #47b6ad;
+  padding: 5px;
+  padding-left: 15px;
 }
 
-.dropdown-item {
+.navbar-toggler {
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  padding-left: 10px;
+}
+
+.nav-item a:link {
   color: #34495E;
 }
 
-.dropdown-menu a,
-.dropdown-menu label {
-  display: block;
-  padding: .55rem;
+.nav-item a:visited {
+  color: #34495E;
 }
 
-.dropdown-menu label {
-  cursor: pointer;
-  margin-bottom: 0;
+.nav-item a:hover {
+  color: #34495E;
+  text-decoration: none;
 }
 
-.nav-menu {
-  padding-left: 30px;
-  font-size: 30px;
+.nav-item a:active {
+  color: #34495E;
 }
 
-.nav-menu ul {
+.nav-btn {
+  background-color: transparent;
+  color: #34495E;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: transparent;
+  font-size: 18px;
+}
+
+.nav-level2 ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.master-nav {
-  padding: 15px;
-  padding-left: 20px;
-  background-color: #47b6ad;
-}
-
-.master-nav .dropdown-toggle {
-  color: #fff;
-}
-
-.master-nav .dropdown-toggle:hover {
-  color: #fff;
+  padding-left: 30px;
 }
 
 .kitties-humans-nav {
-  padding: 15px;
-  padding-left: 20px;
   position: absolute;
   z-index: 1;
-}
-
-.kitties-humans-nav .dropdown-toggle {
-  color: #34495E;
-}
-
-.kitties-humans-nav .dropdown-toggle:hover {
-  color: #34495E;
-}
-
-.group-list {
-  height: 100%;
-  max-height: 0;
-  overflow: hidden;
-}
-
-.group-list a {
-  padding-left: 3rem;
-}
-
-.nav-list a:focus,
-.nav-list a:hover,
-.nav-list label:focus,
-.nav-list label:hover {
-  background: #f8f9fa;
-}
-
-/* reset the height when checkbox is checked */
-
-.nav-list input[type=checkbox]:checked + label + ul {
-  max-height: 1000px;
 }
 
 /* Albums */
