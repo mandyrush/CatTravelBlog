@@ -140,13 +140,26 @@ body {
 .dropdown-toggle::after {
 	display: none;
 }
-
 .dropdown-item {
 	color: $primary;
 }
+.dropdown-menu a, .dropdown-menu label {
+	display: block;
+	padding: .55rem;
+}
+.dropdown-menu label {
+	cursor: pointer;
+	margin-bottom: 0;
+}
+
 .nav-menu {
 	padding-left: 30px;
 	font-size: 30px;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
 }
 .master-nav {
 	padding: 15px;
@@ -167,6 +180,21 @@ body {
 	color: $primary;
 	&:hover {color: $primary;}
 }
+.group-list {
+	height: 100%;
+	max-height: 0;
+	overflow: hidden;
+	a {
+		padding-left: 3rem;
+	}
+}
+.nav-list a:focus, .nav-list a:hover, .nav-list label:focus, .nav-list label:hover { background: #f8f9fa; }
+
+/* reset the height when checkbox is checked */
+.nav-list input[type=checkbox]:checked + label + ul {
+	max-height: 1000px;
+}
+
 /* Albums */
 .album-index {
 	padding-left: 30px;

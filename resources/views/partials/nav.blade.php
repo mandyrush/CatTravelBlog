@@ -5,19 +5,48 @@
 		</a>
 
 		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			<a class="dropdown-item" href="/">Home</a>
-			<a class="dropdown-item" href="/posts">Posts</a>
-			<a class="dropdown-item" href="/albums">Gallery</a>
-			<a class="dropdown-item" href="/kitties">The Kitties</a>
-			<a class="dropdown-item" href="/humans">The Humans</a>
+			<ul class="nav-list">
+				<li><a class="dropdown-item" href="/">Home</a></li>
+				<li><a class="dropdown-item" href="/posts">Posts</a></li>
+				<li><a class="dropdown-item" href="/albums">Gallery</a></li>
 
-			<div>
-				@if (Auth::check())
-					<a class="dropdown-item" href="/logout">Logout</a>
-				@else ()
-					<a class="dropdown-item" href="/login">{{ 'Login' }}</a>
-				@endif
-			</div>
+				<li>
+					<input id="kitties" type="checkbox" hidden />
+					<label for="kitties">The Kitties</label>
+					<ul class="group-list">
+						<li>
+							<a class="dropdown-item" href="/kitties/mozzie">The Mozzie</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="/kitties/nessie">The Nessie</a>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<input id="humans" type="checkbox" hidden />
+					<label for="humans">The Humans</label>
+					<ul class="group-list">
+						<li>
+							<a class="dropdown-item" href="/humans/des">The Des</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="/humans/amanda">The Amanda</a>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<div>
+						@if (Auth::check())
+							<a class="dropdown-item" href="/logout">Logout</a>
+						@else ()
+							<a class="dropdown-item" href="/login">{{ 'Login' }}</a>
+						@endif
+					</div>
+				</li>
+
+			</ul>
 		</div>
 
 	</div>

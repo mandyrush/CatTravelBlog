@@ -174,9 +174,26 @@ body {
   color: #34495E;
 }
 
+.dropdown-menu a,
+.dropdown-menu label {
+  display: block;
+  padding: .55rem;
+}
+
+.dropdown-menu label {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
 .nav-menu {
   padding-left: 30px;
   font-size: 30px;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .master-nav {
@@ -206,6 +223,29 @@ body {
 
 .kitties-humans-nav .dropdown-toggle:hover {
   color: #34495E;
+}
+
+.group-list {
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.group-list a {
+  padding-left: 3rem;
+}
+
+.nav-list a:focus,
+.nav-list a:hover,
+.nav-list label:focus,
+.nav-list label:hover {
+  background: #f8f9fa;
+}
+
+/* reset the height when checkbox is checked */
+
+.nav-list input[type=checkbox]:checked + label + ul {
+  max-height: 1000px;
 }
 
 /* Albums */
