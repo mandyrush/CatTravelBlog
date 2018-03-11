@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-<title>KittyTravelBlog</title>
+<title>Cats Wander</title>
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Cookie|Prociono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
