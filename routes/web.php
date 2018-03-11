@@ -18,13 +18,20 @@ Route::prefix('admin')->group(function () {
     Route::get('posts', 'Admin\PostsController@index');
     Route::post('posts', 'Admin\PostsController@store');
     Route::get('posts/{post}/delete', 'Admin\PostsController@delete');
+
+    // Tags
+    Route::get('tags/create', 'Admin\TagsController@create');
+    Route::get('tags/{tag}/edit', 'Admin\TagsController@edit');
+    Route::get('tags', 'Admin\TagsController@index');
+    Route::post('tags', 'Admin\TagsController@store');
+    Route::get('tags/{tag}/delete', 'Admin\TagsController@delete');
 });
 // ------------ end: Admin ------------
 
 //Albums
 Route::get('/albums', 'AlbumsController@index');
-Route::get('/albums/create', 'AlbumsController@create');
-Route::post('/albums', 'AlbumsController@store');
+//Route::get('/albums/create', 'AlbumsController@create');
+//Route::post('/albums', 'AlbumsController@store');
 
 //Comments
 Route::post('/posts/{post}/comments', 'CommentsController@store');

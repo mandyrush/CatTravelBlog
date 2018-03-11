@@ -17,15 +17,15 @@
         </div>
 
         <!-- search form (Optional) -->
-        <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-                <input type="text" name="q" class="form-control" placeholder="Search...">
-                <span class="input-group-btn">
-              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-              </button>
-            </span>
-            </div>
-        </form>
+        {{--<form action="#" method="get" class="sidebar-form">--}}
+            {{--<div class="input-group">--}}
+                {{--<input type="text" name="q" class="form-control" placeholder="Search...">--}}
+                {{--<span class="input-group-btn">--}}
+              {{--<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>--}}
+              {{--</button>--}}
+            {{--</span>--}}
+            {{--</div>--}}
+        {{--</form>--}}
         <!-- /.search form -->
 
         <!-- Sidebar Menu -->
@@ -38,12 +38,24 @@
                 <a href="#">
                     <i class="fa fa-edit"></i> <span>Posts</span>
                     <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="/admin/posts"><i class="fa fa-circle-o"></i> Show All</a></li>
                     <li><a href="/admin/posts/create"><i class="fa fa-circle-o"></i> Create</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-edit"></i> <span>Tags</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/tags"><i class="fa fa-circle-o"></i> Show All</a></li>
+                    <li><a href="/admin/tags/create"><i class="fa fa-circle-o"></i> Create</a></li>
                 </ul>
             </li>
         </ul>
