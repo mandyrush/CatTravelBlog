@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Post;
+use App\Http\Requests\PostRequest;
 
 class PostsController extends Controller
 {
@@ -25,7 +26,6 @@ class PostsController extends Controller
 
         return view('admin.posts.index', compact('posts'));
     }
-
 
     /**
      * Show selected Post
@@ -51,19 +51,11 @@ class PostsController extends Controller
     /**
      * Store Post
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param PostRequest $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function store(Request $request)
+    public function store(PostRequest $request)
     {
-        // @todo update validation to a Request class
-        //Validate form fields
-        $this->validate(request(), [
-            'title' => 'required',
-            'body' => 'required',
-            'featured_text' => 'required'
-        ]);
-
         // Moving file to the public folder
         $filename = $request->file('featured_photo')->store('public');
         $data = [
@@ -119,7 +111,10 @@ class PostsController extends Controller
     public function delete($id)
     {
         // @todo update to soft delete instead of hard
-        Post::findOrFail($id)->delete();
+//        Post::findOrFail($id)->delete();
+        $post = Post::findOrFail($id);
+
+        $post->update($request->all());
 
         return redirect(Session::get('redirectIndex'));
     }

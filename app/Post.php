@@ -3,10 +3,14 @@
 namespace App;
 
 use Carbon\Carbon;
+//use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
+    use SoftDeletes;
+
     public function comments()
     {
         return $this->hasMany(Comment::class)->latest();
