@@ -18,21 +18,25 @@
                                     <tr role="row">
                                         <th>Action</th>
                                         <th>ID</th>
+                                        <th></th>
                                         <th>Name</th>
                                         <th>Created</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach ($tags as $key => $tag)
+                                    @foreach ($photos as $key => $photo)
                                         <tr>
                                             <td>
-                                                <a style="padding-left: 15px" href="/admin/tags/{{ $tag->id }}"><i class="fa fa-eye"></i></a>
-                                                <a style="padding-left: 15px" href="/admin/tags/{{ $tag->id }}/edit"><i class="fa fa-pencil-square-o"></i></a>
-                                                <a style="padding-left: 15px" href="/admin/tags/{{ $tag->id }}/delete"><i class="fa fa-trash"></i></a>
+                                                <a style="padding-left: 15px" href="/admin/photos/{{ $photo->id }}"><i class="fa fa-eye"></i></a>
+                                                <a style="padding-left: 15px" href="/admin/photos/{{ $photo->id }}/edit"><i class="fa fa-pencil-square-o"></i></a>
+                                                <a style="padding-left: 15px" href="/admin/photos/{{ $photo->id }}/delete"><i class="fa fa-trash"></i></a>
                                             </td>
-                                            <td>{{ $tag->id }}</td>
-                                            <td>{{ $tag->name }}</td>
-                                            <td>{{ $tag->created_at }}</td>
+                                            <td>{{ $photo->id }}</td>
+                                            <td>
+                                                <img style="width: 80px;" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" class="img-fluid" alt="Responsive image">
+                                            </td>
+                                            <td>{{ $photo->featured_photo }}</td>
+                                            <td>{{ $photo->created_at }}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -47,7 +51,7 @@
                             </div>
                             <div class="col-sm-6">
                                 Pagination will be here
-                                {{ $tags->render("pagination::bootstrap-4") }}
+                                {{ $photos->render("pagination::bootstrap-4") }}
                             </div>
                         </div>
                     </div>
