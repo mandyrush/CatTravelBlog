@@ -1,5 +1,5 @@
 @extends('admin.layouts.primary')
-@section('title', 'All Photos')
+@section('title', 'All Albums')
 
 @section('content')
     <div class="row">
@@ -18,25 +18,27 @@
                                     <tr role="row">
                                         <th>Action</th>
                                         <th>ID</th>
-                                        <th></th>
-                                        <th>Name</th>
+                                        <th>Title</th>
+                                        <th>Cover Photo</th>
+                                        <th>Path</th>
                                         <th>Created</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach ($photos as $key => $photo)
+                                    @foreach ($albums as $key => $album)
                                         <tr>
                                             <td>
-                                                <a style="padding-left: 15px" href="/admin/photos/{{ $photo->id }}"><i class="fa fa-eye"></i></a>
-                                                <a style="padding-left: 15px" href="/admin/photos/{{ $photo->id }}/edit"><i class="fa fa-pencil-square-o"></i></a>
-                                                <a style="padding-left: 15px" href="/admin/photos/{{ $photo->id }}/delete"><i class="fa fa-trash"></i></a>
+                                                <a style="padding-left: 15px" href="/admin/albums/{{ $album->id }}"><i class="fa fa-eye"></i></a>
+                                                <a style="padding-left: 15px" href="/admin/albums/{{ $album->id }}/edit"><i class="fa fa-pencil-square-o"></i></a>
+                                                <a style="padding-left: 15px" href="/admin/albums/{{ $album->id }}/delete"><i class="fa fa-trash"></i></a>
                                             </td>
-                                            <td>{{ $photo->id }}</td>
+                                            <td>{{ $album->id }}</td>
+                                            <td>{{ $album->title }}</td>
                                             <td>
-                                                <img style="width: 80px;" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" class="img-fluid" alt="Responsive image">
+                                                <img style="width: 80px;" src="{{Storage::disk('local')->url( $album->cover_photo )}}" class="img-fluid" alt="Responsive image">
                                             </td>
-                                            <td>{{ $photo->featured_photo }}</td>
-                                            <td>{{ $photo->created_at }}</td>
+                                            <td>{{ $album->cover_photo }}</td>
+                                            <td>{{ $album->created_at }}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -51,7 +53,7 @@
                             </div>
                             <div class="col-sm-6">
                                 Pagination will be here
-                                {{ $photos->render("pagination::bootstrap-4") }}
+                                {{--{{ $album->render("pagination::bootstrap-4") }}--}}
                             </div>
                         </div>
                     </div>
