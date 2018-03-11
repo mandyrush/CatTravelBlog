@@ -12,6 +12,7 @@ Route::prefix('admin')->group(function () {
     Route::get('albums', 'Admin\AlbumsController@index');
     Route::get('albums/create', 'Admin\AlbumsController@create');
     Route::post('albums', 'Admin\AlbumsController@store');
+    Route::get('albums/{album}/delete', 'Admin\AlbumsController@delete');
 
     // Pages
     Route::get('test', 'Admin\PagesController@index');
