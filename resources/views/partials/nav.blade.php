@@ -40,31 +40,55 @@
 			</div>
 
 			<div class="row">
-				<div class="nav-item nav-level2 col-md-4">
-					<button class="nav-btn" type="button" data-toggle="collapse" data-target="#collapseItem" aria-expanded="false" aria-controls="collapseItem">
-						The Kitties
-					</button>
-					<ul class="collapse" id="collapseItem">
-						<li class="nav-item"><a class="nav-link" href="/kitties/mozzie">Mozzie</a></li>
-						<li class="nav-item"><a class="nav-link " href="/kitties/nessie">Nessie</a></li>
-					</ul>
-				</div>
-				<div class="nav-item nav-level2 col-md-4">
-					<button class="nav-btn" type="button" data-toggle="collapse" data-target="#collapseItem2" aria-expanded="false" aria-controls="collapseItem2">
-						The Humans
-					</button>
-					<ul class="collapse" id="collapseItem2">
-						<li class="nav-item"><a class="nav-link" href="/kitties/des">Des</a></li>
-						<li class="nav-item"><a class="nav-link" href="/kitties/amanda">Amanda</a></li>
-					</ul>
-				</div>
+
+				<button class="nav-btn col-md-4" type="button" data-toggle="collapse" data-target="#collapseItem" aria-expanded="false" aria-controls="collapseItem">
+					<div class="nav-item nav-level2">
+						<div class="nav-content">
+							<div class="white-border">
+								<div>Kitties</div>
+								<ul class="collapse" id="collapseItem">
+									<li class="nav-item"><a class="nav-link" href="/kitties/mozzie">Mozzie</a></li>
+									<li class="nav-item"><a class="nav-link " href="/kitties/nessie">Nessie</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</button>
+
+				<button class="nav-btn col-md-4" type="button" data-toggle="collapse" data-target="#collapseItem" aria-expanded="false" aria-controls="collapseItem">
+					<div class="nav-item nav-level2">
+						<div class="nav-content">
+							<div class="white-border">
+								<div>Humans</div>
+								<ul class="collapse" id="collapseItem">
+									<li class="nav-item"><a class="nav-link" href="/humans/des">Des</a></li>
+									<li class="nav-item"><a class="nav-link " href="/humans/amanda">Amanda</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</button>
+
 				<div class="nav-item col-md-4">
 					@if (Auth::check())
-						<a class="nav-link" href="/logout">Logout</a>
+						<a href="/logout">
+							<div class="nav-content">
+								<div class="white-border">
+									<div>Logout</div>
+								</div>
+							</div>
+						</a>
 					@else ()
-						<a class="nav-link" href="/login">{{ 'Login' }}</a>
+						<a href="/login">
+							<div class="nav-content">
+								<div class="white-border">
+									<div>{{ 'Login' }}</div>
+								</div>
+							</div>
+						</a>
 					@endif
 				</div>
+
 			</div>
 		</div>
 		<!-- Links -->
