@@ -110,12 +110,8 @@ class PostsController extends Controller
      */
     public function delete($id)
     {
-        // @todo update to soft delete instead of hard
-//        Post::findOrFail($id)->delete();
-        $post = Post::findOrFail($id);
+        Post::findOrFail($id)->delete();
 
-        $post->update($request->all());
-
-        return redirect(Session::get('redirectIndex'));
+        return redirect('/admin/posts');
     }
 }

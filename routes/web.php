@@ -17,7 +17,7 @@ Route::prefix('admin')->group(function () {
     Route::get('posts/{post}/edit', 'Admin\PostsController@edit');
     Route::get('posts', 'Admin\PostsController@index');
     Route::post('posts', 'Admin\PostsController@store');
-    Route::post('posts/{post}/delete', 'Admin\PostsController@delete');
+    Route::get('posts/{post}/delete', 'Admin\PostsController@delete');
 });
 // ------------ end: Admin ------------
 
