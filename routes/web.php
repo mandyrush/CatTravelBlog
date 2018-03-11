@@ -8,8 +8,18 @@ Route::prefix('admin')->group(function () {
         return view('admin/layouts/primary');
     });
 
+    // Albums
+    Route::get('albums', 'Admin\AlbumsController@index');
+    Route::get('albums/create', 'Admin\AlbumsController@create');
+    Route::post('albums', 'Admin\AlbumsController@store');
+
     // Pages
     Route::get('test', 'Admin\PagesController@index');
+
+    // Photos
+    Route::get('photos', 'Admin\PhotosController@index');
+    Route::get('photos/create', 'Admin\PhotosController@create');
+    Route::post('photos', 'Admin\PhotosController@store');
 
     // Posts
     Route::get('posts/create', 'Admin\PostsController@create');
