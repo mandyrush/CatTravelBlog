@@ -171,6 +171,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	ul {
+		margin-left: 20%;
+		position: absolute;
+	}
 }
 .nav-btn {
 	background-color: transparent;

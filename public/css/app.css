@@ -233,6 +233,11 @@ body {
           justify-content: center;
 }
 
+.nav-content ul {
+  margin-left: 20%;
+  position: absolute;
+}
+
 .nav-btn {
   background-color: transparent;
   color: #fff;

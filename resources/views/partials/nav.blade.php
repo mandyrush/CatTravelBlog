@@ -46,25 +46,25 @@
 						<div class="nav-content">
 							<div class="white-border">
 								<div>Kitties</div>
-								<ul class="collapse" id="collapseItem">
-									<li class="nav-item"><a class="nav-link" href="/kitties/mozzie">Mozzie</a></li>
-									<li class="nav-item"><a class="nav-link " href="/kitties/nessie">Nessie</a></li>
-								</ul>
 							</div>
+							<ul class="collapse" id="collapseItem">
+								<li><a href="/kitties/mozzie">Mozzie</a></li>
+								<li><a href="/kitties/nessie">Nessie</a></li>
+							</ul>
 						</div>
 					</div>
 				</button>
 
-				<button class="nav-btn col-md-4" type="button" data-toggle="collapse" data-target="#collapseItem" aria-expanded="false" aria-controls="collapseItem">
+				<button class="nav-btn col-md-4" type="button" data-toggle="collapse" data-target="#collapseItem2" aria-expanded="false" aria-controls="collapseItem">
 					<div class="nav-item nav-level2">
 						<div class="nav-content">
 							<div class="white-border">
 								<div>Humans</div>
-								<ul class="collapse" id="collapseItem">
-									<li class="nav-item"><a class="nav-link" href="/humans/des">Des</a></li>
-									<li class="nav-item"><a class="nav-link " href="/humans/amanda">Amanda</a></li>
-								</ul>
 							</div>
+							<ul class="collapse" id="collapseItem2">
+								<li><a href="/humans/des">Des</a></li>
+								<li><a href="/humans/amanda">Amanda</a></li>
+							</ul>
 						</div>
 					</div>
 				</button>
@@ -103,9 +103,11 @@
 <script>
     function openNav() {
         document.getElementById("myNav").style.height = "100%";
+        document.body.style.overflow = "hidden";
     }
 
     function closeNav() {
         document.getElementById("myNav").style.height = "0%";
+        document.body.style.overflow  = "auto";
     }
 </script>
