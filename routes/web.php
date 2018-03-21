@@ -39,7 +39,12 @@ Route::get('/kitties/mozzie', function(){
 Route::get('/kitties/nessie', function(){
     return view('pages.nessie');
 });
-Route::get('/humans', 'PagesController@humans');
+Route::get('/humans/des', function(){
+    return view('pages.des');
+});
+Route::get('/humans/amanda', function(){
+    return view('pages.amanda');
+});
 
 //Photos
 Route::get('/photos', 'PhotosController@index');
