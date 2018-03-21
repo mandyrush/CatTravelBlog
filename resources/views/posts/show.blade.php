@@ -2,9 +2,8 @@
 
 @section ('content')
 	<div class="container-fluid post-show">
-		<div class="row post-row">
 			
-			<div class="col-sm-8 post-heading">
+			<div class="col-md-12 post-heading">
 				<h2>{{ $post->title }}</h2>
 				<p>
 					{{ $post->user->name }} on
@@ -14,17 +13,13 @@
 				<hr>
 
 				<div class="post-body">
+					<div class="postBodyImg">
+						<img class="img-fluid" src="{{Storage::disk('local')->url( $post->featured_photo )}}" alt="Responsive image">
+					</div>
 					<p>
 						{!! $post->body !!}
 					</p>
 				</div>
-			</div>
-
-			<div class="col-sm-3 nessie-say">
-				<p align="center">
-					Nessie Say "A stick in the paw is worth two under the fridge..."
-				</p>
-			</div>
 			
 		</div>
 

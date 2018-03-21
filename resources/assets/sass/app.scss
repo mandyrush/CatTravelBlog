@@ -376,6 +376,10 @@ body {
 	justify-content: center;
 	position: relative;
 }
+.postBodyImg {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
 .post-title {
 	&:link { color: $primary; }
 	&:visited { color: $primary; }
@@ -406,6 +410,7 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	padding-left: 30px;
+	padding-right: 30px;
 }
 .post-heading {
 	padding-bottom: 5px;
@@ -424,7 +429,6 @@ body {
 	padding-top: 5px;
 	padding-bottom: 40px;
 	img {
-		height: 500px;
 		width: auto;
 	}
 }
@@ -510,7 +514,6 @@ body {
 	border-radius: 15px;
 	height: 100%;
 	left: 0;
-	//overflow: hidden;
 	position: absolute;
 	top: 0;
 	width: 100%;

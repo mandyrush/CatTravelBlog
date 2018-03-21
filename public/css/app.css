@@ -524,6 +524,11 @@ body {
   position: relative;
 }
 
+.postBodyImg {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
 .post-title:link {
   color: #34495E;
 }
@@ -584,6 +589,7 @@ body {
   margin-left: 0;
   margin-right: 0;
   padding-left: 30px;
+  padding-right: 30px;
 }
 
 .post-heading {
@@ -608,7 +614,6 @@ body {
 }
 
 .post-body img {
-  height: 500px;
   width: auto;
 }
 
