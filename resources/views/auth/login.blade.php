@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
 <div class="container">
@@ -8,7 +8,7 @@
                 <div class="panel-heading">Login</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                    <form class="form-horizontal" method="POST" action="/login">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -55,9 +55,13 @@
                                     Login
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
+                                <div>
+                                    <a href="/register">Register</a>
+                                </div>
+
+                                {{--<a class="btn btn-link" href="{{ route('password.request') }}">--}}
+                                    {{--Forgot Your Password?--}}
+                                {{--</a>--}}
                             </div>
                         </div>
                     </form>
