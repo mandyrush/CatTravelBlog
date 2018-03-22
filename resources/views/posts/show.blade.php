@@ -3,7 +3,7 @@
 @section ('content')
 	<div class="container-fluid post-show">
 			
-			<div class="col-md-12 post-heading">
+			<div class="col-md-7 post-heading">
 				<h2>{{ $post->title }}</h2>
 				<p>
 					{{ $post->user->name }} on
@@ -23,8 +23,10 @@
 			
 		</div>
 
+	</div>
+
 		@include ('partials.comments')
 
 		@include('partials.errors')
-	</div>
+
 @endsection
