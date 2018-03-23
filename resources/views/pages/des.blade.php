@@ -2,9 +2,9 @@
 
 @section ('content')
 
-    <div class="container-fluid kitty-human nessie">
+    <div class="container-fluid kitty-human des">
         <div class="bio">
-            <h1>The Nessie</h1>
+            <h1>The Des</h1>
 
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,

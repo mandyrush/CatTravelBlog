@@ -1,7 +1,7 @@
 {{-- Posted Comments --}}
 <div class="row user-comments">
 
-    <div class="col-md-5">
+    <div class="col-md-7">
         <ul class="list-group">
             @foreach($post->comments as $comment)
                 <li class="list-group-item">
@@ -17,14 +17,14 @@
                 </li>
             @endforeach
         </ul>
+        <hr>
     </div>
 
 </div>
 
     {{-- Add a comment --}}
 <div class="row add-comments">
-    <div class="col-md-5">
-        <hr>
+    <div class="col-md-7">
         @if (Auth::check())
             <form method="POST" action="/posts/{{ $post->id }}/comments">
                 {{ csrf_field() }}

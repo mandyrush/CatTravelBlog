@@ -2,7 +2,7 @@
 
 @section ('content')
 
-	<div class="container-fluid kitty-bio mozzie">
+	<div class="container-fluid kitty-human mozzie">
 		<div class="bio">
 			<h1>The Mozzie</h1>
 
