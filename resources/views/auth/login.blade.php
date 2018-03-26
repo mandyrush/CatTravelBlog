@@ -56,7 +56,7 @@
                                 </button>
 
                                 <br>
-                                <div class="register-btn">
+                                <div class="register-link">
 
                                     <a href="/register">Register Here</a>
                                 </div>

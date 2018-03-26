@@ -608,13 +608,27 @@ body {
 .panel {
 	width: 80%;
 }
-.login-btn {
+.panel-heading {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	font-size: 25px;
+}
+.login-btn, .register-btn {
 	display: flex;
 	flex-direction: column;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
-.register-btn {
+.register-link {
 	display: flex;
 	justify-content: flex-end;
+	a {
+		&:link { color: $primary2; }
+		&:visited { color: $primary2; }
+		&:hover { color: $accent; text-decoration: none;}
+		&:active { color: $primary2; }
+	}
 }
 
 /* Footer */

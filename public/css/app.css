@@ -875,7 +875,19 @@ body {
   width: 80%;
 }
 
-.login-btn {
+.panel-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.login-btn,
+.register-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -883,15 +895,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.register-btn {
+.register-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.register-link a:link {
+  color: #47b6ad;
+}
+
+.register-link a:visited {
+  color: #47b6ad;
+}
+
+.register-link a:hover {
+  color: #FF8000;
+  text-decoration: none;
+}
+
+.register-link a:active {
+  color: #47b6ad;
 }
 
 /* Footer */
