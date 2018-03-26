@@ -7,11 +7,11 @@
 </head>
 <body>
 
-	<div class="page-border">
+	<section id="banner" class="section-class-name" data-section-name="banner">
+		@include ('partials.banner')
+	</section>
 
-		<section id="banner" class="section-class-name" data-section-name="banner">
-			@include ('partials.banner')
-		</section>
+	<div class="page-border">
 
 		<section id="body" class="section-class-name" data-section-name="body">
 			<header class="master-nav container-fluid">
