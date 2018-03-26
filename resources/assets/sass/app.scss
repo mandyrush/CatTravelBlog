@@ -25,7 +25,6 @@ $accent-ft: "Cookie", cursive;
 button:focus {outline: transparent;}
 
 .btn-secondary {
-	padding: 5px;
 	background-color: $primary2;
 	border: none;
 }
@@ -601,12 +600,21 @@ body {
 }
 .login-panel, .register-panel {
 	border: 1px solid $lt-gray;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 	padding: 30px 0;
 	display: flex;
 	justify-content: center;
 }
 .panel {
 	width: 80%;
+}
+.login-btn {
+	display: flex;
+	flex-direction: column;
+}
+.register-btn {
+	display: flex;
+	justify-content: flex-end;
 }
 
 /* Footer */

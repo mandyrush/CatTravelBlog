@@ -39,9 +39,7 @@
             </form>
         @else
             <div class="form-group">
-                <a href="/login">
-                    <button class="btn btn-secondary btn-lg">Login To Comment</button>
-                </a>
+                <a href="/login" class="btn btn-secondary">Login To Comment</a>
             </div>
         @endif
     </div>
