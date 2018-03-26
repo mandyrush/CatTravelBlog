@@ -7,13 +7,13 @@
 	<!-- Overlay content-->
 	<div id="myNav" class="overlay">
 
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="width: 55px; height: 55px">&times;</a>
 
 		<!-- Links -->
 		<div class="overlay-content container-fluid">
-			<div class="row">
+			<div class="row nav-row1">
 
-				<a class="nav-item col-md-4" href="/">
+				<a class="nav-item col-md-3" href="/">
 					<div class="nav-content">
 						<div class="white-border">
 							<div>Home</div>
@@ -21,7 +21,7 @@
 					</div>
 				</a>
 
-				<a class="nav-item col-md-4" href="/posts">
+				<a class="nav-item col-md-3" href="/posts">
 					<div class="nav-content">
 						<div class="white-border">
 							<div>Posts</div>
@@ -29,47 +29,53 @@
 					</div>
 				</a>
 
-				<a class="nav-item col-md-4" href="/albums">
+				<a class="nav-item col-md-3" href="/albums">
 					<div class="nav-content">
 						<div class="white-border">
-							<div>Gallery</div>
+							<div class="nav-title">Gallery</div>
 						</div>
 					</div>
 				</a>
 
 			</div>
 
-			<div class="row">
+			<div class="row nav-row2">
 
-				<button class="nav-btn col-md-4" type="button" data-toggle="collapse" data-target="#collapseItem" aria-expanded="false" aria-controls="collapseItem">
+				<button class="nav-btn col-md-3" type="button" data-toggle="collapse" data-target="#collapseItem" aria-expanded="false" aria-controls="collapseItem">
 					<div class="nav-item nav-level2">
 						<div class="nav-content">
 							<div class="white-border">
-								<div>Kitties</div>
+								<div>
+									Kitties
+									<ul class="collapse" id="collapseItem">
+										<li class="nav-hr"><hr></li>
+										<li><a href="/kitties/mozzie">Mozzie</a></li>
+										<li><a href="/kitties/nessie">Nessie</a></li>
+									</ul>
+								</div>
 							</div>
-							<ul class="collapse" id="collapseItem">
-								<li><a href="/kitties/mozzie">Mozzie</a></li>
-								<li><a href="/kitties/nessie">Nessie</a></li>
-							</ul>
 						</div>
 					</div>
 				</button>
 
-				<button class="nav-btn col-md-4" type="button" data-toggle="collapse" data-target="#collapseItem2" aria-expanded="false" aria-controls="collapseItem">
+				<button class="nav-btn col-md-3" type="button" data-toggle="collapse" data-target="#collapseItem2" aria-expanded="false" aria-controls="collapseItem">
 					<div class="nav-item nav-level2">
 						<div class="nav-content">
 							<div class="white-border">
-								<div>Humans</div>
+								<div>
+									Humans
+									<ul class="collapse" id="collapseItem2">
+										<li class="nav-hr"><hr></li>
+										<li><a href="/humans/des">Des</a></li>
+										<li><a href="/humans/amanda">Amanda</a></li>
+									</ul>
+								</div>
 							</div>
-							<ul class="collapse" id="collapseItem2">
-								<li><a href="/humans/des">Des</a></li>
-								<li><a href="/humans/amanda">Amanda</a></li>
-							</ul>
 						</div>
 					</div>
 				</button>
 
-				<div class="nav-item col-md-4">
+				<div class="nav-item col-md-3">
 					@if (Auth::check())
 						<a href="/logout">
 							<div class="nav-content">
