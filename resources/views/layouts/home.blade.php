@@ -8,7 +8,7 @@
 <body>
 
 	<section id="banner" class="section-class-name" data-section-name="banner">
-		@include ('partials.banner')
+		@include ('partials.home_banner')
 	</section>
 
 	<div class="page-border">
