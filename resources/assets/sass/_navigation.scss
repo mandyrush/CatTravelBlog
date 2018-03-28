@@ -97,7 +97,6 @@
       color: $white;
     }
   }
-
   .closebtn {
     position: absolute;
     top: 2px;
@@ -105,42 +104,31 @@
     font-size: 45px;
   }
 }
-
 .overlay-content {
-  position: relative;
-  align-items: center;
-  margin-top: 30px;
+  margin-top: 0;
   padding: 60px;
 }
 
-
-@media screen and (max-height: 450px) {
-  .overlay {
-    overflow-y: auto;
-    a {
-      font-size: 20px
-    }
-    .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
-}
-
 @media(max-width: 768px) {
-  .nav-item {
-    display: flex;
-    flex-direction: column;
-    height: 10em;
-    margin-bottom: 15px;
-  }
   .nav-row1 {
     margin-bottom: 0;
+    .nav-item {
+      margin-bottom: 15px;
+    }
+  }
+  .nav-item {
+    height: 10em;
+  }
+  .nav-btn {
+    margin-bottom: 15px;
   }
   .overlay {
     display: flex;
     align-items: flex-start;
     overflow-y: auto;
+  }
+  .overlay-content {
+    margin-top: 0;
+    padding-top: 80px;
   }
 }

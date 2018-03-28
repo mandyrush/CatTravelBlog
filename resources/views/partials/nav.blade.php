@@ -7,10 +7,12 @@
 	<!-- Overlay content-->
 	<div id="myNav" class="overlay">
 
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="width: 55px; height: 55px">&times;</a>
-
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<!-- Links -->
 		<div class="overlay-content container-fluid">
+
+
+
 			<div class="row nav-row1">
 
 				<a class="nav-item col-md-3" href="/">
