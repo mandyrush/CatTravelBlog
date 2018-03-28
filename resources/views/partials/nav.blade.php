@@ -11,8 +11,6 @@
 		<!-- Links -->
 		<div class="overlay-content container-fluid">
 
-
-
 			<div class="row nav-row1">
 
 				<a class="nav-item col-md-3" href="/">
