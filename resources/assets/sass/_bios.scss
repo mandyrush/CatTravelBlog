@@ -30,17 +30,23 @@
 }
 .bio-title {
   height: 10%;
-  padding: 25px;
+  margin: 20px;
+  padding-left: 15px;
   display: flex;
   align-items: center;
 }
 .bio-body {
-  height: 90%;
+  height: 80%;
   overflow: scroll;
-  padding: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 15px;
 }
 @media (max-width: 768px) {
   .bio {
     width: 75%;
+  }
+  .bio-body {
+    margin-top: 20px;
   }
 }
