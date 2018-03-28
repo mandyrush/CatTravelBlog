@@ -502,7 +502,7 @@
 }
 
 .des {
-  background-image: url("http://images.animalpicturesociety.com/images/rs/8e63a60332a0097de4f1fe43574b49ee_large.jpeg");
+  background-image: url("http://safaridownunder.com/blog/wp-content/uploads/18-Wombats-TMIW-18.jpg");
 }
 
 .bio {
@@ -516,7 +516,7 @@
 
 .bio-title {
   height: 10%;
-  padding: 20px;
+  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,13 +528,7 @@
 .bio-body {
   height: 90%;
   overflow: scroll;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 25px;
 }
 
 @media (max-width: 768px) {

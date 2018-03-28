@@ -18,7 +18,7 @@
   background-image: url("https://i.pinimg.com/originals/3e/0d/96/3e0d964c55ab9e9d6d4afb7f71b8b61b.jpg");
 }
 .des {
-  background-image: url("http://images.animalpicturesociety.com/images/rs/8e63a60332a0097de4f1fe43574b49ee_large.jpeg");
+  background-image: url("http://safaridownunder.com/blog/wp-content/uploads/18-Wombats-TMIW-18.jpg");
 }
 .bio {
   background-color: lightgray;
@@ -30,16 +30,14 @@
 }
 .bio-title {
   height: 10%;
-  padding: 20px;
+  padding: 25px;
   display: flex;
   align-items: center;
 }
 .bio-body {
   height: 90%;
   overflow: scroll;
-  padding: 20px;
-  display: flex;
-  align-items: center;
+  padding: 25px;
 }
 @media (max-width: 768px) {
   .bio {
