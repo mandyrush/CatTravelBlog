@@ -50,13 +50,15 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-12">
+                            <div class="col-md-12 login-btn">
                                 <button type="submit" class="btn btn-secondary btn-lg">
                                     Login
                                 </button>
 
-                                <div>
-                                    <a href="/register">Register</a>
+                                <br>
+                                <div class="register-link">
+
+                                    <a href="/register">Register Here</a>
                                 </div>
 
                                 {{--<a class="btn btn-link" href="{{ route('password.request') }}">--}}

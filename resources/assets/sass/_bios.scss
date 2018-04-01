@@ -1,0 +1,52 @@
+// Bios
+.kitty-human {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mozzie {
+  background-image: url("https://pre00.deviantart.net/84c4/th/pre/i/2013/062/d/7/bengal_kitten_ready_to_pounce_stock_1_by_furlined-d5wtyjm.jpg");
+}
+.nessie {
+  background-image: url("https://i.imgur.com/aW79O49.jpg");
+}
+.amanda {
+  background-image: url("https://i.pinimg.com/originals/3e/0d/96/3e0d964c55ab9e9d6d4afb7f71b8b61b.jpg");
+}
+.des {
+  background-image: url("http://safaridownunder.com/blog/wp-content/uploads/18-Wombats-TMIW-18.jpg");
+}
+.bio {
+  background-color: lightgray;
+  opacity: 0.7;
+  padding: 20px;
+  margin-right: 2%;
+  width: 40%;
+  height: 90%;
+}
+.bio-title {
+  height: 10%;
+  margin: 20px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.bio-body {
+  height: 80%;
+  overflow: scroll;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 15px;
+}
+@media (max-width: 768px) {
+  .bio {
+    width: 75%;
+  }
+  .bio-body {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,36 @@
+
+/* Photos */
+.masonry { /* Masonry container */
+  column-count: 1;
+  column-gap: 1em;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+.masonry-panel { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  border-radius: 15px;
+}
+.masonry-panel_content img {
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+.masonry-panel_content .btn-link {
+  border: none;
+  padding: 0;
+}

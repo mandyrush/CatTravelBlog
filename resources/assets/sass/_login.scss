@@ -1,0 +1,37 @@
+// Login
+.login, .register {
+  display: flex;
+  justify-content: center;
+}
+.login-panel, .register-panel {
+  border: 1px solid $lt-gray;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.panel {
+  width: 80%;
+}
+.panel-heading {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 25px;
+}
+.login-btn, .register-btn {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.register-link {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    &:link { color: $primary2; }
+    &:visited { color: $primary2; }
+    &:hover { color: $accent; text-decoration: none;}
+    &:active { color: $primary2; }
+  }
+}

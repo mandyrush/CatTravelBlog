@@ -1,4 +1,4 @@
-@extends ('layouts.master')
+@extends ('layouts.albums')
 
 @section ('content')
 	<div class="container-fluid album-index">
@@ -6,7 +6,8 @@
 
 			{{-- Album linking to all photos --}}
 			<div class="col-md-4 album">
-				<a href="/photos">	
+				<a href="/photos">
+					<div class="border-shadow">
 
 					<div class="album-content">
 						
@@ -22,6 +23,7 @@
 						All Photos
 					</div>
 
+					</div>
 				</a>
 			</div>
 
@@ -31,19 +33,22 @@
 					
 					@foreach($album->tags as $tag)
 						<a href="/photos/tags/{{$tag->name}}">
+							<div class="border-shadow">
 							
-							<div class="album-content">
-								
-								<img src="{{Storage::disk('local')->url( $album->cover_photo )}}" class="img-fluid" alt="Responsive image">
-							
-								<div class="white-border">
-									<div></div>
+								<div class="album-content">
+
+									<img src="{{Storage::disk('local')->url( $album->cover_photo )}}" class="img-fluid" alt="Responsive image">
+
+									<div class="white-border">
+										<div></div>
+									</div>
+
 								</div>
 
-							</div>
+								<div class="album-title text-center">
+									{{$album->title}}
+								</div>
 
-							<div class="album-title text-center">
-								{{$album->title}}
 							</div>
 						</a>
 					@endforeach

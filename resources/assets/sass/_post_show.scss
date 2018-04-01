@@ -1,0 +1,53 @@
+/* Posts Show */
+.post-show {
+  margin: 10px;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post-heading {
+  padding-bottom: 5px;
+  padding-top: 25px;
+  .post-heading h2{
+    font-size: 30px;
+  }
+}
+.post-row {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.post-body {
+  padding-top: 5px;
+  padding-bottom: 40px;
+  img {
+    width: auto;
+  }
+}
+
+/* Comments */
+.user-comments {
+  color: $accent;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    padding-top: 5px;
+    margin: auto;
+    color: $primary;
+  }
+}
+.add-comments {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}

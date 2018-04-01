@@ -1,0 +1,80 @@
+
+.flip-med {
+  height: 300px;
+}
+.flip {
+  perspective: 2500px;
+}
+.flip:hover .flip-content {
+  transform: rotateY(180deg);
+}
+.flip-panel {
+  backface-visibility: hidden;
+  border-radius: 15px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.flip-panel-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+  background-color: $primary2;
+}
+.flip-panel-back {
+  transform: rotateY(180deg);
+  background-color: $accent;
+}
+.flip-content {
+  height: 100%;
+  overflow: visible;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.85s;
+  color: $white;
+  font-family: 'Quattrocento', serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+@media (max-width: 992px){
+  .flip-med {
+    height: 25rem;
+  }
+  .flip-content {
+    font-size: 2rem;
+  }
+  .masonry {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+@media (max-width: 768px){
+  .flip-med {
+    height: 20rem;
+  }
+  .flip-content {
+    font-size: 2rem;
+  }
+  .masonry {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+@media (max-width: 576px){
+  .flip-med {
+    height: 15rem;
+  }
+  .flip-content {
+    font-size: 1rem;
+  }
+  .masonry {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}

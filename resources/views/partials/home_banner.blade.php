@@ -3,7 +3,7 @@
 
 		<div class="banner col-md-12">
 
-			<div class="home-white-border"></div>
+			<div></div>
 
 			<div class="banner-text col-md-4">
 				<div class="pretty-border col-md-12">
