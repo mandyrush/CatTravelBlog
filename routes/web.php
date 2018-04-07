@@ -75,34 +75,10 @@ Route::get('/posts/create', 'PostsController@create');
 Route::post('/posts', 'PostsController@store');
 Route::get('/posts/{post}', 'PostsController@show');
 
-//Registration
-Route::get('/register', 'RegistrationController@create')->name('register');
-Route::post('/register', 'RegistrationController@store');
-
-//Sessions
-Route::get('/login', 'SessionsController@create')->name('login');;
-Route::post('/login', 'SessionsController@store');
-Route::get('/logout', 'SessionsController@destroy')->name('logout');
-
 // Tags
 Route::get('/posts/tags/{tag}', 'TagsController@posts');
 Route::get('/photos/tags/{tag}', 'TagsController@photos');
 
-
-// @todo feel free to remove here just for reference
 //// Authentication Routes...
-//$this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
-//$this->post('login', 'Auth\LoginController@login');
-//$this->post('logout', 'Auth\LoginController@logout')->name('logout');
-//
-//// Registration Routes...
-//$this->get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-//$this->post('register', 'Auth\RegisterController@register');
-//
-//// Password Reset Routes...
-//$this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm');
-//$this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');
-//$this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
-//$this->post('password/reset', 'Auth\ResetPasswordController@reset');
-
+$this->get('logout', 'Auth\LoginController@logout')->name('logout');
 Auth::routes();

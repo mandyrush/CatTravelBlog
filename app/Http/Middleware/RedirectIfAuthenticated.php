@@ -18,7 +18,8 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
-            return redirect('/home');
+            // They are authenticated but not allowed at this route
+            return redirect('/user/dashboard');
         }
 
         return $next($request);

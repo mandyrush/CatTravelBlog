@@ -17,10 +17,12 @@ class MustBeAdmin
     {
         $user = $request->user();
 
-        if ($user  && $user->isAdmin()) {
+        if ($user && $user->isAdmin()) {
+            // Your an admin now pass go to the route given
             return $next($request);
         }
 
+        // Your not authenticated and/or an admin
         return redirect('/login');
     }
 }
