@@ -4,9 +4,7 @@
             <p>Nessie Say...</p>
         </div>
         <div class="flip-panel flip-panel-back nessie-quote">
-            <p>
-                <q>{{ $nessieQuote[$key]['quote'] }}</q>
-            </p>
+            <q>{{ $nessieQuote[$key]['quote'] }}</q>
         </div>
     </div>
 </div>

@@ -1,3 +1,7 @@
+.nessie-quote {
+  font-style: italic;
+  font-size: 80%;
+}
 
 .flip-med {
   height: 300px;
@@ -46,35 +50,14 @@
   .flip-med {
     height: 25rem;
   }
-  .flip-content {
-    font-size: 2rem;
-  }
-  .masonry {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
 }
 @media (max-width: 768px){
   .flip-med {
     height: 20rem;
   }
-  .flip-content {
-    font-size: 2rem;
-  }
-  .masonry {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
 }
 @media (max-width: 576px){
   .flip-med {
     height: 15rem;
-  }
-  .flip-content {
-    font-size: 1rem;
-  }
-  .masonry {
-    margin-left: 40px;
-    margin-right: 40px;
   }
 }
