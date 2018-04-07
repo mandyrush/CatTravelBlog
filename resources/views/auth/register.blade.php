@@ -8,7 +8,7 @@
                 <div class="panel-heading">Register</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="/register">
+                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -64,6 +64,7 @@
                         <div class="form-group">
                             <div class="col-md-12 register-btn">
                                 <button type="submit" class="btn btn-secondary btn-lg">
+                                    <i class="fas fa-sign-in-alt"></i>
                                     Register
                                 </button>
                             </div>
