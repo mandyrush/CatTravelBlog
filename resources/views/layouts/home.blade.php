@@ -11,7 +11,7 @@
 		@include ('partials.home_banner')
 	</section>
 
-	<div class="page-border">
+
 
 		<section id="body" class="section-class-name" data-section-name="body">
 			<header class="master-nav container-fluid">
@@ -20,17 +20,21 @@
 				</div>
 			</header>
 
-			@if ($flash = session('message'))
-				<div id="flash-message" class="alert alert-success" role="alert">
-					{{ $flash }}
-				</div>
-			@endif
+			<div class="page-border">
 
-			@yield ('content')
-			@include ('partials.footer')
+				@if ($flash = session('message'))
+					<div id="flash-message" class="alert alert-success" role="alert">
+						{{ $flash }}
+					</div>
+				@endif
+
+				@yield ('content')
+				@include ('partials.footer')
+
+			</div>
 		</section>
 
-	</div>
+
 
 	<script>
 		$.scrollify({
@@ -52,6 +56,7 @@
 			afterRender:function() {}
 			});
     </script>
+
 </body>
 
 </html>
