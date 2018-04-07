@@ -63,6 +63,10 @@ button:focus {outline: transparent;}
 	margin-left: 10%;
 	margin-right: 10%;
 	background-color: $white;
+	padding-top: 15px;
+}
+.master {
+	padding-top: 0;
 }
 .pretty-border {
 	border: 1px solid $lt-gray;

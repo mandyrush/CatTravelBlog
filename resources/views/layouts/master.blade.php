@@ -4,7 +4,7 @@
 	@include('partials.head')
 </head>
 <body>
-	<div class="page-border">
+	<div class="master page-border">
 		
 		<header class="master-nav container-fluid">	
 			<div class="row justify-content-between">

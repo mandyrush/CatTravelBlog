@@ -2,60 +2,76 @@
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	@include('partials.head')
 </head>
 <body>
 
-	<section id="banner" class="section-class-name" data-section-name="banner">
+	<section id="banner">
 		@include ('partials.home_banner')
 	</section>
 
+	<section id="body">
 
-
-		<section id="body" class="section-class-name" data-section-name="body">
-			<header class="master-nav container-fluid">
-				<div class="row justify-content-between">
-					@include ('partials.nav')
-				</div>
-			</header>
-
-			<div class="page-border">
-
-				@if ($flash = session('message'))
-					<div id="flash-message" class="alert alert-success" role="alert">
-						{{ $flash }}
-					</div>
-				@endif
-
-				@yield ('content')
-				@include ('partials.footer')
-
+		<header id="navbar" class="master-nav container-fluid">
+			<div class="row justify-content-between">
+				@include ('partials.nav')
 			</div>
-		</section>
+		</header>
 
+		<div class="page-border">
+			@if ($flash = session('message'))
+				<div id="flash-message" class="alert alert-success" role="alert">
+					{{ $flash }}
+				</div>
+			@endif
 
+			@yield ('content')
+			@include ('partials.footer')
+		</div>
+
+	</section>
 
 	<script>
-		$.scrollify({
-			section : ".section-class-name",
-			sectionName : "section-name",
-			interstitialSection : "",
-			easing: "easeOutExpo",
-			scrollSpeed: 1100,
-			offset : 0,
-			scrollbars: true,
-			standardScrollElements: "",
-			setHeights: true,
-			overflowScroll: true,
-			updateHash: true,
-			touchScroll:true,
-			before:function() {},
-			after:function() {},
-			afterResize:function() {},
-			afterRender:function() {}
-			});
-    </script>
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+		} else {
+		navbar.classList.remove("sticky");
+		}
+		}
+	</script>
+
+	{{--<script>--}}
+		{{--$.scrollify({--}}
+			{{--section : ".section-class-name",--}}
+			{{--sectionName : "section-name",--}}
+			{{--interstitialSection : "",--}}
+			{{--easing: "easeOutExpo",--}}
+			{{--scrollSpeed: 1100,--}}
+			{{--offset : 0,--}}
+			{{--scrollbars: true,--}}
+			{{--standardScrollElements: "",--}}
+			{{--setHeights: true,--}}
+			{{--overflowScroll: true,--}}
+			{{--updateHash: true,--}}
+			{{--touchScroll:true,--}}
+			{{--before:function() {},--}}
+			{{--after:function() {},--}}
+			{{--afterResize:function() {},--}}
+			{{--afterRender:function() {}--}}
+			{{--});--}}
+    {{--</script>--}}
 
 </body>
 
