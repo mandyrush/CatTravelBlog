@@ -3,10 +3,14 @@
 namespace App;
 
 use Carbon\Carbon;
+//use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
+    use SoftDeletes;
+
     public function comments()
     {
         return $this->hasMany(Comment::class)->latest();
@@ -22,6 +26,7 @@ class Post extends Model
         $user_id = Auth::user()->id;
         $this->comments()->create(compact('body', 'user_id'));
     }
+
     public function scopefilter($query, $filters)
     {
         if ($month = $filters['month']) {
@@ -32,6 +37,7 @@ class Post extends Model
             $query->whereYear('created_at', $year);
         }
     }
+
     public static function archives()
     {
         return static::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')
@@ -40,6 +46,7 @@ class Post extends Model
             ->get()
             ->toArray();
     }
+
     public function tags()
     {
         return $this->belongsToMany(Tag::class);

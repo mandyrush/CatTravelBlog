@@ -7,6 +7,7 @@
 		<hr>
 
 		<form method="POST" action="/photos" enctype="multipart/form-data">
+
 			{{ csrf_field() }}
 
 			<div class="form-group">
@@ -17,7 +18,6 @@
 			<select class="form-group custom-select" name="tag">
 				<option selected>Select Tag</option>
 				@foreach($tags as $tag)
-					{{-- @todo the value should be the tag id --}}
 					<option value="{{ $tag->id }}">{{ $tag->name }}</option>
 				@endforeach
 			</select>
@@ -27,7 +27,6 @@
 			</div>
 			
 			@include ('partials.errors')
-
 		</form>
 	</div>
 @endsection

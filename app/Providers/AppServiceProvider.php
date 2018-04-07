@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
         });
 
         view()->composer(
-            ['posts.index', 'photos.index', 'photos.create'],
+            ['posts.index', 'photos.index', 'admin/photos.index', 'admin/photos.create', 'photos.create'],
             function ($view) {
                  //$tags = \App\Tag::has('galleries')->pluck('name');
                  $tags = \App\Tag::get()->all();
@@ -34,6 +35,9 @@ class AppServiceProvider extends ServiceProvider
         $this->publishes([
             base_path('vendor/almasaeed2010/adminlte') => public_path('vendor/adminlte'),
         ], 'vendor');
+
+        // Fix for older mysql database string length issue
+        Schema::defaultStringLength(191);
     }
 
     /**
@@ -43,6 +47,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Helps IDEs to resolve files
+        if ($this->app->environment() !== 'production') {
+            $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
+        }
     }
 }

@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Album;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Post;
-use App\Http\Requests\PostRequest;
 
-class PostsController extends Controller
+class AlbumsController extends Controller
 {
     public function __construct()
     {
@@ -22,72 +21,68 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Post::select()->paginate(20);
+        $albums = Album::select()->paginate(20);
 
-        return view('admin.posts.index', compact('posts'));
+        return view('admin.albums.index', compact('albums'));
     }
 
     /**
      * Show selected Post
      *
-     * @param Post $post
+     * @param Album $album
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function show(Post $post)
+    public function show(Album $album)
     {
-        return view('admin.posts.show', compact('post'));
+        return view('admin.albums.show', compact('album'));
     }
 
     /**
-     * Show the form for creating a Post
+     * Show the form for creating a Album
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create()
     {
-        return view('admin.posts.create');
+        return view('admin.albums.create');
     }
 
     /**
-     * Store Post
+     * Store Album
      *
-     * @param PostRequest $request
+     * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function store(PostRequest $request)
+    public function store(Request $request)
     {
+        $this->validate(request(), ['title' => 'required']);
+
         // Moving file to the public folder
-        $filename = $request->file('featured_photo')->store('public');
+        $filename = $request->file('cover_photo')->store('public');
         $data = [
-            "user_id" => auth()->id(),
             "title" => $request->title,
-            "body" => $request->body,
-            "featured_text" => $request->featured_text,
-            "featured_photo" => $filename,
-            "status" => 1
+            "cover_photo" => $filename,
         ];
+        Album::create($data);
 
-        // Save
-        Post::create($data);
-
-        return redirect('/admin/posts');
+        return redirect('/admin/albums');
     }
 
     /**
-     * Show the form for editing a Post
+     * Show the form for editing a Album
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $post = Post::findOrFail($id);
+        $album = Album::findOrFail($id);
 
-        return view('admin.posts.edit', compact('post'));
+        return view('admin.albums.edit', compact('album'));
     }
 
     /**
-     * Update a Post
+     * Update a Album
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -95,23 +90,23 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $post = Post::findOrFail($id);
+        $album = Album::findOrFail($id);
 
-        $post->update($request->all());
+        $album->update($request->all());
 
         return redirect(Session::get('redirect'));
     }
 
     /**
-     * Soft delete a Post
+     * Soft delete a Album
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function delete($id)
     {
-        Post::findOrFail($id)->delete();
+        Album::findOrFail($id)->delete();
 
-        return redirect('/admin/posts');
+        return redirect('/admin/albums');
     }
 }

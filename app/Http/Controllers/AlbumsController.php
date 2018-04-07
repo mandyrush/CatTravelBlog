@@ -13,10 +13,12 @@ class AlbumsController extends Controller
         $albums = Album::with('tags')->paginate(8);
         return view('albums.index', compact('albums'));
     }
+
     public function create()
     {
         return view('albums.create');
     }
+
     public function store()
     {
 

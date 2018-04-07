@@ -8,7 +8,7 @@
                 <div class="panel-heading">Login</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="/login">
+                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -52,18 +52,16 @@
                         <div class="form-group">
                             <div class="col-md-12 login-btn">
                                 <button type="submit" class="btn btn-secondary btn-lg">
+                                    <i class="fas fa-sign-in-alt"></i>
                                     Login
                                 </button>
-
                                 <br>
                                 <div class="register-link">
-
                                     <a href="/register">Register Here</a>
                                 </div>
-
-                                {{--<a class="btn btn-link" href="{{ route('password.request') }}">--}}
-                                    {{--Forgot Your Password?--}}
-                                {{--</a>--}}
+                                <div class="register-link">
+                                    <a href="{{ route('password.request') }}">Forgot Your Password?</a>
+                                </div>
                             </div>
                         </div>
                     </form>
