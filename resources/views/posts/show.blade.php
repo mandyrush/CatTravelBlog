@@ -1,5 +1,5 @@
 @extends ('layouts.master')
-
+@section('title', $post->title)
 @section ('content')
 	<div class="container-fluid post-show">
 			

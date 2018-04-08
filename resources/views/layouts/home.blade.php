@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     @include('partials.head')
 </head>
+
 <body>
+    <section id="banner">
+        @include ('partials.home_banner')
+    </section>
 
-<section id="banner">
-    @include ('partials.home_banner')
-</section>
-
-<section id="body">
-
-    <header id="navbar" class="master-nav container-fluid">
-        <div class="row justify-content-between">
-            @include ('partials.nav')
-        </div>
-    </header>
-
-    <div class="page-border">
-        @if ($flash = session('message'))
-            <div id="flash-message" class="alert alert-success" role="alert">
-                {{ $flash }}
+    <section id="body">
+        <header id="navbar" class="master-nav container-fluid">
+            <div class="row justify-content-between">
+                @include ('partials.nav')
             </div>
-        @endif
+        </header>
 
-        @yield ('content')
+        <div class="page-border">
+            @if ($flash = session('message'))
+                <div id="flash-message" class="alert alert-success" role="alert">
+                    {{ $flash }}
+                </div>
+            @endif
 
-        @include ('partials.footer')
-    </div>
+            @yield ('content')
 
-</section>
+            @include ('partials.footer')
+        </div>
+    </section>
 
-<script src="/js/app.js"></script>
-
+    <script src="/js/app.js"></script>
 </body>
 </html>
