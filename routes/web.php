@@ -36,6 +36,13 @@ Route::group(['prefix' => 'admin',  'middleware' => 'auth.admin'], function() {
     Route::get('tags', 'Admin\TagsController@index');
     Route::post('tags', 'Admin\TagsController@store');
     Route::get('tags/{tag}/delete', 'Admin\TagsController@delete');
+
+    // Nessie Says
+    Route::get('nessie_says/create', 'Admin\NessieSaysController@create');
+    Route::get('nessie_says/{nessie_say}/edit', 'Admin\NessieSaysController@edit');
+    Route::get('nessie_says', 'Admin\NessieSaysController@index');
+    Route::post('nessie_says', 'Admin\NessieSaysController@store');
+    Route::get('nessie_says/{nessie_say}/delete', 'Admin\NessieSaysController@delete');
 });
 // ------------ end: Admin ------------
 

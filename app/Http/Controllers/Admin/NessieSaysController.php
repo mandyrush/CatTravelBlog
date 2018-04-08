@@ -4,14 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Tag;
+use App\NessieSay;
 
-class TagsController extends Controller
+class NessieSaysController extends Controller
 {
     public function __construct()
     {
-        // $this->middleware('auth');
-        // parent::__construct();
     }
 
     /**
@@ -21,34 +19,34 @@ class TagsController extends Controller
      */
     public function index()
     {
-        $tags = Tag::select()->paginate(20);
+        $nessie_says = NessieSay::select()->paginate(20);
 
-        return view('admin.tags.index', compact('tags'));
+        return view('admin.nessie_says.index', compact('nessie_says'));
     }
 
     /**
      * Show selected Post
      *
-     * @param Tag $tag
+     * @param NessieSay $nessie_say
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function show(Tag $tag)
+    public function show(NessieSay $nessie_say)
     {
-        return view('admin.tags.show', compact('tag'));
+        return view('admin.nessie_says.show', compact('nessie_say'));
     }
 
     /**
-     * Show the form for creating a Tag
+     * Show the form for creating a Nessie Say
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create()
     {
-        return view('admin.tags.create');
+        return view('admin.nessie_says.create');
     }
 
     /**
-     * Store Tag
+     * Store Nessie Say
      *
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
@@ -57,26 +55,26 @@ class TagsController extends Controller
     {
         $this->validate(request(), ['name' => 'required']);
         $data = ["name" => $request->name];
-        Tag::create($data);
+        NessieSay::create($data);
 
-        return redirect('/admin/tags');
+        return redirect('/admin/nessie_says');
     }
 
     /**
-     * Show the form for editing a Tag
+     * Show the form for editing a NessieSay
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $tag = Tag::findOrFail($id);
+        $nessie_say = NessieSay::findOrFail($id);
 
-        return view('admin.tags.edit', compact('tag'));
+        return view('admin.nessie_says.edit', compact('nessie_say'));
     }
 
     /**
-     * Update a Tag
+     * Update a NessieSay
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -84,15 +82,15 @@ class TagsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $tag = Tag::findOrFail($id);
+        $nessie_say = NessieSay::findOrFail($id);
 
-        $tag->update($request->all());
+        $nessie_say->update($request->all());
 
         return redirect(Session::get('redirect'));
     }
 
     /**
-     * Soft delete a Tag
+     * Soft delete a NessieSay
      *
      * @param $id
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
@@ -100,8 +98,8 @@ class TagsController extends Controller
      */
     public function delete($id)
     {
-        Tag::findOrFail($id)->delete();
+        NessieSay::findOrFail($id)->delete();
 
-        return redirect('/admin/tags');
+        return redirect('/admin/nessie_says');
     }
 }
