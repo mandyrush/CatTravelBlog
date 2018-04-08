@@ -82,19 +82,33 @@
 }
 
 .hamburger {
+  position: absolute;
+  right: auto;
   font-size: 30px;
   cursor: pointer;
   color: #fff;
 }
 
-.fa-compass {
-  -webkit-filter: drop-shadow(-2px -3px 0 #46b063) drop-shadow(2px 3px 0 #676767);
-          filter: drop-shadow(-2px -3px 0 #46b063) drop-shadow(2px 3px 0 #676767);
+.compass-nav {
+  -webkit-filter: drop-shadow(1px -1px 1px #c0b9ff) drop-shadow(1px 1px 1px #77749e);
+          filter: drop-shadow(1px -1px 1px #c0b9ff) drop-shadow(1px 1px 1px #77749e);
 }
 
-.nav-center {
-  margin: auto;
-  width: 1px;
+.navbar {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-item {
