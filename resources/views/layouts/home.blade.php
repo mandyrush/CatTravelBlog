@@ -1,78 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	@include('partials.head')
+    @include('partials.head')
 </head>
 <body>
 
-	<section id="banner">
-		@include ('partials.home_banner')
-	</section>
+<section id="banner">
+    @include ('partials.home_banner')
+</section>
 
-	<section id="body">
+<section id="body">
 
-		<header id="navbar" class="master-nav container-fluid">
-			<div class="row justify-content-between">
-				@include ('partials.nav')
-			</div>
-		</header>
+    <header id="navbar" class="master-nav container-fluid">
+        <div class="row justify-content-between">
+            @include ('partials.nav')
+        </div>
+    </header>
 
-		<div class="page-border">
-			@if ($flash = session('message'))
-				<div id="flash-message" class="alert alert-success" role="alert">
-					{{ $flash }}
-				</div>
-			@endif
+    <div class="page-border">
+        @if ($flash = session('message'))
+            <div id="flash-message" class="alert alert-success" role="alert">
+                {{ $flash }}
+            </div>
+        @endif
 
-			@yield ('content')
-			@include ('partials.footer')
-		</div>
+        @yield ('content')
 
-	</section>
+        @include ('partials.footer')
+    </div>
 
-	<script>
-		// When the user scrolls the page, execute myFunction
-		window.onscroll = function() {myFunction()};
+</section>
 
-		// Get the navbar
-		var navbar = document.getElementById("navbar");
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
 
-		// Get the offset position of the navbar
-		var sticky = navbar.offsetTop;
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
 
-		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
-		if (window.pageYOffset >= sticky) {
-		navbar.classList.add("sticky")
-		} else {
-		navbar.classList.remove("sticky");
-		}
-		}
-	</script>
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
 
-	{{--<script>--}}
-		{{--$.scrollify({--}}
-			{{--section : ".section-class-name",--}}
-			{{--sectionName : "section-name",--}}
-			{{--interstitialSection : "",--}}
-			{{--easing: "easeOutExpo",--}}
-			{{--scrollSpeed: 1100,--}}
-			{{--offset : 0,--}}
-			{{--scrollbars: true,--}}
-			{{--standardScrollElements: "",--}}
-			{{--setHeights: true,--}}
-			{{--overflowScroll: true,--}}
-			{{--updateHash: true,--}}
-			{{--touchScroll:true,--}}
-			{{--before:function() {},--}}
-			{{--after:function() {},--}}
-			{{--afterResize:function() {},--}}
-			{{--afterRender:function() {}--}}
-			{{--});--}}
-    {{--</script>--}}
-
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
-
 </html>
