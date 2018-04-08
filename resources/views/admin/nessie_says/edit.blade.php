@@ -20,7 +20,7 @@
                                 <button type="submit" class="btn btn-primary">Update</button>
                             </div>
 
-                            {{--@include ('partials.errors')--}}
+                            @include ('partials.errors')
                         </form>
                     </div>
                 </div>

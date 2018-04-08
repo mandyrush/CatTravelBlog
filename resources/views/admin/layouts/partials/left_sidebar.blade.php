@@ -38,7 +38,8 @@
             {{--Albums--}}
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-stack-overflow"></i> <span>Albums</span>
+                    <i class="fa fa-stack-overflow"></i>
+                    <span>Albums</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -52,7 +53,8 @@
             {{--Photos--}}
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-picture-o"></i> <span>Photos</span>
+                    <i class="fa fa-picture-o"></i>
+                    <span>Photos</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -65,7 +67,8 @@
             {{--Posts--}}
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-newspaper-o"></i> <span>Posts</span>
+                    <i class="fa fa-newspaper-o"></i>
+                    <span>Posts</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -78,7 +81,8 @@
             {{--Tags--}}
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-tags"></i> <span>Tags</span>
+                    <i class="fa fa-tags"></i>
+                    <span>Tags</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -90,7 +94,8 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-tags"></i> <span>Nessie Says</span>
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <span>Nessie Says</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>

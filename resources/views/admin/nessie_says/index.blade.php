@@ -21,19 +21,20 @@
                                         <th>ID</th>
                                         <th>Quote</th>
                                         <th>Created</th>
+                                        <th>Deleted</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach ($nessie_says as $key => $nessie_say)
                                         <tr>
                                             <td>
-                                                <a style="padding-left: 15px" href="/admin/nessie_says/{{ $nessie_say->id }}"><i class="fa fa-eye"></i></a>
                                                 <a style="padding-left: 15px" href="/admin/nessie_says/{{ $nessie_say->id }}/edit"><i class="fa fa-pencil-square-o"></i></a>
                                                 <a style="padding-left: 15px" href="/admin/nessie_says/{{ $nessie_say->id }}/delete"><i class="fa fa-trash"></i></a>
                                             </td>
                                             <td>{{ $nessie_say->id }}</td>
                                             <td>{{ $nessie_say->quote }}</td>
                                             <td>{{ $nessie_say->created_at }}</td>
+                                            <td>{{ $nessie_say->deleted_at }}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -42,11 +43,9 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">
-                                    Showing {{($nessie_says->currentpage() - 1) * $nessie_says->perpage() + 1}}
-                                    to {{$nessie_says->currentpage() * $nessie_says->perpage()}}
-                                    of  {{$nessie_says->total()}} entries
-                                </div>
+                                Showing {{($nessie_says->currentpage() - 1) * $nessie_says->perpage() + 1}}
+                                to {{$nessie_says->currentpage() * $nessie_says->perpage()}}
+                                of  {{$nessie_says->total()}} entries
                             </div>
                             <div class="col-sm-6">
                                 {{$nessie_says->links()}}
