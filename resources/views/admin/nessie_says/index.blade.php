@@ -43,9 +43,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                Showing {{($nessie_says->currentpage() - 1) * $nessie_says->perpage() + 1}}
-                                to {{$nessie_says->currentpage() * $nessie_says->perpage()}}
-                                of  {{$nessie_says->total()}} entries
+                                {{ctb_paginate_page_totals($nessie_says)}}
                             </div>
                             <div class="col-sm-6">
                                 {{$nessie_says->links()}}

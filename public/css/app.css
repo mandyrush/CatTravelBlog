@@ -917,6 +917,104 @@ body {
   font-size: 18px;
 }
 
+/* margins */
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
+}
+
+.pt5 {
+  margin-top: 5px;
+}
+
+.pt10 {
+  margin-top: 10px;
+}
+
+.pt15 {
+  margin-top: 15px;
+}
+
+.pt30 {
+  margin-top: 30px;
+}
+
+.pt50 {
+  margin-top: 50px;
+}
+
+.pt100 {
+  margin-top: 100px;
+}
+
+.pb5 {
+  margin-bottom: 5px;
+}
+
+.pb10 {
+  margin-bottom: 10px;
+}
+
+.pb15 {
+  margin-bottom: 15px;
+}
+
+.pb30 {
+  margin-bottom: 30px;
+}
+
+.pb50 {
+  margin-bottom: 50px;
+}
+
+.pb100 {
+  margin-bottom: 100px;
+}
+
 button:focus {
   outline: transparent;
 }
