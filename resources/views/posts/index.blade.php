@@ -1,24 +1,24 @@
 @extends ('layouts.posts')
-
+@section('title', 'Travel Posts')
 @section ('content')
 
-{{-- Posts --}}
-	<section> 
-		<div class="post-layout">
+    {{-- Posts --}}
+    <section>
+        <div class="post-layout">
 
-			@foreach ($posts as $key => $post)
-				@if ($key % 2 == 1)
-					@include ('posts.post_odd')
-				@elseif ($key % 2 == 0)
-					@include ('posts.post_even')
-				@endif		
-			@endforeach
+            @foreach ($posts as $key => $post)
+                @if ($key % 2 == 1)
+                    @include ('posts.post_odd')
+                @elseif ($key % 2 == 0)
+                    @include ('posts.post_even')
+                @endif
+            @endforeach
 
-		</div>
-	</section>
+        </div>
+    </section>
 
-	<div class="container">
-		{{ $posts->render("pagination::bootstrap-4") }}
-	</div>
+    <div class="container">
+        {{ $posts->render("pagination::bootstrap-4") }}
+    </div>
 
 @endsection

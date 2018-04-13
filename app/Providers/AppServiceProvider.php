@@ -36,7 +36,7 @@ class AppServiceProvider extends ServiceProvider
             base_path('vendor/almasaeed2010/adminlte') => public_path('vendor/adminlte'),
         ], 'vendor');
 
-        // Fix for older mysql database string length issue
+        // Fix for older mysql database due to string length issue
         Schema::defaultStringLength(191);
     }
 
@@ -47,7 +47,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Helps IDEs to resolve files
+        // load helper functions
+        require_once __DIR__ . '/../Http/Helpers.php';
+
+        // IDEs to resolve files
         if ($this->app->environment() !== 'production') {
             $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
         }

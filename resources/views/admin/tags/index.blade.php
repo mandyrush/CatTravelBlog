@@ -26,7 +26,6 @@
                                     @foreach ($tags as $key => $tag)
                                         <tr>
                                             <td>
-                                                <a style="padding-left: 15px" href="/admin/tags/{{ $tag->id }}"><i class="fa fa-eye"></i></a>
                                                 <a style="padding-left: 15px" href="/admin/tags/{{ $tag->id }}/edit"><i class="fa fa-pencil-square-o"></i></a>
                                                 <a style="padding-left: 15px" href="/admin/tags/{{ $tag->id }}/delete"><i class="fa fa-trash"></i></a>
                                             </td>
@@ -41,13 +40,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing
-                                    1 to 10 of 57 entries
-                                </div>
+                                {{ctb_paginate_page_totals($tags)}}
                             </div>
                             <div class="col-sm-6">
-                                Pagination will be here
-                                {{ $tags->render("pagination::bootstrap-4") }}
+                                {{$tags->links()}}
                             </div>
                         </div>
                     </div>

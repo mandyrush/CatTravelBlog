@@ -2,10 +2,13 @@
 /public/hot
 /public/img
 /public/storage
+/public/css/app.css
+/public/js/app.js
 /public/vendor
 /storage/*.key
 /vendor
 /.idea
+/_ide_helper.php
 /.vagrant
 Homestead.json
 Homestead.yaml

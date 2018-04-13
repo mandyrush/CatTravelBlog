@@ -1,5 +1,6 @@
 @extends('admin.layouts.primary')
-@section('title', 'All Photos')
+
+@section('title', 'All Tags')
 
 @section('content')
     <div class="row">
@@ -18,25 +19,22 @@
                                     <tr role="row">
                                         <th>Action</th>
                                         <th>ID</th>
-                                        <th></th>
-                                        <th>Name</th>
+                                        <th>Quote</th>
                                         <th>Created</th>
+                                        <th>Deleted</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach ($photos as $key => $photo)
+                                    @foreach ($nessie_says as $key => $nessie_say)
                                         <tr>
                                             <td>
-                                                <a style="padding-left: 15px" href="/admin/photos/{{ $photo->id }}"><i class="fa fa-eye"></i></a>
-                                                <a style="padding-left: 15px" href="/admin/photos/{{ $photo->id }}/edit"><i class="fa fa-pencil-square-o"></i></a>
-                                                <a style="padding-left: 15px" href="/admin/photos/{{ $photo->id }}/delete"><i class="fa fa-trash"></i></a>
+                                                <a style="padding-left: 15px" href="/admin/nessie_says/{{ $nessie_say->id }}/edit"><i class="fa fa-pencil-square-o"></i></a>
+                                                <a style="padding-left: 15px" href="/admin/nessie_says/{{ $nessie_say->id }}/delete"><i class="fa fa-trash"></i></a>
                                             </td>
-                                            <td>{{ $photo->id }}</td>
-                                            <td>
-                                                <img style="width: 80px;" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" class="img-fluid" alt="Responsive image">
-                                            </td>
-                                            <td>{{ $photo->featured_photo }}</td>
-                                            <td>{{ $photo->created_at }}</td>
+                                            <td>{{ $nessie_say->id }}</td>
+                                            <td>{{ $nessie_say->quote }}</td>
+                                            <td>{{ $nessie_say->created_at }}</td>
+                                            <td>{{ $nessie_say->deleted_at }}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>
@@ -45,10 +43,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                {{ctb_paginate_page_totals($photos)}}
+                                {{ctb_paginate_page_totals($nessie_says)}}
                             </div>
                             <div class="col-sm-6">
-                                {{ $photos->links() }}
+                                {{$nessie_says->links()}}
                             </div>
                         </div>
                     </div>

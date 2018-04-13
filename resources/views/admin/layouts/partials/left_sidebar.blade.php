@@ -7,10 +7,10 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="{{asset('vendor/adminlte/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+                <img src="{{asset('vendor/adminlte/dist/img/user2-160x160.png')}}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Alexander Pierce</p>
+                <p>{{ Auth::user()->name ?? '' }}</p>
                 <!-- Status -->
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
@@ -38,7 +38,8 @@
             {{--Albums--}}
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-stack-overflow"></i> <span>Albums</span>
+                    <i class="fa fa-stack-overflow"></i>
+                    <span>Albums</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -52,7 +53,8 @@
             {{--Photos--}}
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-picture-o"></i> <span>Photos</span>
+                    <i class="fa fa-picture-o"></i>
+                    <span>Photos</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -65,7 +67,8 @@
             {{--Posts--}}
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-newspaper-o"></i> <span>Posts</span>
+                    <i class="fa fa-newspaper-o"></i>
+                    <span>Posts</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -78,7 +81,8 @@
             {{--Tags--}}
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-tags"></i> <span>Tags</span>
+                    <i class="fa fa-tags"></i>
+                    <span>Tags</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -86,6 +90,19 @@
                 <ul class="treeview-menu">
                     <li><a href="/admin/tags"><i class="fa fa-circle-o"></i> Show All</a></li>
                     <li><a href="/admin/tags/create"><i class="fa fa-circle-o"></i> Create</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <span>Nessie Says</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/nessie_says"><i class="fa fa-circle-o"></i> Show All</a></li>
+                    <li><a href="/admin/nessie_says/create"><i class="fa fa-circle-o"></i> Create</a></li>
                 </ul>
             </li>
         </ul>

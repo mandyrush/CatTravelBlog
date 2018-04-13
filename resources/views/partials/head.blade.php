@@ -1,5 +1,9 @@
+<!-- Required meta tags -->
 <meta charset="UTF-8">
-<title>Cats Wander</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>@yield('title') - Cats Wander</title>
+
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Cookie|Prociono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">

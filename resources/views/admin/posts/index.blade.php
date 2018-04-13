@@ -45,13 +45,10 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing
-                                    1 to 10 of 57 entries
-                                </div>
+                                {{ctb_paginate_page_totals($posts)}}
                             </div>
                             <div class="col-sm-6">
-                                Pagination will be here
-                                {{ $posts->render("pagination::bootstrap-4") }}
+                                {{$posts->links()}}
                             </div>
                         </div>
                     </div>
