@@ -126,7 +126,7 @@
                     <ul class="dropdown-menu">
                         <!-- The user image in the menu -->
                         <li class="user-header">
-                            <img src="{{sset('images/admin/user2-160x160.png')}}" class="img-circle" alt="User Image">
+                            <img src="{{asset('images/admin/user2-160x160.png')}}" class="img-circle" alt="User Image">
                             <p>
                                 {{ Auth::user()->name ?? '' }}
                                 <small>Member since {{ Auth::user()->created_at ?? '' }}</small>
