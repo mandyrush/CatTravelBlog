@@ -7,6 +7,7 @@
 
 require('./bootstrap');
 require('./scroller');
+// require('./modal');
 
 window.Vue = require('vue');
 

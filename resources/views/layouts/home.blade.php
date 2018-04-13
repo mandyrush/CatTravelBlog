@@ -11,7 +11,7 @@
     @include ('partials.home_banner')
 </section>
 
-<section id="body">
+<section class="body" id="body">
 
     <header id="navbar" class="master-nav container-fluid">
         <div class="row justify-content-between">

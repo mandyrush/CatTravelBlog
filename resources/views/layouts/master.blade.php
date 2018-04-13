@@ -15,5 +15,7 @@
 		@yield ('content')
 		@include ('partials.footer')
 	</div>
+
+	<script src="/js/app.js"></script>
 </body>
 </html>
