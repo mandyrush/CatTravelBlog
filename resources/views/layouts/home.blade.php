@@ -16,7 +16,7 @@
             </div>
         </header>
 
-        <div class="page-border">
+
             @if ($flash = session('message'))
                 <div id="flash-message" class="alert alert-success" role="alert">
                     {{ $flash }}
@@ -26,7 +26,7 @@
             @yield ('content')
 
             @include ('partials.footer')
-        </div>
+
     </section>
 
     @yield('scripts')
