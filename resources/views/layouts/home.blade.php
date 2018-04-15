@@ -5,23 +5,28 @@
 </head>
 
 <body>
-    <section id="banner">
+    <section class="homeBanner">
         @include ('partials.home_banner')
+
+        {{--@if ($flash = session('message'))--}}
+            {{--<div id="flash-message" class="alert alert-success" role="alert">--}}
+                {{--{{ $flash }}--}}
+            {{--</div>--}}
+        {{--@endif--}}
+
     </section>
 
-    <section id="body">
-        <header id="navbar" class="master-nav container-fluid">
-            <div class="row justify-content-between">
-                @include ('partials.nav')
-            </div>
-        </header>
+    <section class="homeIntro">
+        <div class="greeting pad50">
+            Come with us! As me "Nessie", and my acquaintance Mozzie travel the world with our enslaved humans to the far reaching corners of the globe.
+        </div>
+    </section>
 
+    <header id="navbar">
+        @include ('partials.nav')
+    </header>
 
-            @if ($flash = session('message'))
-                <div id="flash-message" class="alert alert-success" role="alert">
-                    {{ $flash }}
-                </div>
-            @endif
+    <section class="homeBody">
 
             @yield ('content')
 

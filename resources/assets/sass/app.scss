@@ -42,10 +42,12 @@ body {
 }
 
 // Spacing generator
-$spacings: 100, 50, 30, 15, 10, 3, 0;
+$spacings: 100, 70, 50, 30, 15, 10, 3, 0;
 @each $amount in $spacings {
     .pad#{$amount} {padding-top:$amount + px;padding-bottom:$amount + px;padding-left:$amount + px;padding-right:$amount + px;}
     .pt#{$amount} {padding-top:$amount + px;}
+    .pl#{$amount} {padding-left:$amount + px;}
+    .pr#{$amount} {padding-right:$amount + px;}
     .pb#{$amount} {padding-bottom:$amount + px;}
     .mv#{$amount} {margin-top: $amount + px; margin-bottom: $amount + px;}
     .mh#{$amount} {margin-left: $amount + px; margin-right: $amount + px;}

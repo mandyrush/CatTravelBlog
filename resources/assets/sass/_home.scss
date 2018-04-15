@@ -47,3 +47,18 @@
     font-size: 2.8rem;
   }
 }
+
+.homeIntro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+}
+.greeting {
+  font-family: 'Gaegu', cursive;
+  font-size: 3rem;
+  background-color: $lt-gray;
+  text-align: center;
+  margin: 0 15rem;
+}
