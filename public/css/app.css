@@ -929,6 +929,12 @@ body {
   font-size: 18px;
 }
 
+.shadow5 {
+  /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+  -webkit-filter: drop-shadow(-1px -1px 1px #000);
+  filter: drop-shadow(-1px -1px 1px #000);
+}
+
 /* margins */
 
 .mt5 {
