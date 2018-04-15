@@ -1,6 +1,9 @@
 @extends ('layouts.master')
 
 @section ('content')
+	<div class="col-sm-7" style="margin-left: 25px">
+		<a href="javascript:history.back()" class="btn btn-sm btn-secondary"><i class="fas fa-long-arrow-alt-left"></i> Back</a>
+	</div>
 
 	<div class="masonry">
 
@@ -20,9 +23,7 @@
 
 					{{--Modal--}}
 					<div id="myModal{{$photo->id}}" class="modal fade" role="dialog">
-
 						<div class="modal-dialog modal-lg">
-
 							{{--Modal Content--}}
 							<div class="modal-content">
 								@foreach($photo->tags as $tag)
@@ -32,7 +33,6 @@
 									</div>
 								@endforeach
 
-
 								<div class="modal-body">
 									{{--<div><a class="prev" data-photo-prev="{{$photo->id - 1}}">&#10094;</a></div>--}}
 
@@ -41,13 +41,10 @@
 									{{--<div><a class="next" data-photo-next="{{$photo->id + 1}}">&#10095;</a></div>--}}
 								</div>
 
-
-
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Close</button>
 								</div>
 							</div>
-
 						</div>
 					</div>
 

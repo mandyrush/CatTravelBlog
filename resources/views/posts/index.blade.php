@@ -5,6 +5,9 @@
     {{-- Posts --}}
     <section>
         <div class="post-layout">
+            <a href="javascript:history.back()" class="btn btn-sm btn-secondary mb30 mt20">
+                <i class="fas fa-long-arrow-alt-left"></i> Back
+            </a>
 
             @foreach ($posts as $key => $post)
                 @if ($key % 2 == 1)
