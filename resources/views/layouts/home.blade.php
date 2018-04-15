@@ -9,24 +9,22 @@
         @include ('partials.home_banner')
     </section>
 
-    <section id="body">
+    <section>
         <header id="navbar" class="master-nav container-fluid">
             <div class="row justify-content-between">
                 @include ('partials.nav')
             </div>
         </header>
 
+        @if ($flash = session('message'))
+            <div id="flash-message" class="alert alert-success" role="alert">
+                {{ $flash }}
+            </div>
+        @endif
 
-            @if ($flash = session('message'))
-                <div id="flash-message" class="alert alert-success" role="alert">
-                    {{ $flash }}
-                </div>
-            @endif
+        @yield ('content')
 
-            @yield ('content')
-
-            @include ('partials.footer')
-
+        @include ('partials.footer')
     </section>
 
     @yield('scripts')
