@@ -1,4 +1,4 @@
-@extends ('layouts.posts')
+@extends ('layouts.master')
 @section('title', 'Travel Posts')
 @section ('content')
 

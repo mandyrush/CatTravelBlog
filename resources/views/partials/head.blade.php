@@ -7,6 +7,8 @@
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Cookie|Prociono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gaegu|Just+Me+Again+Down+Here|Life+Savers|Loved+by+the+King|Peralta" rel="stylesheet">
+
 
 <!-- CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
