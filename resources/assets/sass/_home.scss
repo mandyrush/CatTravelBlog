@@ -54,11 +54,13 @@
   justify-content: center;
   align-items: center;
   background-color: $white;
+  position: relative;
 }
 .greeting {
+  color: $white;
   font-family: 'Gaegu', cursive;
   font-size: 3rem;
-  background-color: $lt-gray;
+  background-color: $primary2;
   text-align: center;
   margin: 0 15rem;
 }

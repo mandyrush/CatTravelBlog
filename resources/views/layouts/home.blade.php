@@ -16,15 +16,15 @@
 
     </section>
 
+    <header id="navbar">
+        @include ('partials.nav')
+    </header>
+
     <section class="homeIntro">
         <div class="greeting pad50">
             Come with us! As me "Nessie", and my acquaintance Mozzie travel the world with our enslaved humans to the far reaching corners of the globe.
         </div>
     </section>
-
-    <header id="navbar">
-        @include ('partials.nav')
-    </header>
 
     <section class="homeBody">
 

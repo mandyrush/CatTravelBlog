@@ -6,10 +6,8 @@
 <body>
 	<div class="master page-border">
 
-		<header class="master-nav container-fluid">
-			<div class="row justify-content-between">
-				@include ('partials.nav')
-			</div>
+		<header>
+			@include ('partials.nav')
 		</header>
 
 		@yield ('content')
