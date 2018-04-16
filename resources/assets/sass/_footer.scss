@@ -1,0 +1,37 @@
+/* Footer */
+.main-footer {
+  min-height: 18rem;
+  background-color: $primary2;
+  display: flex;
+  align-items: flex-end;
+}
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  a {
+    font-size: 18px;
+    padding: 15px;
+    &:link { color: $white; }
+    &:visited { color: $white; }
+    &:hover { color: $accent; text-decoration: none; }
+    &:active { color: $white; }
+  }
+}
+.footerHr hr {
+  border: 1px solid $white;
+  width: 90%;
+}
+.footerImg {
+  height: 18rem;
+  width: 26rem;
+}
+.smNessie {
+  background-image: url("/img/nessie_monster.jpg");
+  background-repeat: no-repeat;
+}

@@ -1,24 +1,26 @@
 .banner {
-  background-image: url('https://c402277.ssl.cf1.rackcdn.com/photos/11224/images/hero_full/20150513_JWA7615-web.jpg?1459522593');
+  background-image: url('https://www.popular-photo.com/wp-content/uploads/2017/03/two-ginger-cats-650546_960_720-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $white;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
   height: 100vh;
 }
 .banner-text {
   padding: 15px;
   position: absolute;
-  display: flex;
-  background-color: $white;
-  color: $primary;
+  color: $white;
   font-family: 'Quattrocento', serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 7rem;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 7rem;
 }
 
 @media (max-width: 576px) {
@@ -47,7 +49,9 @@
     font-size: 2.8rem;
   }
 }
-
+.homeBody {
+  background-color: $white;
+}
 .homeIntro {
   height: 100vh;
   display: flex;
