@@ -19,7 +19,10 @@
     padding: 15px;
     &:link { color: $white; }
     &:visited { color: $white; }
-    &:hover { color: $accent; text-decoration: none; }
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+    }
     &:active { color: $white; }
   }
 }

@@ -11,7 +11,9 @@
 		</header>
 
 		@yield ('content')
+
 		@include ('partials.footer')
+
 	</div>
 
 	@yield ('scripts')

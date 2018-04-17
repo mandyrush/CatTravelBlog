@@ -4,18 +4,18 @@
     @include('partials.head')
 </head>
 <body>
-<div class="master page-border">
+    <div class="master page-border">
 
-    <header>
-        @include ('partials.nav')
-    </header>
+        <header>
+            @include ('partials.nav')
+        </header>
 
-    @yield ('content')
+        @yield ('content')
 
-    <div class="authFooter"></div>
+        <div class="authFooter"></div>
 
-</div>
+    </div>
 
-@yield ('scripts')
+    @yield ('scripts')
 </body>
 </html>
