@@ -34,19 +34,26 @@
   border: none;
   padding: 0;
 }
-.modal-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  //a {
-  //  cursor: pointer;
-  //  font-weight: bold;
-  //  font-size: 2em;
-  //}
+.modal-header {
+  height: 30px;
 }
-//#prev {
-//  padding-right: 15px;
-//}
-//#next {
-//  padding-left: 15px;
-//}
+.modal-content {
+  height: 98vh;
+}
+.modal-content .close {
+  font-size: 30px;
+  padding-top: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+//Carousel
+/* Make the image fully responsive */
+.carousel-inner img {
+  max-height: 75vh;
+}
