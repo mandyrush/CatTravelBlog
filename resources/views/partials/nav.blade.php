@@ -60,6 +60,27 @@
                     </div>
                 </button>
 
+
+                {{--<div id="accordion">--}}
+                    {{--<div class="card">--}}
+                        {{--<div class="card-header" id="headingTwo">--}}
+                            {{--<h5 class="mb-0">--}}
+                                {{--<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">--}}
+                                    {{--Humans--}}
+                                {{--</button>--}}
+                            {{--</h5>--}}
+                        {{--</div>--}}
+                        {{--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">--}}
+                            {{--<div class="card-body">--}}
+                                {{--<a href="/humans/des">Des</a>--}}
+                                {{--<a href="/humans/amanda">Amanda</a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+
+
+
                 <button class="nav-btn col-md-3" type="button" data-toggle="collapse" data-target="#collapseItem2" aria-expanded="false" aria-controls="collapseItem">
                     <div class="nav-item nav-level2">
                         <div class="nav-content">

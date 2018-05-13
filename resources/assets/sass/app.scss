@@ -1,10 +1,10 @@
 /* Colors */
-$primary: #34495E;
-$primary2: rgb(71, 182, 173);
-$accent: #FF8000;
-$gray: #85929E;
-$lt-gray: #ccc;
-$white: #fff;
+$primary: #666975;
+$primary2: #68C3D1;
+$accent: #EF8354;
+$gray: #ccc;
+$lt-gray: #D1D7D9;
+$white: #FEFFFE;
 
 /* Fonts */
 $primary-ft: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
@@ -20,6 +20,7 @@ $accent-ft: "Cookie", cursive;
 @import 'post_index';
 @import 'post_show';
 @import 'login';
+@import 'footer';
 //@import "variables";
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
@@ -174,12 +175,6 @@ button:focus {outline: transparent;}
 
 .border-shadow {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-}
-
-/* Footer */
-.main-footer {
-    height: 75px;
-    background-color: $primary2;
 }
 
 #flash-message {

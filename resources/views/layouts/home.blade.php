@@ -7,13 +7,18 @@
 <body>
     <section class="homeBanner">
         @include ('partials.home_banner')
+
+        {{--@if ($flash = session('message'))--}}
+            {{--<div id="flash-message" class="alert alert-success" role="alert">--}}
+                {{--{{ $flash }}--}}
+            {{--</div>--}}
+        {{--@endif--}}
+
     </section>
 
-    {{--@if ($flash = session('message'))--}}
-    {{--<div id="flash-message" class="alert alert-success" role="alert">--}}
-    {{--{{ $flash }}--}}
-    {{--</div>--}}
-    {{--@endif--}}
+    <header id="navbar">
+        @include ('partials.nav')
+    </header>
 
     <section class="homeIntro">
         <div class="greeting pad50">
@@ -21,16 +26,11 @@
         </div>
     </section>
 
-    <header id="navbar">
-        @include ('partials.nav')
-    </header>
-
     <section class="homeBody">
         @yield ('content')
 
         @include ('partials.footer')
     </section>
-
 
     @yield('scripts')
 </body>
