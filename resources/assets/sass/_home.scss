@@ -22,6 +22,13 @@
   text-align: center;
   line-height: 7rem;
 }
+.greeting {
+  color: $white;
+  align-self: flex-end;
+  padding: 1.5em 9em;
+  font-size: 1.3em;
+  text-align: center;
+}
 
 @media (max-width: 576px) {
   .banner-text p {
@@ -51,20 +58,5 @@
 }
 .homeBody {
   background-color: $white;
-}
-.homeIntro {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $white;
-  position: relative;
-}
-.greeting {
-  color: $white;
-  font-family: 'Gaegu', cursive;
-  font-size: 3rem;
-  background-color: $primary2;
-  text-align: center;
-  margin: 0 15rem;
+  padding-top: 3em;
 }

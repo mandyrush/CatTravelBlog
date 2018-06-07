@@ -7,6 +7,7 @@
 	<div class="master page-border">
 
 		<header>
+			<div class="master-logo"><a href="/">Cats Wander</a></div>
 			@include ('partials.nav')
 		</header>
 
