@@ -1,7 +1,7 @@
 @extends ('layouts.master')
 
 @section ('content')
-	<div class="container-fluid album-index">
+	<div class="album-index container-fluid">
 		<div class="row mb10">
 			<div class="col-sm-7">
 				<a href="javascript:history.back()" class="btn btn-sm btn-secondary"><i class="fas fa-long-arrow-alt-left"></i> Back</a>

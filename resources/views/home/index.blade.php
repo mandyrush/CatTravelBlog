@@ -18,7 +18,7 @@
 		</div>
 	</section>
 
-	<div class="more_posts">
+	<div class="more-posts">
 		<a href="/posts">More Posts</a>
 	</div>
 

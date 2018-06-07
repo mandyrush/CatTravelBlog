@@ -29,10 +29,12 @@
   transform: rotateY(0deg);
   z-index: 2;
   background-color: $primary2;
+  color: $white;
 }
 .flip-panel-back {
   transform: rotateY(180deg);
   background-color: $accent;
+  color: $primary2;
 }
 .flip-content {
   height: 100%;
@@ -40,7 +42,6 @@
   position: relative;
   transform-style: preserve-3d;
   transition: 0.85s;
-  color: $white;
   font-family: 'Quattrocento', serif;
   font-size: 40px;
   text-align: center;

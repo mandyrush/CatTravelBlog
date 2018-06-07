@@ -1,5 +1,5 @@
 /* Posts Index*/
-.more_posts {
+.more-posts {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
@@ -14,7 +14,7 @@
     &:active { color: $primary; }
   }
   a:hover {
-    background-color: $primary2;
+    background-color: $gray;
     color: $white;
   }
 }
@@ -34,6 +34,7 @@
 .post-layout {
   background-color: $white;
   margin: 0 5% 5% 5%;
+  padding-top: 5%;
 }
 .posts {
   padding: 30px 15px;
@@ -62,10 +63,10 @@
   padding-bottom: 15px;
 }
 .read-more {
-  &:link { color: $accent; }
-  &:visited { color: $accent; }
-  &:hover { color: $accent; }
-  &:active { color: $accent; }
+  &:link { color: $accent2; }
+  &:visited { color: $accent2; }
+  &:hover { color: $accent2; }
+  &:active { color: $accent2; }
 }
 .aligner {
   display: flex;

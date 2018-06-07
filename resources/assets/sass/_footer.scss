@@ -2,6 +2,7 @@
 .main-footer {
   min-height: 18rem;
   background-color: $primary2;
+  opacity: 0.9;
   display: flex;
   align-items: flex-end;
 }
@@ -20,7 +21,7 @@
     &:link { color: $white; }
     &:visited { color: $white; }
     &:hover {
-      color: $accent;
+      color: $primary;
       text-decoration: none;
     }
     &:active { color: $white; }
