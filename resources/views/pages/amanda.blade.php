@@ -2,7 +2,7 @@
 
 @section ('content')
 
-    <div class="container-fluid kitty-human amanda">
+    <div class="kitty-human amanda container-fluid">
         <div class="bio">
             <div class="bio-title">
                 <h1>The Amanda</h1>

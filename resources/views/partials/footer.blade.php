@@ -19,5 +19,5 @@
 
     </div>
 
-    <div class="footerImg smNessie col-md-3"></div>
+    <div class="footerImg col-md-3"></div>
 </footer>

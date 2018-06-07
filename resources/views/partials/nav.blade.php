@@ -34,7 +34,7 @@
                 <a class="nav-item col-md-3" href="/albums">
                     <div class="nav-content">
                         <div class="white-border">
-                            <div class="nav-title">Gallery</div>
+                            <div>Gallery</div>
                         </div>
                     </div>
                 </a>

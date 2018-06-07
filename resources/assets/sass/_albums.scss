@@ -1,35 +1,34 @@
 /* Albums */
 .album-index {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-.album {
-  padding: 15px;
-  a {
-    &:link { color: $white; }
-    &:visited { color: $white; }
-    &:hover { color: $white; text-decoration: none; }
-    &:active { color: $white; }
+  padding: 10px 30px 15px 30px;
+  .album {
+    padding: 15px;
+    a {
+      &:link { color: $white; }
+      &:visited { color: $white; }
+      &:hover { color: $white; text-decoration: none; }
+      &:active { color: $white; }
+      .album-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &:hover {
+          background-color: $lt-gray;
+          opacity: 0.9;
+        }
+      }
+      .album-title {
+        font-family: 'Quattrocento', serif;
+        font-weight: 300;
+        font-size: 26px;
+        color: $primary;
+        padding: 30px;
+        text-transform: uppercase;
+        border: 1px solid $lt-gray;
+      }
+    }
   }
 }
-.album-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  &:hover {
-    background-color: $lt-gray;
-    opacity: 0.9;
-  }
-}
-.album-title {
-  font-family: 'Quattrocento', serif;
-  font-weight: 300;
-  font-size: 26px;
-  color: $primary;
-  padding: 30px;
-  text-transform: uppercase;
-  border: 1px solid $lt-gray;
-}
+
+

@@ -1,18 +1,3 @@
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
-.sticky + .intro {
-  padding-top: 75px;
-}
-.hamburger {
-  position: absolute;
-  right: auto;
-  cursor: pointer;
-}
-
 // Compass
 .compass-nav {
   filter: drop-shadow(1px -1px 1px #c0b9ff) drop-shadow(1px 1px 1px #77749e);
@@ -26,138 +11,145 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  .hamburger {
+    position: absolute;
+    right: auto;
+    cursor: pointer;
+  }
+  .overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    overflow-y: hidden;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      color: $white;
+      display: block;
+      transition: 0.3s;
+      &:hover {
+        color: $white;
+      }
+      &:focus {
+        color: $white;
+      }
+    }
+    .closebtn {
+      position: absolute;
+      top: 2px;
+      right: 30px;
+      font-size: 45px;
+      color: $primary;
+    }
+    .overlay-content {
+      margin-top: 0;
+      padding: 60px;
+      .nav-row1 {
+        margin-bottom: 2rem;
+      }
+      .nav-row2 {
+        .nav-btn {
+          background-color: transparent;
+          color: $white;
+          padding: 0;
+          border: transparent;
+          font-size: 18px;
+          cursor: pointer;
+          &:hover {
+            color: $white;
+          }
+          .nav-level2 {
+            ul {
+              list-style-type: none;
+              margin-bottom: 0;
+              .nav-hr {
+                background-color: white;
+              }
+            }
+          }
+        }
+      }
+      .nav-row1, .nav-row2 {
+        display: flex;
+        justify-content: space-evenly;
+        .nav-item {
+          border: 1px solid $white;
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+          background-color: $primary2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 15em;
+          &:hover {
+            background-color: $primary2;
+            opacity: 0.8;
+          }
+          a {
+            &:link { color: $white; }
+            &:visited { color: $white; }
+            &:hover {
+              color: $white;
+              text-decoration: none;
+            }
+            &:active { color: $white; }
+          }
+          .nav-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            ul {
+              position: relative;
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
 #navbar .navbar {
   position: absolute;
   align-items: center;
 }
 
-.nav-item {
-  border: 1px solid $white;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  background-color: $primary2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15em;
-  &:hover {
-    background-color: $primary2;
-    opacity: 0.8;
-  }
-  a {
-    &:link { color: $white; }
-    &:visited { color: $white; }
-    &:hover {
-      color: $white;
-      text-decoration: none;
-    }
-    &:active { color: $white; }
-  }
-}
-.nav-hr {
-  background-color: white;
-}
-.nav-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  ul {
-    position: relative;
-    padding-left: 0;
-  }
-}
-
-.nav-btn {
-  background-color: transparent;
-  color: $white;
-  padding: 0;
-  border: transparent;
-  font-size: 18px;
-  cursor: pointer;
-}
-.nav-btn:hover {
-  color: $white;
-}
-.nav-level2 {
-  ul {
-    list-style-type: none;
-    margin-bottom: 0;
-  }
-}
 .kitties-humans-nav {
   position: absolute;
   z-index: 1;
 }
-.nav-row1, .nav-row2 {
-  display: flex;
-  justify-content: space-evenly;
-}
-.nav-row1 {
-  margin-bottom: 2rem;
-}
-.overlay {
-  height: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: $white;
-  overflow-y: hidden;
-  transition: 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  a {
-    text-decoration: none;
-    font-size: 18px;
-    color: $white;
-    display: block;
-    transition: 0.3s;
-    &:hover {
-      color: $white;
-    }
-    &:focus {
-      color: $white;
-    }
-  }
-  .closebtn {
-    position: absolute;
-    top: 2px;
-    right: 30px;
-    font-size: 45px;
-    color: $primary;
-  }
-}
-.overlay-content {
-  margin-top: 0;
-  padding: 60px;
-}
 
-@media(max-width: 768px) {
-  .nav-row1 {
-    margin-bottom: 0;
-    .nav-item {
-      margin-bottom: 15px;
-    }
-  }
-  .nav-item {
-    height: 10em;
-  }
-  .nav-btn {
-    margin-bottom: 15px;
-  }
-  .overlay {
-    display: flex;
-    align-items: flex-start;
-    overflow-y: auto;
-  }
-  .overlay-content {
-    margin-top: 0;
-    padding-top: 80px;
-  }
-}
+//@media(max-width: 768px) {
+//  .nav-row1 {
+//    margin-bottom: 0;
+//    .nav-item {
+//      margin-bottom: 15px;
+//    }
+//  }
+//  .nav-item {
+//    height: 10em;
+//  }
+//  .nav-btn {
+//    margin-bottom: 15px;
+//  }
+//  .overlay {
+//    display: flex;
+//    align-items: flex-start;
+//    overflow-y: auto;
+//  }
+//  .overlay-content {
+//    margin-top: 0;
+//    padding-top: 80px;
+//  }
+//}

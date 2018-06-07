@@ -1,3 +1,8 @@
+.homeBody {
+  background-color: $white;
+  padding-top: 3em;
+}
+
 .banner {
   background-image: url('https://www.popular-photo.com/wp-content/uploads/2017/03/two-ginger-cats-650546_960_720-1.jpg');
   background-repeat: no-repeat;
@@ -8,55 +13,40 @@
   align-items: flex-start;
   justify-content: flex-end;
   height: 100vh;
-}
-.banner-text {
-  padding: 15px;
-  position: absolute;
-  color: $white;
-  font-family: 'Quattrocento', serif;
-  font-weight: 300;
-  font-size: 7rem;
-  text-transform: uppercase;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  line-height: 7rem;
-}
-.greeting {
-  color: $white;
-  align-self: flex-end;
-  padding: 1.5em 9em;
-  font-size: 1.3em;
-  text-align: center;
+  .banner-text {
+    padding: 15px;
+    position: absolute;
+    color: $white;
+    font-family: 'Quattrocento', serif;
+    font-weight: 300;
+    font-size: 7rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 7rem;
+  }
+  .greeting {
+    color: $white;
+    align-self: flex-end;
+    padding: 1.5em 9em;
+    font-size: 1.3em;
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
-  .banner-text p {
-    font-size: 0.8rem;
-  }
-  .banner-text h3 {
+  .banner-text {
     font-size: 1.5rem;
   }
 }
-
 @media (min-width: 768px) {
-  .banner-text p {
-    font-size: 1rem;
-  }
-  .banner-text h3 {
+  .banner-text {
     font-size: 2rem;
   }
 }
-
 @media (min-width: 992px) {
-  .banner-text p {
-    font-size: 1.2rem;
-  }
-  .banner-text h3 {
+  .banner-text {
     font-size: 2.8rem;
   }
-}
-.homeBody {
-  background-color: $white;
-  padding-top: 3em;
 }

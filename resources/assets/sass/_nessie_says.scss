@@ -1,50 +1,49 @@
-.nessie-quote {
-  font-style: italic;
-  font-size: 80%;
-}
-
 .flip-med {
   height: 300px;
-}
-.flip {
-  perspective: 2500px;
 }
 .flip:hover .flip-content {
   transform: rotateY(180deg);
 }
-.flip-panel {
-  backface-visibility: hidden;
-  border-radius: 15px;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-.flip-panel-front {
-  transform: rotateY(0deg);
-  z-index: 2;
-  background-color: $primary2;
-  color: $white;
-}
-.flip-panel-back {
-  transform: rotateY(180deg);
-  background-color: $accent;
-  color: $primary2;
-}
-.flip-content {
-  height: 100%;
-  overflow: visible;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: 0.85s;
-  font-family: 'Quattrocento', serif;
-  font-size: 40px;
-  text-align: center;
+.flip {
+  perspective: 2500px;
+  .flip-content {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.85s;
+    font-family: 'Quattrocento', serif;
+    font-size: 40px;
+    text-align: center;
+    .flip-panel {
+      backface-visibility: hidden;
+      border-radius: 15px;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    .flip-panel-front {
+      transform: rotateY(0deg);
+      z-index: 2;
+      background-color: $primary2;
+      color: $white;
+    }
+    .flip-panel-back {
+      transform: rotateY(180deg);
+      background-color: $accent;
+      color: $primary2;
+    }
+    .nessie-quote {
+      font-style: italic;
+      font-size: 80%;
+    }
+  }
 }
 
 @media (max-width: 992px){
