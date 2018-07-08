@@ -2,7 +2,7 @@
 .post-layout {
   background-color: $white;
   margin: 0 5% 5% 5%;
-  padding-top: 5%;
+  //padding-top: 5%;
   .posts {
     padding: 30px 15px;
     margin-bottom: 30px;
@@ -37,26 +37,6 @@
         }
       }
     }
-  }
-}
-
-.more-posts {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
-  a {
-    border: 2px solid $lt-gray;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: $white;
-    &:link { color: $primary; }
-    &:visited { color: $primary; }
-    &:hover { color: $primary; text-decoration: none;}
-    &:active { color: $primary; }
-  }
-  a:hover {
-    background-color: $gray;
-    color: $white;
   }
 }
 

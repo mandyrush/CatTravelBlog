@@ -1,6 +1,9 @@
 .homeBody {
-  background-color: $white;
-  padding-top: 3em;
+  background-color: $lt-gray;
+  padding-top: 7em;
+  .post-layout {
+    background-color: $lt-gray;
+  }
 }
 
 .banner {
@@ -32,6 +35,26 @@
     padding: 1.5em 9em;
     font-size: 1.3em;
     text-align: center;
+  }
+}
+
+.more-posts {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  a {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $white;
+    &:link { color: $primary; }
+    &:visited { color: $primary; }
+    &:hover { color: $primary; text-decoration: none;}
+    &:active { color: $primary; }
+  }
+  a:hover {
+    background-color: $gray;
+    color: $white;
   }
 }
 
