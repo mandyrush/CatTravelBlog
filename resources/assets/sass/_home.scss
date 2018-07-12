@@ -7,9 +7,10 @@
 }
 
 .banner {
-  background-image: url('https://www.popular-photo.com/wp-content/uploads/2017/03/two-ginger-cats-650546_960_720-1.jpg');
+  background-image: url("/storage/mozzie_walk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: $white;
   position: relative;
   display: flex;
