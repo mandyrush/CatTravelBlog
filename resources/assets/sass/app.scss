@@ -64,6 +64,7 @@ button:focus {outline: transparent;}
 .page-item.active .page-link {
     background-color: $primary2;
     border: 1px solid $lt-gray;
+    z-index: 2;
 }
 .page-link {
     color: $primary;
