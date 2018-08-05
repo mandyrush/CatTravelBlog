@@ -16,7 +16,7 @@
 
 				<div class="post-body">
 					<div class="postBodyImg">
-						<img class="img-fluid" src="{{Storage::disk('local')->url( $post->featured_photo )}}" alt="Responsive image">
+						<img class="img-fluid" src="{{Storage::disk('s3')->url($post->featured_photo)}}" alt="Responsive image">
 					</div>
 					<p>
 						{!! $post->body !!}

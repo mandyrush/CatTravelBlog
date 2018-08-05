@@ -43,7 +43,7 @@
 							
 								<div class="album-content">
 
-									<img src="{{Storage::disk('local')->url( $album->cover_photo )}}" class="img-fluid" alt="Responsive image">
+									<img src="{{Storage::disk('s3')->url($album->cover_photo)}}" class="img-fluid" alt="Responsive image">
 
 									<div class="white-border">
 										<div></div>

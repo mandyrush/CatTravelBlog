@@ -18,7 +18,7 @@
 
 					{{--Trigger Modal--}}
 					<button type="button" class="myBtn btn btn-link" data-toggle="modal" data-target="#myModal{{$photo->id}}">
-						<img class="img-fluid" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" alt="Responsive image">
+						<img class="img-fluid" src="{{Storage::disk('s3')->url($photo->featured_photo)}}" alt="Responsive image">
 					</button>
 
 					{{--Modal--}}
