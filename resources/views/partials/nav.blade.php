@@ -1,5 +1,5 @@
 <!--Navbar-->
-<nav class="navbar">
+<nav class="navbar col-md-12">
 
     <div class="hamburger" onclick="openNav()">
         <img class="shadow5" src="{{asset('images/svg/cat.svg')}}" width="51" height="50" style="transform:rotate(-1deg) scale(1.12);" alt="cat" >
