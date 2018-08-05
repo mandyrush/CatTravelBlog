@@ -15,10 +15,12 @@
       .aligner-item {
         flex: 1;
         .post-title {
-          &:link { color: $primary; }
-          &:visited { color: $primary; }
-          &:hover { color: $primary; text-decoration: none;}
-          &:active { color: $primary; }
+          &:link { color: $primary2; }
+          &:visited { color: $primary2; }
+          &:hover {
+            color: $primary2;
+            text-decoration: none;}
+          &:active { color: $primary2; }
         }
         .post-created {
           padding-bottom: 15px;

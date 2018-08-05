@@ -50,7 +50,10 @@
     background-color: $white;
     &:link { color: $primary; }
     &:visited { color: $primary; }
-    &:hover { color: $primary; text-decoration: none;}
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+      opacity: .6;}
     &:active { color: $primary; }
   }
   a:hover {

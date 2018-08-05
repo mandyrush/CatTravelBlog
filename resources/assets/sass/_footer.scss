@@ -29,7 +29,8 @@
         &:link { color: $white; }
         &:visited { color: $white; }
         &:hover {
-          color: $primary;
+          color: $white;
+          opacity: .5;
           text-decoration: none;
         }
         &:active { color: $white; }
