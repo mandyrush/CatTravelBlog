@@ -73,10 +73,18 @@ button:focus {outline: transparent;}
 .btn {
     cursor: pointer;
 }
+.btn-sm {
+    &:hover {
+        background-color: $primary2;
+    }
+}
 
 .btn-secondary {
     background-color: $primary2;
     border: none;
+    &:hover {
+        background-color: $primary2;
+    }
 }
 
 /* Borders */

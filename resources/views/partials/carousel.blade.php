@@ -1,4 +1,4 @@
-<div id="myCarousel-{{$key}}" class="carousel slide">
+<div id="myCarousel-{{$key}}" class="carousel">
 
     <!-- The slideshow -->
     <div class="carousel-inner">
@@ -22,9 +22,9 @@
 
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#myCarousel-{{$key}}" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <i class="fa fa-chevron-left carousel-btn"></i>
     </a>
     <a class="carousel-control-next" href="#myCarousel-{{$key}}" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <i class="fa fa-chevron-right carousel-btn"></i>
     </a>
 </div>

@@ -23,7 +23,7 @@
 
 					{{--Modal--}}
 					<div id="myModal{{$photo->id}}" class="modal fade" role="dialog">
-						<div class="modal-dialog modal-lg">
+						<div class="modal-dialog">
 
 							{{--Modal Content--}}
 							<div class="modal-content">
@@ -31,9 +31,9 @@
 
 								@include ('partials.carousel')
 
-								<div class="modal-footer">
-									<button type="button" class="modal-close btn btn-secondary btn-lg" data-dismiss="modal">Close</button>
-								</div>
+								{{--<div class="modal-footer">--}}
+									{{--<button type="button" class="modal-close btn btn-secondary btn-lg" data-dismiss="modal">Close</button>--}}
+								{{--</div>--}}
 							</div>
 
 						</div>

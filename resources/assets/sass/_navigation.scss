@@ -47,6 +47,10 @@
       right: 30px;
       font-size: 45px;
       color: $primary;
+      &:hover {
+        color: $primary;
+        opacity: .8;
+      }
     }
     .overlay-content {
       margin-top: 0;
