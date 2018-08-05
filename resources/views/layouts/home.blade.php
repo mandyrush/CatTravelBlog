@@ -14,13 +14,8 @@
     </header>
 
     <section class="homeBody">
-
             @yield ('content')
-
             @include ('partials.footer')
-
     </section>
-
-    @yield('scripts')
 </body>
 </html>
