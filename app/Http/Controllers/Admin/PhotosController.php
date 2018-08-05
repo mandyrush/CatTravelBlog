@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Photo;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class PhotosController extends Controller
 {
@@ -21,7 +22,9 @@ class PhotosController extends Controller
      */
     public function index()
     {
-        $photos = Photo::select()->paginate(20);
+        $photos = Photo::select()
+            ->orderBy('created_at', 'DESC')
+            ->paginate(20);
 
         return view('admin.photos.index', compact('photos'));
     }
@@ -51,17 +54,29 @@ class PhotosController extends Controller
      * Store Photo
      *
      * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
-        foreach ($request->file('featured_photo') as $file) {
-            $filename = $file->store('public');
+        foreach ($request->file('featured_photo') as $image) {
+
+            // Limit filename length
+            $filenameWithoutExtension = basename($image->getClientOriginalName(), '.'.$image->getClientOriginalExtension());
+            $shortFilename = substr($filenameWithoutExtension, 0, 50);
+            $imageFileName = $shortFilename .'_'.date('Ymd').'.'. $image->getClientOriginalExtension();
+
+            // Place file on S3
+            $s3 = Storage::disk('s3');
+            $filePath = (string) 'uploads/'.$imageFileName;
+            if (!$s3->put($filePath, file_get_contents($image), 'public')) {
+                // @todo something bad happened
+            }
 
             // Save
             $photo = Photo::create([
-                "featured_photo" => $filename
+                "featured_photo" => $filePath
             ]);
+
             $photo->tags()->attach($request['tag']);
         }
 
