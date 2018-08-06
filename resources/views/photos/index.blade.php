@@ -14,7 +14,7 @@
 			@endif
 
 			<div class="masonry-panel">
-				<div class="masonry-panel_content">
+				<div class="masonry-panel-content">
 
 					{{--Trigger Modal--}}
 					<button type="button" class="myBtn btn btn-link" data-toggle="modal" data-target="#myModal{{$photo->id}}">
@@ -31,9 +31,6 @@
 
 								@include ('partials.carousel')
 
-								{{--<div class="modal-footer">--}}
-									{{--<button type="button" class="modal-close btn btn-secondary btn-lg" data-dismiss="modal">Close</button>--}}
-								{{--</div>--}}
 							</div>
 
 						</div>

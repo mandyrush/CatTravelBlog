@@ -12,9 +12,10 @@
                         <h4 class="modal-title">{{ $tag->name }}</h4>
                     </div>
                 @endforeach
-
-                <div class="modal-body">
-                    <img class="img-fluid" src="{{Storage::disk('local')->url( $innerPhoto->featured_photo )}}" alt="Responsive image">
+                <div class="flex-center">
+                    <div class="modal-body">
+                        <img class="img-fluid" src="{{Storage::disk('local')->url( $innerPhoto->featured_photo )}}" alt="Responsive image">
+                    </div>
                 </div>
             </div>
         @endforeach

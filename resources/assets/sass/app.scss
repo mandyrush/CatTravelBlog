@@ -59,6 +59,12 @@ $spacings: 100, 70, 50, 30, 15, 10, 3, 0;
     .mb#{$amount} {margin-bottom: $amount + px;}
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 button:focus {outline: transparent;}
 
 .page-item.active .page-link {
@@ -158,14 +164,6 @@ button:focus {outline: transparent;}
     position: absolute;
     height: 100%;
     width: 100%;
-}
-
-.modal {
-    background-color: rgba(0,0,0,0.5);
-}
-
-.modal-dialog {
-    margin: 8px auto;
 }
 
 .section {

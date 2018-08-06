@@ -10,7 +10,10 @@
     margin: 0 0 1rem;
     width: 100%;
     border-radius: 15px;
-    .masonry-panel_content {
+    .masonry-panel-content {
+      .modal {
+        background-color: rgba(0,0,0,0.5);
+      }
       img {
         border-radius: 15px;
         display: block;
@@ -49,13 +52,13 @@
     }
   }
 }
-.modal-body img {
-  max-height: 86vh;
-  max-width: auto;
-}
 .modal-body {
   max-height: 100vh;
-  max-width: auto;
+  max-width: 1200px;
+  img {
+    max-height: 86vh;
+    width: auto;
+  }
 }
 .carousel-btn {
   color: $primary2;
