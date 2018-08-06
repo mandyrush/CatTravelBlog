@@ -32,7 +32,7 @@
   a {
     &:link { color: $primary2; }
     &:visited { color: $primary2; }
-    &:hover { color: $accent; text-decoration: none;}
+    &:hover { color: $primary2; }
     &:active { color: $primary2; }
   }
 }

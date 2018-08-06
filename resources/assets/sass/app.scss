@@ -76,6 +76,7 @@ button:focus {outline: transparent;}
 .btn-sm {
     &:hover {
         background-color: $primary2;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     }
 }
 
@@ -84,6 +85,7 @@ button:focus {outline: transparent;}
     border: none;
     &:hover {
         background-color: $primary2;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     }
 }
 

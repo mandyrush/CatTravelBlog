@@ -14,28 +14,41 @@
   background-color: $white;
   position: relative;
   display: flex;
-  align-items: flex-start;
   justify-content: flex-end;
   height: 100vh;
+  max-width: 100%;
+  padding: 0;
   .banner-text {
-    padding: 15px;
     position: absolute;
-    color: $white;
-    font-family: 'Quattrocento', serif;
-    font-weight: 300;
-    font-size: 7rem;
-    text-transform: uppercase;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-color: $primary2;
+    padding: 2rem 0 2rem 2rem;
+    border-radius: 50% 0 0 50%;
+    .pretty-border {
+      border: 1px solid $white;
+      height: 100%;
+      border-radius: 50% 0 0 50%;
+      border-right: 0 none;
+    }
+  }
+  .title {
+    color: $white;
+    font-family: 'quattrocentro', serif;
+    font-weight: 400;
+    font-size: 6vw;
+    text-transform: uppercase;
     text-align: center;
-    line-height: 7rem;
+    line-height: 6rem;
+    padding: 0 1.5rem 2rem 2rem;
   }
   .greeting {
     color: $white;
-    align-self: flex-end;
-    padding: 1.5em 9em;
-    font-size: 1.3em;
-    text-align: center;
+    font-size: 1.5vw;
+    line-height: 2.5rem;
+    font-weight: 100rem;
+    padding: 0 1.5rem 0 2rem;
   }
 }
 
@@ -62,18 +75,30 @@
   }
 }
 
-@media (max-width: 576px) {
-  .banner-text {
-    font-size: 1.5rem;
+@media (max-width: 767px) {
+  .banner {
+    .banner-text {
+      background-color: transparent;
+      .pretty-border {
+        border: none;
+      }
+    }
+    .title {
+      font-size: 7vw;
+      text-shadow: 7px 4px 5px rgba(144, 150, 150, 1);
+    }
+    .greeting {
+      font-size: 3vw;
+      text-shadow: 7px 4px 5px rgba(144, 150, 150, 1);
+    }
   }
 }
-@media (min-width: 768px) {
-  .banner-text {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 992px) {
-  .banner-text {
-    font-size: 2.8rem;
+@media (max-width: 992px) {
+  .banner {
+    position: static;
+    height: auto;
+    .banner-text {
+      position: static;
+    }
   }
 }
