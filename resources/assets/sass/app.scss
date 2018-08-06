@@ -22,6 +22,7 @@ $accent-ft: "Cookie", cursive;
 @import 'post_show';
 @import 'login';
 @import 'footer';
+@import 'master_layout';
 //@import "variables";
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
@@ -105,31 +106,6 @@ button:focus {outline: transparent;}
     margin-right: 10%;
     background-color: $white;
     padding-top: 15px;
-}
-
-.master {
-    padding-top: 0;
-    header {
-        background-color: $primary2;
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        margin-bottom: 15px;
-        .master-logo {
-            color: $white;
-            position: absolute;
-            padding: .1em .3em;
-            font-size: 2em;
-            font-family: cursive;
-            a {
-                &:link { color: $white; }
-                &:visited { color: $white; }
-                &:hover { color: $white; text-decoration: none;}
-                &:active { color: $white; }
-            }
-        }
-    }
 }
 
 .pretty-border {
