@@ -148,12 +148,22 @@
           margin-bottom: 0;
           .nav-item {
             margin-bottom: 15px;
+            height: 9rem;
           }
         }
 
         .nav-row2 {
           .nav-btn {
+            height: 9rem;
             margin-bottom: 15px;
+            }
+          .nav-item {
+            height: 9rem;
+            ul {
+              .nav-hr hr {
+                margin: 0;
+              }
+            }
           }
         }
       }

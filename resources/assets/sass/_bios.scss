@@ -13,7 +13,7 @@
     padding: 20px;
     margin-right: 2%;
     width: 40%;
-    height: 90%;
+    height: 80%;
     .bio-title {
       height: 10%;
       margin: 20px;
@@ -47,10 +47,12 @@
 }
 
 @media (max-width: 768px) {
-  .bio {
-    width: 75%;
-    .bio-body {
-      margin-top: 20px;
+  .kitty-human {
+    .bio {
+      width: 75%;
+      .bio-body {
+        margin-top: 20px;
+      }
     }
   }
 }

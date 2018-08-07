@@ -41,3 +41,11 @@
   width: 100%;
   background-color: $primary2;
 }
+
+@media (max-width: 675px) {
+ .master .page-border {
+    header {
+      margin-bottom: 0;
+    }
+}
+}

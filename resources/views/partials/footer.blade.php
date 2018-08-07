@@ -1,7 +1,7 @@
 <footer class="main-footer">
 
-    <div class="footerContent col-md-9">
-        <div class="footerHr row col-md-12">
+    <div class="footerContent col-xl-9">
+        <div class="footerHr row col-lg-12">
             <hr>
         </div>
 
@@ -20,4 +20,5 @@
     </div>
 
     <div class="footerImg col-md-3"></div>
+
 </footer>

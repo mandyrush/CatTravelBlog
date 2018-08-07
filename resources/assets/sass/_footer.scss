@@ -1,15 +1,17 @@
 /* Footer */
 .main-footer {
-  min-height: 18rem;
+  min-height: 12.5rem;
   background-color: $primary2;
   opacity: 0.9;
   display: flex;
   align-items: flex-end;
   .footerImg {
-    height: 18rem;
-    width: 26rem;
+    height: 225px;
+    width: 100%;
     background-image: url("/img/nessie_monster.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
   }
   .footerContent {
     display: flex;
@@ -35,6 +37,34 @@
         }
         &:active { color: $white; }
       }
+    }
+  }
+}
+
+@media (max-width: 1310px) {
+  .main-footer{
+    .footerContent {
+      .footerLinks {
+        a {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .main-footer {
+    min-height: 10rem;
+    flex-direction: column;
+    align-items: center;
+    .footerContent {
+      width: 100%;
+      padding: 15px 0;
+    }
+    .footerImg {
+      visibility: hidden;
+      height: 0;
     }
   }
 }
