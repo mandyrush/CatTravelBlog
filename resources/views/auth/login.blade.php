@@ -55,15 +55,18 @@
                                     <i class="fas fa-sign-in-alt"></i>
                                     Login
                                 </button>
-                                <br>
-                                <div class="register-link">
-                                    <a href="/register">Register Here</a>
-                                </div>
-                                <div class="register-link">
-                                    <a href="{{ route('password.request') }}">Forgot Your Password?</a>
-                                </div>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 register-link">
+                                <a href="/register">Register Here</a>
+                            </div>
+                            <div class="col-md-12 register-link">
+                                <a href="{{ route('password.request') }}">Forgot Your Password?</a>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>

@@ -5,7 +5,7 @@
     <div class="container-fluid kitty-human des">
         <div class="bio">
             <div class="bio-title">
-                <h1>The Des</h1>
+                The Des
             </div>
 
             <div class="bio-body">

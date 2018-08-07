@@ -5,7 +5,7 @@
     <div class="kitty-human amanda container-fluid">
         <div class="bio">
             <div class="bio-title">
-                <h1>The Amanda</h1>
+                The Amanda
             </div>
 
             <div class="bio-body">

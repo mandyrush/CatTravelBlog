@@ -11,22 +11,19 @@
     background-color: lightgray;
     opacity: 0.7;
     padding: 20px;
-    margin-right: 2%;
+    margin-right: 1%;
     width: 40%;
     height: 80%;
     .bio-title {
-      height: 10%;
-      margin: 20px;
-      padding-left: 15px;
+      padding: 5% 2%;
+      font-size: 2rem;
       display: flex;
       align-items: center;
     }
     .bio-body {
       height: 80%;
       overflow-y: scroll;
-      margin-right: 20px;
-      margin-left: 20px;
-      padding: 15px;
+      padding: 0 2%;
     }
   }
 }

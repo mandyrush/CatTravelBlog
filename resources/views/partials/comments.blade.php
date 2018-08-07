@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-secondary btn-lg">Add Comment</button>
+                    <button type="submit" class="btn btn-secondary">Add Comment</button>
                 </div>
             </form>
         @else

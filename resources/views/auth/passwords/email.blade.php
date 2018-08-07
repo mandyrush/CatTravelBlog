@@ -35,7 +35,7 @@
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-secondary">
                                     <i class="fas fa-envelope fa-lg"></i>
-                                    Send Password Reset Link
+                                    Send Password Reset
                                 </button>
                             </div>
                         </div>
