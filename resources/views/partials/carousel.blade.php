@@ -14,7 +14,7 @@
                 @endforeach
                 <div class="flex-center">
                     <div class="modal-body">
-                        <img class="img-fluid" src="{{Storage::disk('local')->url( $innerPhoto->featured_photo )}}" alt="Responsive image">
+                        <img class="img-fluid" src="{{Storage::disk('s3')->url($innerPhoto->featured_photo)}}" alt="Responsive image">
                     </div>
                 </div>
             </div>

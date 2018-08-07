@@ -33,7 +33,7 @@
                                             </td>
                                             <td>{{ $photo->id }}</td>
                                             <td>
-                                                <img style="width: 80px;" src="{{Storage::disk('local')->url( $photo->featured_photo )}}" class="img-fluid" alt="Responsive image">
+                                                <img style="width: 80px;" src="{{Storage::disk('s3')->url($photo->featured_photo)}}" class="img-fluid" alt="Responsive image">
                                             </td>
                                             <td>{{ $photo->featured_photo }}</td>
                                             <td>{{ $photo->created_at }}</td>
