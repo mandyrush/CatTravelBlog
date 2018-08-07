@@ -4,6 +4,15 @@
 
 <title>@yield('title') - Cats Wander</title>
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106552187-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-106552187-1');
+</script>
+
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Cookie|Prociono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet">
