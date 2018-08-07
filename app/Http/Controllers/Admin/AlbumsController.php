@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Album;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class AlbumsController extends Controller
 {
@@ -57,13 +58,24 @@ class AlbumsController extends Controller
     {
         $this->validate(request(), ['title' => 'required']);
 
-        // Moving file to the public folder
-        $filename = $request->file('cover_photo')->store('public');
-        $data = [
+        $image = $request->file('cover_photo');
+
+        // Limit filename length
+        $filenameWithoutExtension = basename($image->getClientOriginalName(), '.'.$image->getClientOriginalExtension());
+        $shortFilename = substr($filenameWithoutExtension, 0, 50);
+        $imageFileName = $shortFilename .'_'.date('Ymd').'.'. $image->getClientOriginalExtension();
+
+        // Place file on S3
+        $s3 = Storage::disk('s3');
+        $filePath = (string) 'uploads/'.$imageFileName;
+        if (!$s3->put($filePath, file_get_contents($image), 'public')) {
+            // @todo something bad happened
+        }
+
+        Album::create([
             "title" => $request->title,
-            "cover_photo" => $filename,
-        ];
-        Album::create($data);
+            "cover_photo" => $filePath,
+        ]);
 
         return redirect('/admin/albums');
     }

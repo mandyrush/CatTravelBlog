@@ -1,4 +1,4 @@
-# CatTravelBlog
+# CatsWander Blog
 
 ## Fresh Install
 ### File Storage

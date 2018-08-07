@@ -35,7 +35,7 @@
                                             <td>{{ $album->id }}</td>
                                             <td>{{ $album->title }}</td>
                                             <td>
-                                                <img style="width: 80px;" src="{{Storage::disk('local')->url( $album->cover_photo )}}" class="img-fluid" alt="Responsive image">
+                                                <img style="width: 80px;" src="{{Storage::disk('s3')->url($album->cover_photo)}}" class="img-fluid" alt="Responsive image">
                                             </td>
                                             <td>{{ $album->cover_photo }}</td>
                                             <td>{{ $album->created_at }}</td>

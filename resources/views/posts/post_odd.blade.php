@@ -21,7 +21,7 @@
 			<a href="/posts/{{ $post->id }}" class="aligner-item">
 
 				<div class="post-img">
-					<img class="img-fluid" src="{{Storage::disk('local')->url( $post->featured_photo )}}" alt="Responsive image">
+					<img class="img-fluid" src="{{Storage::disk('s3')->url($post->featured_photo)}}" alt="Responsive image">
 
 					<div class="white-border">
 						<div></div>

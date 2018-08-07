@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Post;
-use Carbon\Carbon;
-use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
@@ -12,9 +10,9 @@ class PostsController extends Controller
     {
         $this->middleware('auth')->except(['index', 'show']);
     }
+
     public function index()
     {
-
         $posts = Post::latest()
             ->filter(['month'=> \request('month'), 'year'=> \request('year')])
             ->paginate(5);
@@ -25,36 +23,5 @@ class PostsController extends Controller
     public function show(Post $post)
     {
         return view('posts.show', compact('post'));
-    }
-
-    public function create()
-    {
-        return view('posts.create');
-    }
-
-    public function store(Request $request)
-    {
-        //Validate form fields
-        $this->validate(request(), [
-            'title' => 'required',
-            'body' => 'required',
-            'featured_text' => 'required'
-        ]);
-        
-        // Moving file to the public folder
-        $filename = $request->file('featured_photo')->store('public');
-        $data = [
-            "user_id" => auth()->id(),
-            "title" => $request->title,
-            "body" => $request->body,
-            "featured_text" => $request->featured_text,
-            "featured_photo" => $filename,
-            "status" => 1
-        ];
-
-        // Save
-        Post::create($data);
-
-        return redirect('/');
     }
 }
