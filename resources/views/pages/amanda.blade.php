@@ -1,5 +1,5 @@
 @extends ('layouts.kitties_humans')
-
+@section('title', 'Amanda')
 @section ('content')
 
     <div class="kitty-human amanda container-fluid">

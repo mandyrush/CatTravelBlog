@@ -1,5 +1,5 @@
 @extends ('layouts.master')
-
+@section('title', 'Gallery')
 @section ('content')
 	<div class="col-sm-7" style="margin-left: 25px">
 		<a href="javascript:history.back()" class="btn btn-sm btn-secondary"><i class="fas fa-long-arrow-alt-left"></i> Back</a>

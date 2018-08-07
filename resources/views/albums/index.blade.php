@@ -1,5 +1,5 @@
 @extends ('layouts.master')
-
+@section('title', 'Gallery')
 @section ('content')
 	<div class="album-index container-fluid">
 		<div class="row mb10">
