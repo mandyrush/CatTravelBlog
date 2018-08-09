@@ -17,7 +17,7 @@
 
 					<div class="album-content">
 						
-						<img class="img-fluid" src="http://eskipaper.com/images/maine-coon-kittens-4.jpg" alt="Responsive image">
+						<img class="img-fluid" src="/storage/narrow_streets.jpg" alt="Responsive image">
 					
 						<div class="white-border">
 							<div></div>
