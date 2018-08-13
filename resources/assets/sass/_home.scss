@@ -1,6 +1,6 @@
 .homeBody {
   background-color: $lt-gray;
-  padding-top: 7em;
+  padding-top: 10rem;
   .post-layout {
     background-color: $lt-gray;
   }
@@ -13,42 +13,35 @@
   background-position: center;
   background-color: $white;
   position: relative;
-  display: flex;
-  justify-content: flex-end;
   height: 100vh;
   max-width: 100%;
   padding: 0;
   .banner-text {
     position: absolute;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: $primary2;
-    padding: 2rem 0 2rem 2rem;
-    border-radius: 50% 0 0 50%;
+    padding: 2rem;
     .pretty-border {
-      border: 1px solid $white;
+      border: 3px solid $white;
       height: 100%;
-      border-radius: 50% 0 0 50%;
-      border-right: 0 none;
     }
   }
   .title {
     color: $white;
     font-family: 'quattrocentro', serif;
+    text-shadow: 4px 3px 6px rgba(0, 0, 50, 1), 4px 3px 12px rgba(0, 0, 50, 1);
     font-weight: 400;
-    font-size: 6vw;
+    font-size: 8.5vw;
     text-transform: uppercase;
-    text-align: center;
     line-height: 6rem;
-    padding: 0 1.5rem 2rem 2rem;
+    padding: 7.5rem 1.5rem 1rem 1.5rem;
   }
   .greeting {
     color: $white;
-    font-size: 1.5vw;
-    line-height: 2.5rem;
-    font-weight: 100rem;
-    padding: 0 1.5rem 0 2rem;
+    font-size: 1.6vw;
+    text-shadow: 2.5px 1.7px .8px rgba(0, 0, 50, 1), 4px 3px 12px rgba(0, 0, 50, 1), 4px 3px 17px rgba(0, 0, 50, 1);
+    line-height: 2.3rem;
+    font-weight: 400;
+    padding: 0 15rem;
   }
 }
 
@@ -75,30 +68,48 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1350px) {
   .banner {
-    .banner-text {
-      background-color: transparent;
-      .pretty-border {
-        border: none;
-      }
+    .title {
+      font-size: 7.5vw;
+      line-height: 4rem;
+      padding: 7.5rem 1rem 1rem 1rem;
     }
+    .greeting {
+      font-size: 1.8vw;
+      line-height: 2rem;
+      padding: 0 12rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .banner {
     .title {
       font-size: 7vw;
-      text-shadow: 7px 4px 5px rgba(144, 150, 150, 1);
+      line-height: 4rem;
+      padding: 7.5rem .5rem 1rem .5rem;
+    }
+    .greeting {
+      font-size: 2vw;
+      line-height: 2rem;
+      padding: 0 8rem;
+    }
+  }
+}
+
+@media (max-width: 778px) {
+  .banner {
+    .title {
+      font-size: 9vw;
+      line-height: 4rem;
+      padding: 7.5rem .3rem 0 .3rem;
     }
     .greeting {
       font-size: 3vw;
-      text-shadow: 7px 4px 5px rgba(144, 150, 150, 1);
+      line-height: 2rem;
+      padding: 0 2rem;
     }
   }
 }
-@media (max-width: 992px) {
-  .banner {
-    position: static;
-    height: auto;
-    .banner-text {
-      position: static;
-    }
-  }
-}
+

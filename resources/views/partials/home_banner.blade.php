@@ -1,6 +1,6 @@
 <div class="banner col-md-12">
 
-	<div class="banner-text col-md-5">
+	<div class="banner-text">
 		<div class="pretty-border">
 
 			<div class="title">
