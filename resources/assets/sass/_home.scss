@@ -86,7 +86,6 @@
 @media (max-width: 992px) {
   .banner {
     .title {
-      font-size: 7vw;
       line-height: 4rem;
       padding: 7.5rem .5rem 1rem .5rem;
     }
@@ -101,14 +100,29 @@
 @media (max-width: 778px) {
   .banner {
     .title {
-      font-size: 9vw;
+      font-size: 8vw;
       line-height: 4rem;
       padding: 7.5rem .3rem 0 .3rem;
     }
     .greeting {
       font-size: 3vw;
       line-height: 2rem;
-      padding: 0 2rem;
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media (max-width: 598px) {
+  .banner {
+    .title {
+      font-size: 5.5vw;
+      line-height: 2.5rem;
+      padding: 5.5rem .3rem 0 .3rem;
+    }
+    .greeting {
+      font-size: 3.5vw;
+      line-height: 1rem;
+      padding: 0 .5rem;
     }
   }
 }

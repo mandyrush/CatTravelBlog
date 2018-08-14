@@ -143,15 +143,16 @@
     .hamburger {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      margin-top: 1rem;
-      img {
-          transition-duration: .5s;
-        &:hover {
-          -ms-transform: rotate(30deg); /* IE 9 */
-          -webkit-transform: rotate(30deg); /* Safari 3-8 */
-          transform: rotate(30deg);
-        }
+      justify-content: center;
+      margin-top: .5rem;
+      border-radius: 50%;
+      width: 8.5rem;
+      height: 6rem;
+      transition-duration: .5s;
+      &:hover {
+        -ms-transform: rotate(30deg); /* IE 9 */
+        -webkit-transform: rotate(30deg); /* Safari 3-8 */
+        transform: rotate(30deg);
       }
     }
   }
