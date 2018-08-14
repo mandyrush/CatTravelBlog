@@ -10,7 +10,9 @@
     </section>
 
     <header id="navbar">
+        <div class="nav-oval"></div>
         @include ('partials.nav')
+        <div class="drop-shadow"></div>
     </header>
 
     <section class="homeBody">
