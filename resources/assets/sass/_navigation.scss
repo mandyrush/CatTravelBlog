@@ -1,164 +1,162 @@
-// Compass
-.compass-nav {
-  filter: drop-shadow(1px -1px 1px #c0b9ff) drop-shadow(1px 1px 1px #77749e);
-}
-
-.navbar {
-  height: 6rem;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .hamburger {
-    position: absolute;
-    right: auto;
-    cursor: pointer;
-  }
-  .overlay {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    background-color: $white;
-    overflow-y: hidden;
-    transition: 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a {
-      text-decoration: none;
-      font-size: 18px;
-      color: $white;
-      display: block;
-      transition: 0.3s;
-      &:hover {
-        color: $white;
-      }
-      &:focus {
-        color: $white;
-      }
-    }
-    .closebtn {
-      position: absolute;
-      top: 2px;
-      right: 30px;
-      font-size: 45px;
-      color: $primary;
-      &:hover {
-        color: $primary;
-        opacity: .8;
-      }
-    }
-    .overlay-content {
-      margin-top: 0;
-      padding: 60px;
-      .nav-row1 {
-        margin-bottom: 2rem;
-      }
-      .nav-row2 {
-        .nav-btn {
-          background-color: transparent;
-          color: $white;
-          padding: 0;
-          border: transparent;
-          font-size: 18px;
-          cursor: pointer;
-          &:hover {
-            color: $white;
-          }
-          .nav-level2 {
-            ul {
-              list-style-type: none;
-              margin-bottom: 0;
-              .nav-hr {
-                background-color: white;
-              }
-            }
-          }
-        }
-      }
-      .nav-row1, .nav-row2 {
-        display: flex;
-        justify-content: space-evenly;
-        .nav-item {
-          border: 1px solid $white;
-          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-          background-color: $primary2;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 15em;
-          &:hover {
-            background-color: $primary2;
-            opacity: 0.8;
-          }
-          a {
-            &:link { color: $white; }
-            &:visited { color: $white; }
-            &:hover {
-              color: $white;
-              text-decoration: none;
-            }
-            &:active { color: $white; }
-          }
-          .nav-content {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 25px;
-            ul {
-              position: relative;
-              padding-left: 0;
-            }
-          }
-        }
-      }
-    }
+.master .navbar-layout-1 {
+  .navbar {
+    width: 80%;
   }
 }
 
-#navbar {
+.navbar-layout-1 {
   display: flex;
   justify-content: center;
   .nav-oval {
     background-color: $primary2;
-    width: 8.5rem;
-    height: 7rem;
+    width: 9rem;
+    height: 8rem;
     position: absolute;
     border-radius: 50%;
     padding: 1.5rem;
     box-shadow: 0 13px 13px 0 rgba(0,0,0,0.16);
+    z-index: 3;
   }
   .navbar {
     position: absolute;
-    align-items: end;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 3.5rem;
+    height: 4rem;
+    padding-top: 1.5rem;
     background-color: $primary2;
     .hamburger {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: .5rem;
+      position: absolute;
+      cursor: pointer;
+      margin-top: 1.5rem;
       border-radius: 50%;
       width: 8.5rem;
-      height: 6rem;
+      height: 8rem;
       transition-duration: .5s;
+      z-index: 4;
       &:hover {
         -ms-transform: rotate(30deg); /* IE 9 */
         -webkit-transform: rotate(30deg); /* Safari 3-8 */
         transform: rotate(30deg);
       }
+      .hamburger-icon {
+        font-size: 2.5rem;
+        color: $white;
+      }
+    }
+    .overlay {
+      height: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      background-color: $white;
+      overflow-y: hidden;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        color: $white;
+        display: block;
+        transition: 0.3s;
+        &:hover {
+          color: $white;
+        }
+        &:focus {
+          color: $white;
+        }
+      }
+      .closebtn {
+        position: absolute;
+        top: 2px;
+        right: 30px;
+        font-size: 45px;
+        color: $primary;
+        &:hover {
+          color: $primary;
+          opacity: .8;
+        }
+      }
+      .overlay-content {
+        margin-top: 0;
+        padding: 60px;
+        .nav-row1 {
+          margin-bottom: 2rem;
+        }
+        .nav-row2 {
+          .nav-btn {
+            background-color: transparent;
+            color: $white;
+            padding: 0;
+            border: transparent;
+            font-size: 18px;
+            cursor: pointer;
+            &:hover {
+              color: $white;
+            }
+            .nav-level2 {
+              ul {
+                list-style-type: none;
+                margin-bottom: 0;
+                .nav-hr {
+                  background-color: white;
+                }
+              }
+            }
+          }
+        }
+        .nav-row1, .nav-row2 {
+          display: flex;
+          justify-content: space-evenly;
+          .nav-item {
+            border: 1px solid $white;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            background-color: $primary2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15em;
+            &:hover {
+              background-color: $primary2;
+              opacity: 0.8;
+            }
+            a {
+              &:link { color: $white; }
+              &:visited { color: $white; }
+              &:hover {
+                color: $white;
+                text-decoration: none;
+              }
+              &:active { color: $white; }
+            }
+            .nav-content {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 25px;
+              ul {
+                position: relative;
+                padding-left: 0;
+              }
+            }
+          }
+        }
+      }
     }
   }
   .drop-shadow {
     width: 100%;
-    height: 3.5rem;
+    height: 4rem;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   }
 }
@@ -166,8 +164,22 @@
 .kitties-humans-nav {
   position: absolute;
   z-index: 1;
+  .navbar {
+    background-color: transparent;
+    justify-content: flex-start;
+    .hamburger {
+      &:hover {
+        -ms-transform:none; /* IE 9 */
+        -webkit-transform: none; /* Safari 3-8 */
+        transform: none;
+      }
+      img {
+        visibility: collapse;
+        height: 0;
+      }
+    }
+  }
 }
-
 
 @media(max-width: 768px) {
   .navbar {
@@ -206,3 +218,8 @@
     }
   }
 }
+
+// Compass
+//.compass-nav {
+//  filter: drop-shadow(1px -1px 1px #c0b9ff) drop-shadow(1px 1px 1px #77749e);
+//}

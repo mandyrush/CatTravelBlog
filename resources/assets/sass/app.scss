@@ -38,11 +38,11 @@ body {
     }
 }
 
-.shadow5 {
-    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
-    -webkit-filter: drop-shadow( -1px -1px 1px #000 );
-    filter: drop-shadow( -1px -1px 1px #000 );
-}
+//.shadow5 {
+//    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+//    -webkit-filter: drop-shadow( -1px -1px 1px #000 );
+//    filter: drop-shadow( -1px -1px 1px #000 );
+//}
 
 // Spacing generator
 $spacings: 100, 70, 50, 30, 15, 10, 3, 0;
@@ -67,6 +67,11 @@ $spacings: 100, 70, 50, 30, 15, 10, 3, 0;
 }
 
 button:focus {outline: transparent;}
+.btn-secondary {
+    .focus, &:focus {
+        box-shadow: none;
+    }
+}
 
 .page-item.active .page-link {
     background-color: $primary2;

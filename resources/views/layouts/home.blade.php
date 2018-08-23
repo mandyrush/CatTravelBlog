@@ -9,9 +9,9 @@
         @include ('partials.home_banner')
     </section>
 
-    <header id="navbar">
+    <header class="navbar-layout-1">
         <div class="nav-oval"></div>
-        @include ('partials.nav')
+            @include ('partials.nav')
         <div class="drop-shadow"></div>
     </header>
 

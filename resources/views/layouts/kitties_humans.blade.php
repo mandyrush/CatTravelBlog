@@ -5,8 +5,8 @@
 </head>
 <body>
 
-    <header class="kitties-humans-nav container-fluid">
-        <div class="row justify-content-between">
+    <header class=" kitties-humans-nav container-fluid">
+        <div class="row navbar-layout-1">
             @include ('partials.nav')
         </div>
     </header>
