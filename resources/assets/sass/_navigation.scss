@@ -182,34 +182,36 @@
 }
 
 @media(max-width: 768px) {
-  .navbar {
-    .overlay {
-      display: flex;
-      align-items: flex-start;
-      overflow-y: auto;
+  .navbar-layout-1 {
+    .navbar {
+      .overlay {
+        display: flex;
+        align-items: flex-start;
+        overflow-y: auto;
 
-      .overlay-content {
-        margin-top: 0;
-        padding-top: 80px;
+        .overlay-content {
+          margin-top: 0;
+          padding-top: 80px;
 
-        .nav-row1 {
-          margin-bottom: 0;
-          .nav-item {
-            margin-bottom: 15px;
-            height: 9rem;
-          }
-        }
-
-        .nav-row2 {
-          .nav-btn {
-            height: 9rem;
-            margin-bottom: 15px;
+          .nav-row1 {
+            margin-bottom: 0;
+            .nav-item {
+              margin-bottom: 15px;
+              height: 9rem;
             }
-          .nav-item {
-            height: 9rem;
-            ul {
-              .nav-hr hr {
-                margin: 0;
+          }
+
+          .nav-row2 {
+            .nav-btn {
+              height: 9rem;
+              margin-bottom: 15px;
+            }
+            .nav-item {
+              height: 9rem;
+              ul {
+                .nav-hr hr {
+                  margin: 0;
+                }
               }
             }
           }
@@ -217,7 +219,12 @@
       }
     }
   }
+  .master .navbar-layout-1 {
+    margin-bottom: 3rem;
+  }
 }
+
+
 
 // Compass
 //.compass-nav {

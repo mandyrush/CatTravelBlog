@@ -15,17 +15,7 @@
 }
 
 @media(max-width: 768px) {
-  .master {
-    position: static;
-    flex-direction: column;
-    align-items: center;
-    .navbar-layout-1 {
-      position: static;
-      order: 2;
-    }
-    .master-logo {
-      position: static;
-      order: 1;
-    }
+  .master-logo {
+    visibility: hidden;
   }
 }

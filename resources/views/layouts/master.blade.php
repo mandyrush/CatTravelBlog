@@ -6,13 +6,13 @@
 <body>
 	<div class="master page-border">
 
-			<header class="navbar-layout-1">
-				<div class="nav-oval"></div>
-				@include ('partials.nav')
-				<div class="drop-shadow"></div>
-			</header>
+		<div class="master-logo"><a href="/">Cats Wander</a></div>
 
-			<div class="master-logo"><a href="/">Cats Wander</a></div>
+		<header class="navbar-layout-1">
+			<div class="nav-oval"></div>
+			@include ('partials.nav')
+			<div class="drop-shadow"></div>
+		</header>
 
 		@yield ('content')
 
