@@ -1,3 +1,4 @@
+
 <div class="filter card">
 
     <div class="card-header" id="filterHeading">
@@ -12,52 +13,20 @@
 
                <form action="/posts" method="get" class="filter-options">
                    <ul class="when-posted">
-                       <?php if(! isset($_GET["oldest"])) : ?>
                        <li>
                            <label class="container">
-                               <input type="radio" name="oldest" value="0" checked="checked">
+                               <input type="radio" name="oldest" value="0" {{ request('oldest') == 0 ? 'checked' : '' }}>
                                <span class="radio"></span>
                                Most Recent
                            </label>
                        </li>
                        <li>
                            <label class="container">
-                               <input type="radio" name="oldest" value="1">
+                               <input type="radio" name="oldest" value="1" {{ request('oldest') == 1 ? 'checked' : '' }}>
                                <span class="radio"></span>
                                Oldest
                            </label>
                        </li>
-                       <?php elseif($_GET["oldest"] === "0") : ?>
-                           <li>
-                               <label class="container">
-                                   <input type="radio" name="oldest" value="0" checked="checked">
-                                   <span class="radio"></span>
-                                   Most Recent
-                               </label>
-                           </li>
-                           <li>
-                               <label class="container">
-                                   <input type="radio" name="oldest" value="1">
-                                   <span class="radio"></span>
-                                   Oldest
-                               </label>
-                           </li>
-                       <?php elseif($_GET["oldest"] === "1") : ?>
-                           <li>
-                               <label class="container">
-                                   <input type="radio" name="oldest" value="0">
-                                   <span class="radio"></span>
-                                   Most Recent
-                               </label>
-                           </li>
-                           <li>
-                               <label class="container">
-                                   <input type="radio" name="oldest" value="1" checked="checked">
-                                   <span class="radio"></span>
-                                   Oldest
-                               </label>
-                           </li>
-                       <?php endif ?>
                    </ul>
 
 
@@ -65,14 +34,14 @@
                        <div class="row">
                            <li>
                                <label class="container">
-                                   <input type="checkbox" name="user_id[amanda]" value="1">
+                                   <input type="checkbox" name="user_id[amanda]" value="1" {{ isset($_GET['user_id']['amanda']) && $_GET['user_id']['amanda'] == 1 ? 'checked' : '' }}>
                                    <span class="checkbox"></span>
                                    Amanda
                                </label>
                            </li>
                            <li>
                                <label class="container">
-                                   <input type="checkbox" name="user_id[des]" value="5">
+                                   <input type="checkbox" name="user_id[des]" value="5" {{ isset($_GET['user_id']['des']) && $_GET['user_id']['des'] == 5 ? 'checked' : '' }}>
                                    <span class="checkbox"></span>
                                    Des
                                </label>
@@ -81,14 +50,14 @@
                        <div class="row">
                            <li>
                                <label class="container">
-                                   <input type="checkbox" name="user_id[mozzie]" value="7">
+                                   <input type="checkbox" name="user_id[mozzie]" value="7" {{ isset($_GET['user_id']['mozzie']) && $_GET['user_id']['mozzie'] == 7 ? 'checked' : '' }}>
                                    <span class="checkbox"></span>
                                    Mozzie
                                </label>
                            </li>
                            <li>
                                <label class="container">
-                                   <input type="checkbox" name="user_id[nessie]" value="8">
+                                   <input type="checkbox" name="user_id[nessie]" value="8" {{ isset($_GET['user_id']['nessie']) && $_GET['user_id']['nessie'] == 8 ? 'checked' : '' }}>
                                    <span class="checkbox"></span>
                                    Nessie
                                </label>
