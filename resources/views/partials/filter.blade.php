@@ -50,14 +50,14 @@
                        <div class="row">
                            <li>
                                <label class="container">
-                                   <input type="checkbox" name="user_id[mozzie]" value="7" {{ isset($_GET['user_id']['mozzie']) && $_GET['user_id']['mozzie'] == 7 ? 'checked' : '' }}>
+                                   <input type="checkbox" name="user_id[mozzie]" value="9" {{ isset($_GET['user_id']['mozzie']) && $_GET['user_id']['mozzie'] == 9 ? 'checked' : '' }}>
                                    <span class="checkbox"></span>
                                    Mozzie
                                </label>
                            </li>
                            <li>
                                <label class="container">
-                                   <input type="checkbox" name="user_id[nessie]" value="8" {{ isset($_GET['user_id']['nessie']) && $_GET['user_id']['nessie'] == 8 ? 'checked' : '' }}>
+                                   <input type="checkbox" name="user_id[nessie]" value="10" {{ isset($_GET['user_id']['nessie']) && $_GET['user_id']['nessie'] == 10 ? 'checked' : '' }}>
                                    <span class="checkbox"></span>
                                    Nessie
                                </label>
