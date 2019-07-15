@@ -19,6 +19,9 @@
         "vue": "^2.6.10"
     },
     "dependencies": {
-        "jquery-scrollify": "^1.0.20"
+        "braces": "^2.3.2",
+        "jquery-scrollify": "^1.0.20",
+        "querystringify": "^2.1.1",
+        "stringstream": "0.0.6"
     }
 }
