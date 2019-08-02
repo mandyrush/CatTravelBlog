@@ -12,7 +12,7 @@
                 <section>
                     Hello! I’m Amanda. I’m a web developer, crazy cat lady in training and adventurer
                     with a weakness for sweets. There’s nothing quite like a good maple doughnut
-                    or chocolate eclairs...
+                    or some chocolate eclairs...
                     <br><br>
 
                     Usually travel and pets don’t go together but as we found, where there’s a will

@@ -9,7 +9,13 @@
             <a href="/kitties/nessie">Nessie</a>
             <a href="/humans/des">Des</a>
             <a href="/humans/amanda">Amanda</a>
-            <a href="/login">Login</a>
+
+            @if (Auth::check())
+                <a href="/logout">Logout</a>
+            @else ()
+                <a href="/login">Login</a>
+            @endif
+
             <a href="/register">Register</a>
         </div>
 
