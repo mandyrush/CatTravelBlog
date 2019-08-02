@@ -9,11 +9,11 @@
   justify-content: flex-end;
   .bio {
     background-color: lightgray;
-    opacity: 0.7;
-    padding: 20px;
+    opacity: 0.9;
+    padding: 2rem;
     margin-right: 1%;
     width: 40%;
-    height: 80%;
+    height: auto;
     .bio-title {
       padding: 5% 2%;
       font-size: 2rem;
@@ -43,10 +43,12 @@
   background-position: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .kitty-human {
+    align-items: flex-end;
     .bio {
-      width: 75%;
+      width: 100%;
+      height: 50%;
       .bio-body {
         margin-top: 20px;
       }

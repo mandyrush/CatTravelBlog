@@ -10,28 +10,21 @@
 
             <div class="bio-body">
                 <section>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-                    id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-                    ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-                    efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-                    Fusce ullamcorper nibh enim, eget dictum massa auctor ac. Phasellus a nisl non ipsum sodales
-                    vestibulum a id nisl. Suspendisse efficitur semper consequat. Vivamus diam magna, interdum eu
-                    diam id, vehicula efficitur velit. Sed erat lorem, porttitor nec suscipit sed, feugiat et ligula.
-                    Pellentesque vitae augue pellentesque, fringilla enim vel, condimentum nisl.
-                <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-                    id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-                    ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-                    efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-                <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-                    id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-                    ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-                    efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-                    Fusce ullamcorper nibh enim, eget dictum massa auctor ac. Phasellus a nisl non ipsum sodales
-                    vestibulum a id nisl. Suspendisse efficitur semper consequat. Vivamus diam magna, interdum eu
-                    diam id, vehicula efficitur velit. Sed erat lorem, porttitor nec suscipit sed, feugiat et ligula.
-                    Pellentesque vitae augue pellentesque, fringilla enim vel, condimentum nisl.
+                    I am Nessie. If you do anything Nessie doesn’t like, I bite you! Chasing
+                    meat sticks is the best!! I love playing with toys… and clawing the couch
+                    and did I mention meat sticks! My tummy demands food when I am bored. If
+                    you don’t feed me in time, I bite you!
+                    <br><br>
+
+                    I don’t like car rides so if I you get a suitcase, Nessie HIDE!!! I eat
+                    anything I see but sometimes my tummy will make me arf it back up, like when
+                    I try to eat weather striping, don’t know why… Nessie’s were made for outside,
+                    outside is the best! I like to eat grass and dream about catching birdies with
+                    my teeth.
+
+                    <br><br>
+                    I like to cuddle and get lots of pets, sometimes the pets are soooo good that it
+                    makes me drool. If you don’t pet me in time though… I bite you!
                 </section>
             </div>
         </div>

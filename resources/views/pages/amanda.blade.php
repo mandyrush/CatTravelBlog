@@ -10,28 +10,16 @@
 
             <div class="bio-body">
                 <section>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-                    id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-                    ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-                    efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-                    Fusce ullamcorper nibh enim, eget dictum massa auctor ac. Phasellus a nisl non ipsum sodales
-                    vestibulum a id nisl. Suspendisse efficitur semper consequat. Vivamus diam magna, interdum eu
-                    diam id, vehicula efficitur velit. Sed erat lorem, porttitor nec suscipit sed, feugiat et ligula.
-                    Pellentesque vitae augue pellentesque, fringilla enim vel, condimentum nisl.
+                    Hello! I’m Amanda. I’m a web developer, crazy cat lady in training and adventurer
+                    with a weakness for sweets. There’s nothing quite like a good maple doughnut
+                    or chocolate eclairs...
                     <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-                    id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-                    ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-                    efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-                    id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-                    ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-                    efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-                    Fusce ullamcorper nibh enim, eget dictum massa auctor ac. Phasellus a nisl non ipsum sodales
-                    vestibulum a id nisl. Suspendisse efficitur semper consequat. Vivamus diam magna, interdum eu
-                    diam id, vehicula efficitur velit. Sed erat lorem, porttitor nec suscipit sed, feugiat et ligula.
-                    Pellentesque vitae augue pellentesque, fringilla enim vel, condimentum nisl.
+
+                    Usually travel and pets don’t go together but as we found, where there’s a will
+                    there’s a way. I love venturing to far off places I’ve never seen and learning
+                    about the history and cultures. I’m always in search of great food to try or wines
+                    to taste. The rest of my time is spent creating websites and catering to my furry
+                    felines.
                 </section>
             </div>
         </div>

@@ -1,10 +1,11 @@
 /* Colors */
-$primary: #6C5F5B;
-$primary2: #5171A5;
+$primary: #25274d;
+$primary2: #0b87c1;
+$accent2: #F8C834;
 $accent: #FFEC5C;
-$accent2: #F47D4A;
+
 $gray: #7C7C7C;
-$lt-gray: #F0EFEA;
+$lt-gray: #f2f2f2;
 $white: #FFFFFF;
 
 /* Fonts */
@@ -37,12 +38,6 @@ body {
         size: 18px;
     }
 }
-
-//.shadow5 {
-//    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
-//    -webkit-filter: drop-shadow( -1px -1px 1px #000 );
-//    filter: drop-shadow( -1px -1px 1px #000 );
-//}
 
 // Spacing generator
 $spacings: 100, 70, 50, 30, 15, 10, 3, 0;
@@ -145,10 +140,6 @@ button:focus {outline: transparent;}
     position: absolute;
     height: 100%;
     width: 100%;
-}
-
-.section {
-    display: block;
 }
 
 .border-shadow {

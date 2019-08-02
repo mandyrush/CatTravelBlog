@@ -31,38 +31,20 @@
 
 
                    <ul class="posted-by">
-                       <div class="row">
-                           <li>
-                               <label class="container">
-                                   <input type="checkbox" name="user_id[amanda]" value="1" {{ isset($_GET['user_id']['amanda']) && $_GET['user_id']['amanda'] == 1 ? 'checked' : '' }}>
-                                   <span class="checkbox"></span>
-                                   Amanda
-                               </label>
-                           </li>
-                           <li>
-                               <label class="container">
-                                   <input type="checkbox" name="user_id[des]" value="5" {{ isset($_GET['user_id']['des']) && $_GET['user_id']['des'] == 5 ? 'checked' : '' }}>
-                                   <span class="checkbox"></span>
-                                   Des
-                               </label>
-                           </li>
-                       </div>
-                       <div class="row">
-                           <li>
-                               <label class="container">
-                                   <input type="checkbox" name="user_id[mozzie]" value="9" {{ isset($_GET['user_id']['mozzie']) && $_GET['user_id']['mozzie'] == 9 ? 'checked' : '' }}>
-                                   <span class="checkbox"></span>
-                                   Mozzie
-                               </label>
-                           </li>
-                           <li>
-                               <label class="container">
-                                   <input type="checkbox" name="user_id[nessie]" value="10" {{ isset($_GET['user_id']['nessie']) && $_GET['user_id']['nessie'] == 10 ? 'checked' : '' }}>
-                                   <span class="checkbox"></span>
-                                   Nessie
-                               </label>
-                           </li>
-                       </div>
+                       <li>
+                           <label class="container">
+                               <input type="checkbox" name="user_id[amanda]" value="1" {{ isset($_GET['user_id']['amanda']) && $_GET['user_id']['amanda'] == 1 ? 'checked' : '' }}>
+                               <span class="checkbox"></span>
+                               Amanda
+                           </label>
+                       </li>
+                       <li>
+                           <label class="container">
+                               <input type="checkbox" name="user_id[des]" value="5" {{ isset($_GET['user_id']['des']) && $_GET['user_id']['des'] == 5 ? 'checked' : '' }}>
+                               <span class="checkbox"></span>
+                               Des
+                           </label>
+                       </li>
                    </ul>
 
                <div class="filter-btn">

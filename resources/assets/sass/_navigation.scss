@@ -1,29 +1,11 @@
-.master .navbar-layout-1 {
-  .navbar {
-    width: 80%;
-  }
-}
-
 .navbar-layout-1 {
   display: flex;
   justify-content: center;
-  .nav-oval {
-    background-color: $primary2;
-    width: 9rem;
-    height: 8rem;
-    position: absolute;
-    border-radius: 50%;
-    padding: 1.5rem;
-    box-shadow: 0 13px 13px 0 rgba(0,0,0,0.16);
-    z-index: 3;
-  }
   .navbar {
-    position: absolute;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 4rem;
-    padding-top: 1.5rem;
     background-color: $primary2;
     .hamburger {
       display: flex;
@@ -32,17 +14,6 @@
       justify-content: center;
       position: absolute;
       cursor: pointer;
-      margin-top: 1.5rem;
-      border-radius: 50%;
-      width: 8.5rem;
-      height: 8rem;
-      transition-duration: .5s;
-      z-index: 4;
-      &:hover {
-        -ms-transform: rotate(30deg); /* IE 9 */
-        -webkit-transform: rotate(30deg); /* Safari 3-8 */
-        transform: rotate(30deg);
-      }
       .hamburger-icon {
         font-size: 2.5rem;
         color: $white;
@@ -191,7 +162,7 @@
 
         .overlay-content {
           margin-top: 0;
-          padding-top: 80px;
+          padding: 5rem 1rem;
 
           .nav-row1 {
             margin-bottom: 0;
@@ -219,14 +190,4 @@
       }
     }
   }
-  .master .navbar-layout-1 {
-    margin-bottom: 3rem;
-  }
 }
-
-
-
-// Compass
-//.compass-nav {
-//  filter: drop-shadow(1px -1px 1px #c0b9ff) drop-shadow(1px 1px 1px #77749e);
-//}

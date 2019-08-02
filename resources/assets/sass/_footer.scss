@@ -1,70 +1,25 @@
 /* Footer */
 .main-footer {
-  min-height: 12.5rem;
   background-color: $primary2;
   opacity: 0.9;
   display: flex;
-  align-items: flex-end;
-  .footerImg {
-    height: 225px;
-    width: 100%;
-    background-image: url("/img/nessie_monster.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-  }
-  .footerContent {
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  .footerLinks {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2rem;
-    .footerHr hr {
-      border: 1px solid $white;
-      width: 90%;
-    }
-    .footerLinks {
-      display: flex;
-      justify-content: center;
-      a {
-        font-size: 18px;
-        padding: 15px;
-        &:link { color: $white; }
-        &:visited { color: $white; }
-        &:hover {
-          color: $white;
-          opacity: .5;
-          text-decoration: none;
-        }
-        &:active { color: $white; }
+    justify-content: center;
+    a {
+      font-size: 18px;
+      padding: 15px;
+      &:link { color: $white; }
+      &:visited { color: $white; }
+      &:hover {
+        color: $white;
+        opacity: .5;
+        text-decoration: none;
       }
-    }
-  }
-}
-
-@media (max-width: 1310px) {
-  .main-footer{
-    .footerContent {
-      .footerLinks {
-        a {
-          padding: 10px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1160px) {
-  .main-footer {
-    min-height: 10rem;
-    flex-direction: column;
-    align-items: center;
-    .footerContent {
-      width: 100%;
-      padding: 15px 0;
-    }
-    .footerImg {
-      visibility: hidden;
-      height: 0;
+      &:active { color: $white; }
     }
   }
 }

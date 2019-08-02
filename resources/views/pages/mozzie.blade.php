@@ -10,28 +10,22 @@
 
 			<div class="bio-body">
 				<section>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-					id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-					ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-					efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-					Fusce ullamcorper nibh enim, eget dictum massa auctor ac. Phasellus a nisl non ipsum sodales
-					vestibulum a id nisl. Suspendisse efficitur semper consequat. Vivamus diam magna, interdum eu
-					diam id, vehicula efficitur velit. Sed erat lorem, porttitor nec suscipit sed, feugiat et ligula.
-					Pellentesque vitae augue pellentesque, fringilla enim vel, condimentum nisl.
+					Greetings, I am Mozzie (aka the Tiny Tiger). I enjoy only the finest foods,
+					daily massages and stealing my humans chairs when they aren't looking. I
+					provide a complementary alarm service at random times during the day and night
+					for their protection which I know they thoroughly enjoy.
 					<br><br>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-					id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-					ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-					efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
+
+					Bowls of water simply cannot be trusted so when I need to quench my thirst I
+					summon my humans to turn on one of my water fountains, yes I have two… They
+					call them sinks as if they were made for humans but we both know they are far
+					too tall to drink from them properly.
 					<br><br>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-					id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-					ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-					efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-					Fusce ullamcorper nibh enim, eget dictum massa auctor ac. Phasellus a nisl non ipsum sodales
-					vestibulum a id nisl. Suspendisse efficitur semper consequat. Vivamus diam magna, interdum eu
-					diam id, vehicula efficitur velit. Sed erat lorem, porttitor nec suscipit sed, feugiat et ligula.
-					Pellentesque vitae augue pellentesque, fringilla enim vel, condimentum nisl.
+
+					My green sheep is my most prized possession, I love to listen to the melodious
+					sound of its bell jingling as I bite down on it’s soft furry insides with the
+					fury of 1000 tigers. In my spare time I enjoy car rides, visits to grandma’s
+					house or hunting my acquaintance Nessie.
 				</section>
 			</div>
 		</div>

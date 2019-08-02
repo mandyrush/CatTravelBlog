@@ -16,11 +16,16 @@
         "jquery": "^3.4.1",
         "laravel-mix": "^4.1.2",
         "lodash": "^4.17.14",
-        "vue": "^2.6.10"
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.22.9",
+        "sass-loader": "^7.1.0",
+        "vue": "^2.6.10",
+        "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
         "braces": "^2.3.2",
         "jquery-scrollify": "^1.0.20",
+        "macaddress": "^0.2.9",
         "querystringify": "^2.1.1",
         "stringstream": "0.0.6"
     }

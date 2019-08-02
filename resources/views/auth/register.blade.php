@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row register">
-        <div class="col-md-5 register-panel">
+        <div class="col-lg-5 register-panel">
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>
 

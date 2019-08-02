@@ -113,7 +113,7 @@
     text-align: start;
   }
   .posted-by {
-    padding-left: 2rem;
+    padding-left: 1rem;
     text-align: start;
     .row li {
       flex-grow: 3;
@@ -135,7 +135,7 @@
     }
     .posted-by {
       padding-top: 1.5rem;
-      padding-left: 1rem;
+      padding-left: 0;
     }
   }
 }

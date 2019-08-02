@@ -10,28 +10,16 @@
 
             <div class="bio-body">
                 <section>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-                    id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-                    ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-                    efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-                    Fusce ullamcorper nibh enim, eget dictum massa auctor ac. Phasellus a nisl non ipsum sodales
-                    vestibulum a id nisl. Suspendisse efficitur semper consequat. Vivamus diam magna, interdum eu
-                    diam id, vehicula efficitur velit. Sed erat lorem, porttitor nec suscipit sed, feugiat et ligula.
-                    Pellentesque vitae augue pellentesque, fringilla enim vel, condimentum nisl.
+                    Hello there, I’m Des. I am a remote web developer who loves adventure and great
+                    food. My dream is to live on a sailboat and travel the world one day in search
+                    of the best coffee and sushi I can find. In the meantime, I enjoy traveling on
+                    land with my wife and furry critters, visiting new places and meeting new people.
                     <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-                    id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-                    ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-                    efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur justo lacus,
-                    id posuere arcu tempus quis. Duis at lorem id dui laoreet rutrum. Nunc magna enim,
-                    ultricies at enim vel, condimentum consequat justo. Integer dapibus sem quis ligula
-                    efficitur auctor vitae id elit. Quisque a diam et dolor malesuada placerat vel nec ligula.
-                    Fusce ullamcorper nibh enim, eget dictum massa auctor ac. Phasellus a nisl non ipsum sodales
-                    vestibulum a id nisl. Suspendisse efficitur semper consequat. Vivamus diam magna, interdum eu
-                    diam id, vehicula efficitur velit. Sed erat lorem, porttitor nec suscipit sed, feugiat et ligula.
-                    Pellentesque vitae augue pellentesque, fringilla enim vel, condimentum nisl.
+
+                    I like a good beer with friends and have actually created a few of my own brews
+                    in my spare time. My hobbies include art, photography, and design. I also like
+                    to do a little hiking and rock climbing. I spend most of my days working,
+                    traveling, walking cats, petting cats and playing with cats...
                 </section>
             </div>
         </div>

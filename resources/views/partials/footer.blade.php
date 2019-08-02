@@ -1,9 +1,5 @@
 <footer class="main-footer">
-
     <div class="footerContent col-xl-9">
-        <div class="footerHr row col-lg-12">
-            <hr>
-        </div>
 
         <div class="footerLinks row col-sm-12">
             <a href="/">Home</a>
@@ -18,7 +14,4 @@
         </div>
 
     </div>
-
-    <div class="footerImg col-md-3"></div>
-
 </footer>

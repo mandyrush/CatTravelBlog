@@ -2,8 +2,6 @@
 <nav class="navbar">
 
     <div class="hamburger" onclick="openNav()">
-        {{--<img class="shadow5" src="{{asset('images/svg/cat.svg')}}" width="51" height="50" alt="cat" >--}}
-        <img src="/storage/cat_fat.png" alt="Cat-sing">
         <i class="fas fa-bars hamburger-icon"></i>
     </div>
 

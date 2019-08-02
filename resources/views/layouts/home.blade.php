@@ -10,14 +10,12 @@
     </section>
 
     <header class="navbar-layout-1">
-        <div class="nav-oval"></div>
-            @include ('partials.nav')
-        <div class="drop-shadow"></div>
+        @include ('partials.nav')
     </header>
 
     <section class="homeBody">
-            @yield ('content')
-            @include ('partials.footer')
+        @yield ('content')
+        @include ('partials.footer')
     </section>
 </body>
 </html>
