@@ -72,10 +72,15 @@
     column-count: 2;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .modal-body {
     height: auto;
     max-height: 90vh;
+  }
+  .masonry .masonry-panel .masonry-panel-content .modal-dialog .close {
+    display: block;
+    text-align: right;
+    padding-right: 1rem;
   }
 }
 @media (min-width: 1200px) {

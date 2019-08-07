@@ -1,5 +1,5 @@
 <div class="masonry-panel flip-med flip">
-    <div class="masonry-panel_content flip-content">
+    <div class="masonry-panel_content flip-content" aria-haspopup="true">
         <div class="flip-panel flip-panel-front">
             <p>Nessie Say...</p>
         </div>

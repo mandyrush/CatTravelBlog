@@ -152,7 +152,30 @@
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
+  .navbar-layout-1 {
+    .navbar {
+      .overlay {
+        .overlay-content {
+          .nav-row1, .nav-row2 {
+            justify-content: space-around;
+            .nav-item {
+              padding-left: 0;
+            }
+            .nav-item {
+              display: block;
+              .nav-content {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) {
   .navbar-layout-1 {
     .navbar {
       .overlay {

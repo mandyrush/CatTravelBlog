@@ -43,12 +43,22 @@
   background-position: center;
 }
 
+@media(max-width: 1024px) {
+  .kitty-human .bio .bio-body {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 600px) {
   .kitty-human {
     align-items: flex-end;
+    height: 100%;
+    position: static;
     .bio {
       width: 100%;
       height: 50%;
+      margin-top: 25%;
+      opacity: .7;
       .bio-body {
         margin-top: 20px;
       }
