@@ -78,6 +78,10 @@ button:focus {outline: transparent;}
     }
 }
 
+.pagination {
+    flex-wrap: wrap;
+}
+
 .page-item.active .page-link {
     background-color: $primary2;
     border: 1px solid $lt-gray;
