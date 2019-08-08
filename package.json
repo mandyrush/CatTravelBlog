@@ -27,6 +27,6 @@
         "jquery-scrollify": "^1.0.20",
         "macaddress": "^0.2.9",
         "querystringify": "^2.1.1",
-        "stringstream": "0.0.6"
+        "stringstream": "1.0.0"
     }
 }
