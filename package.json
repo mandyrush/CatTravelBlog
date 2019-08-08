@@ -23,7 +23,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "braces": "^2.3.2",
+        "braces": "^3.0.2",
         "jquery-scrollify": "^1.0.20",
         "macaddress": "^0.2.9",
         "querystringify": "^2.1.1",
